@@ -1,9 +1,9 @@
-# Bentoclay Claytech Website
+# bentoclayclaytech
 
 Official responsive web application for **Bentoclay Claytech** — Manufacturer and global exporter of high-purity Attapulgite, Bentonite, and Industrial Clays.
 
 ## Repository
-- Remote: https://github.com/Dhavaldave121002/https-bentoclayclaytech.com-.git
+- Remote: https://github.com/Dhavaldave121002/bentoclayclaytech.git
 - Production URL: https://bentoclayclaytech.com
 
 ## Technology Stack
