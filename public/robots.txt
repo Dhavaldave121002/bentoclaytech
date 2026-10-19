@@ -1,0 +1,65 @@
+# Robots.txt for Bentoclay Claytech (https://bentoclayclaytech.com)
+# Global manufacturer & exporter of Attapulgite & Palygorskite minerals
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/private/
+
+# Standard Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Favicon
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Generative Engine Optimization (GEO & AIO) Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+# Host Specification
+Host: bentoclayclaytech.com
+
+# Canonical XML Sitemap & AI Knowledge Dossier (AEO/GEO)
+Sitemap: https://bentoclayclaytech.com/sitemap.xml
+# LLMS Index: https://bentoclayclaytech.com/llms.txt
+# LLMS Full Dossier: https://bentoclayclaytech.com/llms-full.txt

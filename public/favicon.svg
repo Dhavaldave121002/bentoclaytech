@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#B91C1C"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Background crisp white rounded tile with subtle border for high contrast in dark mode tabs -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="#FFFFFF" filter="url(#shadow)" stroke="#E2E8F0" stroke-width="4"/>
+  
+  <!-- Bentoclay Intersecting Ribbon Emblem -->
+  <g transform="translate(48, 48) scale(0.8125)">
+    <!-- Yellow Wing/Ribbon (Left to Center) -->
+    <path d="M 50 190 C 130 90, 260 70, 360 170 C 290 190, 210 170, 160 210 C 110 240, 70 230, 50 190 Z" fill="url(#yellowGrad)"/>
+    <path d="M 70 250 C 140 210, 230 200, 320 270 C 250 280, 180 270, 140 300 C 100 320, 80 290, 70 250 Z" fill="#FBBF24" opacity="0.9"/>
+    
+    <!-- Red Crossing Wing/Ribbon (Right to Left across Center) -->
+    <path d="M 462 190 C 382 90, 252 70, 152 170 C 222 190, 302 170, 352 210 C 402 240, 442 230, 462 190 Z" fill="url(#redGrad)"/>
+    <!-- Central Red V-Apex Ribbon -->
+    <path d="M 190 190 L 256 310 L 322 190 C 370 230, 430 240, 450 260 C 370 300, 310 270, 256 345 C 202 270, 142 300, 62 260 C 82 240, 142 230, 190 190 Z" fill="url(#redGrad)"/>
+    
+    <!-- Brand Name Text 'Bentoclay' -->
+    <text x="256" y="405" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="64" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="-1.5">Bentoclay<tspan font-size="28" dy="-28">®</tspan></text>
+    
+    <!-- Brand underline stripes -->
+    <rect x="70" y="430" width="372" height="8" rx="4" fill="#F59E0B"/>
+    <rect x="70" y="444" width="372" height="10" rx="5" fill="#DC2626"/>
+  </g>
+</svg>
