@@ -16,8 +16,8 @@ export const faqs = [
   {
     category: 'Product Range',
     categoryIcon: '📦',
-    question: 'Which standardized attapulgite grades does Bentoclay Claytech produce?',
-    summary: 'Bentoclay Claytech produces six dedicated standardized and custom-engineered industrial grades from our Bhavnagar facility:',
+    question: 'Which standardized attapulgite grades does Bento Clay Tech produce?',
+    summary: 'Bento Clay Tech produces six dedicated standardized and custom-engineered industrial grades from our Bhavnagar facility:',
     points: [
       { title: '1. Salt Gel Grade Powder', desc: '35 cps min @ 600 rpm · For deep saline muds, brine drilling, and high-viscosity gelling.' },
       { title: '2. API-13A Section 12 Grade', desc: '30 cps min · Certified drilling grade matching American Petroleum Institute specifications.' },

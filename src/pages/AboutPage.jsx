@@ -34,13 +34,13 @@ export default function AboutPage() {
       <section className="page-hero split-hero visual-split">
         <div className="container">
           <div>
-            <span className="section-number">ABOUT BENTOCLAY CLAYTECH</span>
+            <span className="section-number">ABOUT BENTO CLAY TECH</span>
             <h1>
               Attapulgite specialists.<br />
               <em>Bhavnagar, India.</em>
             </h1>
             <p>
-              Bentoclay Claytech manufactures specialized attapulgite powder and granules from its processing works in Kardej, Bhavnagar, Gujarat, supplying drilling and industrial formulators worldwide.
+              Bento Clay Tech manufactures specialized attapulgite powder and granules from its processing works in Kardej, Bhavnagar, Gujarat, supplying drilling and industrial formulators worldwide.
             </p>
             <div className="mineral-formula compact-formula">
               <small>CHEMICAL FORMULA &amp; CRYSTALLOGRAPHY</small>

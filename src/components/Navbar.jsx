@@ -73,10 +73,10 @@ export default function Navbar() {
         style={{ top: isScrolled ? '0' : 'var(--topbar-height, 40px)' }}
       >
         <div className="container nav-wrap">
-          <Link to="/" className="brand" aria-label="Bentoclay Claytech home" onClick={closeMenu}>
+          <Link to="/" className="brand" aria-label="Bento Clay Tech home" onClick={closeMenu}>
             <img
               src="/assets/bentoclay-logo.webp"
-              alt="Bentoclay Claytech"
+              alt="Bento Clay Tech"
               width="110"
               height="auto"
               style={{ height: 'auto' }}

@@ -189,7 +189,7 @@ export default function ProductDetailPage() {
                   <div className="detail-media-fade">
                     <ImageWithSkeleton
                       src={product.image}
-                      alt={`${product.name} - Certified High Purity Attapulgite Clay Mineral by Bentoclay Claytech`}
+                      alt={`${product.name} - Certified High Purity Attapulgite Clay Mineral by Bento Clay Tech`}
                       className="product-main-photo"
                     />
                   </div>

@@ -250,7 +250,7 @@ export default function TeamVideoSection() {
                     ref={videoRefs[item.id]}
                     src={item.src}
                     playsInline
-                    preload={isActive ? 'auto' : 'none'}
+                    preload={isActive && isSectionVisible ? 'auto' : 'none'}
                     muted
                     defaultMuted
                     onTimeUpdate={() => handleTimeUpdate(item.id)}

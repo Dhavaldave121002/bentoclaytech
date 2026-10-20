@@ -7,11 +7,12 @@ export default function Footer() {
       <div className="footer-accent"></div>
       <div className="container footer-main">
         <div className="footer-about">
-          <Link className="brand footer-brand" to="/">
+          <Link className="brand footer-brand" to="/" aria-label="Bento Clay Tech home">
             <img
               src="/assets/bentoclay-logo.webp"
-              alt="Bentoclay"
+              alt="Bento Clay Tech"
               width="130"
+              height="44"
               style={{ height: 'auto' }}
             />
           </Link>
@@ -22,11 +23,11 @@ export default function Footer() {
 
           {/* Google Rating Trust Badge */}
           <a
-            href="https://www.google.com/search?q=Bentoclay+Claytech+Bhavnagar"
+            href="https://www.google.com/search?q=Bento+Clay+Tech+Bhavnagar+reviews"
             target="_blank"
             rel="noopener noreferrer"
             className="google-rating-badge"
-            aria-label="Bentoclay Claytech - Google Reviews"
+            aria-label="Bento Clay Tech — View our Google Reviews (opens in new window)"
           >
             {/* Google wordmark in brand colors */}
             <div className="google-wordmark" aria-hidden="true">
@@ -38,12 +39,12 @@ export default function Footer() {
               <span style={{ color: '#EA4335' }}>e</span>
             </div>
             {/* 5 Gold Stars */}
-            <div className="google-stars" aria-label="5 out of 5 stars">
-              <span className="google-star">★</span>
-              <span className="google-star">★</span>
-              <span className="google-star">★</span>
-              <span className="google-star">★</span>
-              <span className="google-star">★</span>
+            <div className="google-stars" aria-label="5 out of 5 stars on Google" role="img">
+              <span className="google-star" aria-hidden="true">★</span>
+              <span className="google-star" aria-hidden="true">★</span>
+              <span className="google-star" aria-hidden="true">★</span>
+              <span className="google-star" aria-hidden="true">★</span>
+              <span className="google-star" aria-hidden="true">★</span>
             </div>
           </a>
         </div>
@@ -61,22 +62,22 @@ export default function Footer() {
 
         <div className="footer-contact">
           <h4>Get in touch</h4>
-          <a className="contact-line" href="mailto:dipak@bentoclay.com">
-            <i>✉</i>
+          <a className="contact-line" href="mailto:dipak@bentoclay.com" aria-label="Email sales: dipak@bentoclay.com">
+            <i aria-hidden="true">✉</i>
             <span>
               <small>DIRECT SALES EMAIL</small>
               dipak@bentoclay.com
             </span>
           </a>
-          <a className="contact-line" href="mailto:bentoclayclaytech@gmail.com">
-            <i>✉</i>
+          <a className="contact-line" href="mailto:bentoclayclaytech@gmail.com" aria-label="Email general inquiries: bentoclayclaytech@gmail.com">
+            <i aria-hidden="true">✉</i>
             <span>
               <small>GENERAL INQUIRIES</small>
               bentoclayclaytech@gmail.com
             </span>
           </a>
-          <a className="contact-line" href="tel:+917435818628">
-            <i>📞</i>
+          <a className="contact-line" href="tel:+917435818628" aria-label="Call us: +91 74358 18628">
+            <i aria-hidden="true">📞</i>
             <span>
               <small>CALL US</small>
               +91 74358 18628
@@ -118,7 +119,7 @@ export default function Footer() {
 
       <div className="footer-base">
         <div className="container">
-          <span>© 2026 Bentoclay Claytech. All rights reserved.</span>
+          <span>© 2026 Bento Clay Tech. All rights reserved.</span>
           <span className="footer-formula">Hydrated aluminium magnesium silicate</span>
         </div>
       </div>

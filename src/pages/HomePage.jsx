@@ -83,7 +83,7 @@ export default function HomePage() {
                 <span>six different jobs.</span>
               </h2>
             </div>
-            <p>Every specification below is reproduced from the published Bentoclay Claytech product data sheet for that grade.</p>
+            <p>Every specification below is reproduced from the published Bento Clay Tech product data sheet for that grade.</p>
           </div>
 
           <div className="filter-bar" role="tablist" aria-label="Product filters">

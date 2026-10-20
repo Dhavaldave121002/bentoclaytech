@@ -154,7 +154,7 @@ export default function HeroClayShowcase() {
             </h1>
 
             <p className="hero-lead">
-              Bentoclay Claytech manufactures six specialized attapulgite grades — from 35 cps salt gel for saline drilling fluids to 210 m²/g Premium 325 for paint and coatings — each controlled to a published data sheet in 25 kg HDPE packing.
+              Bento Clay Tech manufactures six specialized attapulgite grades — from 35 cps salt gel for saline drilling fluids to 210 m²/g Premium 325 for paint and coatings — each controlled to a published data sheet in 25 kg HDPE packing.
             </p>
 
             <div className="hero-actions">
@@ -239,7 +239,7 @@ export default function HeroClayShowcase() {
                   <div className="showcase-media-box showcase-powder-box" key={`powder-${activeGrade.id}`}>
                     <img
                       src={activeGrade.image}
-                      alt={`${activeGrade.name} - Pure Attapulgite Clay Mineral by Bentoclay Claytech`}
+                      alt={`${activeGrade.name} - Pure Attapulgite Clay Mineral by Bento Clay Tech`}
                       className="showcase-main-img floating-clay-anim"
                       width="540"
                       height="540"
@@ -252,7 +252,7 @@ export default function HeroClayShowcase() {
                   <div className="showcase-media-box showcase-bag-box" key="bag-view">
                     <img
                       src="/assets/bentoclay-hdpe-bag.jpg"
-                      alt="Bentoclay Claytech 25 kg HDPE Woven Sack with PE Liner"
+                      alt="Bento Clay Tech 25 kg HDPE Woven Sack with PE Liner"
                       className="showcase-main-img floating-clay-anim bag-photo"
                       width="540"
                       height="540"

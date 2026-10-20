@@ -230,14 +230,14 @@ async function createPDS(data) {
     });
 
     const textX = 45 + logoDims.width + 12;
-    page.drawText('Bentoclay Claytech', {
+    page.drawText('Bento Clay Tech', {
       x: textX,
       y: y - 4,
       size: 18,
       font: fontBold,
       color: darkInk
     });
-    page.drawText('Manufactures of Attapulgite Powder', {
+    page.drawText('Manufacturers of Attapulgite Minerals', {
       x: textX,
       y: y - 18,
       size: 9.5,
@@ -245,14 +245,14 @@ async function createPDS(data) {
       color: lightGray
     });
   } else {
-    page.drawText('Bentoclay Claytech', {
+    page.drawText('Bento Clay Tech', {
       x: 45,
       y: y - 4,
       size: 19,
       font: fontBold,
       color: darkInk
     });
-    page.drawText('Manufactures of Attapulgite Powder', {
+    page.drawText('Manufacturers of Attapulgite Minerals', {
       x: 45,
       y: y - 18,
       size: 9.5,
@@ -511,7 +511,7 @@ async function createPDS(data) {
     font: fontBold,
     color: darkInk
   });
-  page.drawText('HDPE with linear 25kgs packing.', {
+  page.drawText('HDPE with liner, 25 kg packing.', {
     x: 105,
     y: y,
     size: 9.5,
@@ -528,7 +528,7 @@ async function createPDS(data) {
     color: rgb(0.85, 0.85, 0.85)
   });
 
-  page.drawText('Address: - L.S. 341/P-2, Behind Manpasand Dhaba, Vallabhipur Highway, Kardej, Bhavnagar – 364060, Gujarat, India', {
+  page.drawText('Manufacturing Works: L.S. 341/P-2, Behind Manpasand Dhaba, Vallabhipur Highway, Kardej, Bhavnagar – 364060, Gujarat, India', {
     x: 45,
     y: footerY + 11,
     size: 7.8,
@@ -544,8 +544,8 @@ async function createPDS(data) {
     color: brandGold
   });
 
-  page.drawText('Contact: +91 74358 18628  |  Website: https://bentoclay.com', {
-    x: 320,
+  page.drawText('Contact: +91 74358 18628  |  Website: https://bentoclayclaytech.com/', {
+    x: 300,
     y: footerY - 1,
     size: 8,
     font: fontBold,

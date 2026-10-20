@@ -55,6 +55,41 @@ export default defineConfig({
     watch: {
       ignored: ['**/dist/**', '**/node_modules/**']
     }
+  },
+  build: {
+    target: 'es2020',
+    cssCodeSplit: true,
+    minify: 'esbuild',
+    rollupOptions: {
+      output: {
+        // Split vendor packages into separate cacheable chunks (no circular deps)
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react-router')) return 'vendor-router';
+            if (id.includes('react-dom')) return 'vendor-react-dom';
+            if (id.includes('/react/')) return 'vendor-react';
+            if (id.includes('@react-pdf') || id.includes('pdfmake') || id.includes('jspdf')) return 'vendor-pdf';
+            if (id.includes('xlsx') || id.includes('exceljs')) return 'vendor-excel';
+            return 'vendor-misc';
+          }
+        },
+        // Deterministic file naming
+        chunkFileNames: 'assets/js/[name]-[hash].js',
+        entryFileNames: 'assets/js/[name]-[hash].js',
+        assetFileNames: (assetInfo) => {
+          const ext = (assetInfo.name ?? '').split('.').pop() ?? '';
+          if (/png|jpe?g|svg|gif|webp|ico|avif/.test(ext)) {
+            return 'assets/images/[name]-[hash][extname]';
+          }
+          if (/css/.test(ext)) {
+            return 'assets/css/[name]-[hash][extname]';
+          }
+          return 'assets/[name]-[hash][extname]';
+        }
+      }
+    },
+    // Increase chunk size warning limit (CSS is large by design)
+    chunkSizeWarningLimit: 600
   }
 });
 

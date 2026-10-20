@@ -8,7 +8,7 @@ export default function TermsConditionsPage() {
           <span className="section-number">COMMERCIAL & LEGAL</span>
           <h1>Terms & Conditions of Sale & Export</h1>
           <p style={{ marginTop: '16px', maxWidth: '650px' }}>
-            Official terms governing product sales, quality conformity, custom specifications, international maritime export, and website usage for Bentoclay Claytech.
+            Official terms governing product sales, quality conformity, custom specifications, international maritime export, and website usage for Bento Clay Tech.
           </p>
         </div>
       </section>
@@ -21,14 +21,14 @@ export default function TermsConditionsPage() {
               📍 Company Profile & Registered Works
             </strong>
             <p style={{ margin: 0, fontSize: '14px', color: 'var(--muted)' }}>
-              <strong>Bentoclay Claytech</strong> · Plot No. 12/A, GIDC Industrial Estate, Kardej, Bhavnagar – 364004, Gujarat, India.<br />
+              <strong>Bento Clay Tech</strong> · Plot No. 12/A, GIDC Industrial Estate, Kardej, Bhavnagar – 364004, Gujarat, India.<br />
               Email: <strong>bentoclayclaytech@gmail.com</strong> · WhatsApp / Phone: <strong>+91 74358 18628</strong>
             </p>
           </div>
 
           <h3>1. Scope of Agreement</h3>
           <p style={{ marginBottom: '24px' }}>
-            These General Terms and Conditions govern all offers, proforma invoices, purchase orders, sales contracts, and shipments of Attapulgite (Palygorskite) powders, granules, and related mineral products entered into between Bentoclay Claytech ("Manufacturer / Seller") and the purchasing entity ("Buyer / Client"). Any differing terms proposed by the Buyer shall not apply unless expressly agreed upon in writing by an authorized representative of Bentoclay Claytech.
+            These General Terms and Conditions govern all offers, proforma invoices, purchase orders, sales contracts, and shipments of Attapulgite (Palygorskite) powders, granules, and related mineral products entered into between Bento Clay Tech ("Manufacturer / Seller") and the purchasing entity ("Buyer / Client"). Any differing terms proposed by the Buyer shall not apply unless expressly agreed upon in writing by an authorized representative of Bento Clay Tech.
           </p>
           
           <h3 style={{ marginTop: '36px' }}>2. Product Specifications, Quality & Certificate of Analysis (COA)</h3>

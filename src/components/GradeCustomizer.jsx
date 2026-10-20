@@ -399,7 +399,7 @@ export default function GradeCustomizer({ product }) {
       `• Discharge Port / City: ${contact.destination || 'Not provided'}\n` +
       (contact.notes ? `• Specific Instructions: ${contact.notes}\n` : '') +
       `-----------------------------------------\n` +
-      `Sent from Bentoclay Claytech ${product.shortName} Spec Builder`
+      `Sent from Bento Clay Tech ${product.shortName} Spec Builder`
     );
   };
 

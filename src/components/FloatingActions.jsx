@@ -100,18 +100,18 @@ export default function FloatingActions() {
 
   const whatsappNumber = '917435818628';
   const whatsappText = activeProduct
-    ? `Hello Bentoclay Claytech, I am interested in ${activeProduct.name} and would like to request technical specifications, pricing, and sample availability.`
-    : 'Hello Bentoclay Claytech, I am interested in your attapulgite and bentonite mineral grades and would like to request product details, technical specifications, and pricing.';
+    ? `Hello Bento Clay Tech, I am interested in ${activeProduct.name} and would like to request technical specifications, pricing, and sample availability.`
+    : 'Hello Bento Clay Tech, I am interested in your attapulgite and bentonite mineral grades and would like to request product details, technical specifications, and pricing.';
   
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
 
   const emailSubject = activeProduct
     ? `Technical Inquiry: ${activeProduct.name}`
-    : 'Inquiry from Bentoclay Website - Mineral Grades & Technical Specs';
+    : 'Inquiry from Bento Clay Tech Website - Mineral Grades & Technical Specs';
 
   const emailBody = activeProduct
-    ? `Hello Bentoclay Claytech Team,\n\nI am interested in ${activeProduct.name}.\n\nPlease provide the Product Data Sheet (PDS), Certificate of Analysis (COA), sample availability, and export pricing per metric ton.\n\nLooking forward to your response.\n\nBest regards,`
-    : `Hello Bentoclay Claytech Team,\n\nI am visiting your website and interested in your attapulgite and bentonite mineral grades.\n\nPlease share your technical product catalog, specifications, and quotation details.\n\nLooking forward to your response.\n\nBest regards,`;
+    ? `Hello Bento Clay Tech Team,\n\nI am interested in ${activeProduct.name}.\n\nPlease provide the Product Data Sheet (PDS), Certificate of Analysis (COA), sample availability, and export pricing per metric ton.\n\nLooking forward to your response.\n\nBest regards,`
+    : `Hello Bento Clay Tech Team,\n\nI am visiting your website and interested in your attapulgite and bentonite mineral grades.\n\nPlease share your technical product catalog, specifications, and quotation details.\n\nLooking forward to your response.\n\nBest regards,`;
 
   const emailUrl = `mailto:bentoclayclaytech@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
 
@@ -134,6 +134,7 @@ export default function FloatingActions() {
           rel="noopener noreferrer"
           className="speed-dial-item item-whatsapp"
           role="menuitem"
+          aria-label="Chat on WhatsApp with Bento Clay Tech"
           title="Chat on WhatsApp"
           onClick={() => setIsOpen(false)}
         >
@@ -155,6 +156,7 @@ export default function FloatingActions() {
           href={emailUrl}
           className="speed-dial-item item-email"
           role="menuitem"
+          aria-label="Send email inquiry to Bento Clay Tech"
           title="Email: bentoclayclaytech@gmail.com"
           onClick={() => setIsOpen(false)}
         >
@@ -181,6 +183,7 @@ export default function FloatingActions() {
           href="tel:+917435818628"
           className="speed-dial-item item-call"
           role="menuitem"
+          aria-label="Call Bento Clay Tech at +91 74358 18628"
           title="Call: +91 74358 18628"
           onClick={() => setIsOpen(false)}
         >
@@ -208,7 +211,7 @@ export default function FloatingActions() {
         className={`floating-btn connect-trigger-btn ${isOpen ? 'open' : ''}`}
         onClick={() => setIsOpen(prev => !prev)}
         aria-expanded={isOpen}
-        aria-label={isOpen ? 'Close quick contact options' : 'Connect with Bentoclay Claytech'}
+        aria-label={isOpen ? 'Close quick contact options' : 'Connect with Bento Clay Tech'}
         title={isOpen ? 'Close' : 'Connect with us'}
       >
         <span className="connect-pulse" aria-hidden="true"></span>

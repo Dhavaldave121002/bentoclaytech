@@ -9,7 +9,7 @@ export default function ProductCard({ product, index }) {
         <div className={`product-photo product-photo-${index + 1}`}>
           <img
             src={product.image || "/assets/product-range.webp"}
-            alt={`${product.name} - High Purity Attapulgite Clay by Bentoclay Claytech`}
+            alt={`${product.name} - High Purity Attapulgite Clay by Bento Clay Tech`}
             loading="lazy"
             decoding="async"
             width="600"

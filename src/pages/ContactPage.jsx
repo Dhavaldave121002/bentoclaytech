@@ -27,10 +27,14 @@ export default function ContactPage() {
 
   const [formData, setFormData] = useState({
     name: '',
+    company: '',
     email: '',
     phone: '',
+    country: '',
+    quantity: '1 x 20ft FCL (~20 MT)',
     product: resolveSelectedProduct(queryParam),
-    requirement: ''
+    requirement: '',
+    bot_field: ''
   });
 
   useEffect(() => {
@@ -65,9 +69,9 @@ export default function ContactPage() {
 
   const triggerMailtoFallback = (productName) => {
     const directLinks = getDirectContactLinks(formData.phone);
-    const subject = encodeURIComponent(`Quote Enquiry: ${productName} - ${formData.name}`);
+    const subject = encodeURIComponent(`B2B Quote RFQ: ${productName} - ${formData.company || formData.name}`);
     const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nProduct: ${productName}\n\nRequirement:\n${formData.requirement}${directLinks.summaryText}`
+      `Name: ${formData.name}\nCompany: ${formData.company}\nCountry / Port: ${formData.country}\nQuantity: ${formData.quantity}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nProduct: ${productName}\n\nRequirement:\n${formData.requirement}${directLinks.summaryText}`
     );
     window.location.href = `mailto:${FORM_CONFIG.clientEmail}?subject=${subject}&body=${body}`;
   };
@@ -76,6 +80,13 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
     setErrorMessage('');
+
+    // Spam honeypot trap
+    if (formData.bot_field) {
+      setIsSubmitting(false);
+      setSubmitted(true);
+      return;
+    }
 
     const selectedProd = products.find((p) => p.id === formData.product);
     const productName = selectedProd ? selectedProd.name : (formData.product !== 'Choose a product' ? formData.product : 'General Enquiry');
@@ -87,12 +98,15 @@ export default function ContactPage() {
         const payload = {
           access_key: FORM_CONFIG.accessKey,
           name: formData.name,
+          "🏢 Company / Organization": formData.company || 'Not specified',
           email: formData.email,
           phone: formData.phone,
+          "🌍 Country / Delivery Port": formData.country || 'Not specified',
+          "📦 Target Quantity": formData.quantity,
           product: productName,
-          message: formData.requirement || 'General inquiry / No message provided.',
-          subject: `New Bentoclay Quotation Request: ${productName} (${formData.name})`,
-          from_name: 'Bentoclay Claytech Web Enquiry'
+          message: formData.requirement || 'General RFQ inquiry / No extra message provided.',
+          subject: `New B2B Bento Clay Tech RFQ: ${productName} (${formData.company || formData.name})`,
+          from_name: 'Bento Clay Tech Web RFQ Desk'
         };
 
         if (directLinks.cleanPhone && directLinks.cleanPhone !== 'Not provided') {
@@ -118,12 +132,26 @@ export default function ContactPage() {
         if (result.success) {
           setIsSubmitting(false);
           setSubmitted(true);
+
+          // Track GA4 conversion event
+          if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+            window.gtag('event', 'generate_lead', {
+              event_category: 'Contact Form',
+              event_label: `RFQ - ${productName}`,
+              value: 1.0
+            });
+          }
+
           setFormData({
             name: '',
+            company: '',
             email: '',
             phone: '',
+            country: '',
+            quantity: '1 x 20ft FCL (~20 MT)',
             product: 'Choose a product',
-            requirement: ''
+            requirement: '',
+            bot_field: ''
           });
           return;
         }
@@ -157,7 +185,7 @@ export default function ContactPage() {
             <div className="contact-image-card">
               <img
                 src="/assets/contect.webp"
-                alt="Bentoclay Attapulgite and Bentonite Product Pack"
+                alt="Bento Clay Tech Attapulgite Mineral Product Packaging"
                 className="contact-hero-img"
                 loading="eager"
                 decoding="async"
@@ -170,7 +198,7 @@ export default function ContactPage() {
               <a href="mailto:dipak@bentoclay.com">
                 <small>DIRECT SALES</small>dipak@bentoclay.com
               </a>
-              <a href={`mailto:bentoclayclaytech@gmail.com?subject=${encodeURIComponent(activeProductName ? `Inquiry: ${activeProductName}` : 'Inquiry for Bentoclay Claytech')}`}>
+              <a href={`mailto:bentoclayclaytech@gmail.com?subject=${encodeURIComponent(activeProductName ? `Inquiry: ${activeProductName}` : 'Inquiry for Bento Clay Tech')}`}>
                 <small>GENERAL EMAIL</small>bentoclayclaytech@gmail.com
               </a>
               <a href="tel:+917435818628">
@@ -187,8 +215,8 @@ export default function ContactPage() {
                 <a
                   href={`https://wa.me/917435818628?text=${encodeURIComponent(
                     activeProductName
-                      ? `Hello Bentoclay Claytech, I am interested in ${activeProductName} and would like to request product details and pricing.`
-                      : 'Hello Bentoclay Claytech, I am interested in your mineral grades and would like to request product details and pricing.'
+                      ? `Hello Bento Clay Tech, I am interested in ${activeProductName} and would like to request product details and pricing.`
+                      : 'Hello Bento Clay Tech, I am interested in your mineral grades and would like to request product details and pricing.'
                   )}`}
                   aria-label="WhatsApp"
                   target="_blank"
@@ -201,58 +229,136 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <form className="quote-form" onSubmit={handleSubmit}>
+          <form className="quote-form" onSubmit={handleSubmit} data-agent="commercial-rfq-form" aria-label="Commercial Quote Request Form">
             <div className="form-head">
               <span>REQUEST A QUOTE</span>
               <b>Usually responds directly</b>
             </div>
 
             {submitted && (
-              <div className="form-success-banner" role="alert">
-                ✓ Thank you! Your enquiry has been recorded. Our team will connect with you shortly.
+              <div className="form-success-banner" role="alert" aria-live="polite">
+                ✓ Thank you! Your RFQ has been recorded. Our Bhavnagar export desk will connect with you within 24 hours.
               </div>
             )}
 
-            <label>
-              Your name
-              <input
-                name="name"
-                required
-                placeholder="Full name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </label>
+            {/* Hidden honeypot field for bot protection */}
+            <input
+              type="text"
+              name="bot_field"
+              id="rfq-bot-field"
+              tabIndex="-1"
+              autoComplete="off"
+              aria-hidden="true"
+              style={{ display: 'none', position: 'absolute', left: '-9999px' }}
+              value={formData.bot_field}
+              onChange={handleChange}
+            />
 
             <div className="form-row">
-              <label>
-                Email address
+              <label htmlFor="rfq-name">
+                Your name *
                 <input
+                  id="rfq-name"
+                  name="name"
+                  type="text"
+                  required
+                  autoComplete="name"
+                  placeholder="Full name"
+                  data-agent="contact-name"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </label>
+
+              <label htmlFor="rfq-company">
+                Company / Organization *
+                <input
+                  id="rfq-company"
+                  name="company"
+                  type="text"
+                  required
+                  autoComplete="organization"
+                  placeholder="Company name"
+                  data-agent="contact-company"
+                  value={formData.company}
+                  onChange={handleChange}
+                />
+              </label>
+            </div>
+
+            <div className="form-row">
+              <label htmlFor="rfq-email">
+                Business email *
+                <input
+                  id="rfq-email"
                   type="email"
                   name="email"
                   required
-                  placeholder="you@company.com"
+                  autoComplete="email"
+                  placeholder="procurement@company.com"
+                  data-agent="contact-email"
                   value={formData.email}
                   onChange={handleChange}
                 />
               </label>
 
-              <label>
-                Phone number
+              <label htmlFor="rfq-phone">
+                Phone / WhatsApp *
                 <input
+                  id="rfq-phone"
                   type="tel"
                   name="phone"
-                  placeholder="+91"
+                  required
+                  autoComplete="tel"
+                  placeholder="+Country Code & Number"
+                  data-agent="contact-phone"
                   value={formData.phone}
                   onChange={handleChange}
                 />
               </label>
             </div>
 
-            <label>
-              Product interest
+            <div className="form-row">
+              <label htmlFor="rfq-country">
+                Country / Destination Port *
+                <input
+                  id="rfq-country"
+                  name="country"
+                  type="text"
+                  required
+                  autoComplete="country-name"
+                  placeholder="e.g. USA (Houston), UAE (Jebel Ali), India"
+                  data-agent="delivery-destination"
+                  value={formData.country}
+                  onChange={handleChange}
+                />
+              </label>
+
+              <label htmlFor="rfq-quantity">
+                Target Order Quantity *
+                <select
+                  id="rfq-quantity"
+                  name="quantity"
+                  data-agent="target-quantity"
+                  value={formData.quantity}
+                  onChange={handleChange}
+                >
+                  <option value="1 x 20ft FCL (~20 MT)">1 x 20ft FCL (~20 Metric Tons)</option>
+                  <option value="25 kg Lab Evaluation Sample">25 kg Lab Evaluation Sample (with COA)</option>
+                  <option value="2 MT Trial Batch">2 MT Trial Batch (Plant Evaluation)</option>
+                  <option value="2 to 5 FCL Containers (40–100 MT)">2 to 5 FCL Containers (40–100 MT)</option>
+                  <option value="100+ MT Bulk Supply">100+ MT Annual Supply Contract</option>
+                  <option value="Custom Quantity">Custom Quantity / Project Requirement</option>
+                </select>
+              </label>
+            </div>
+
+            <label htmlFor="rfq-product">
+              Mineral Grade Interest *
               <select
+                id="rfq-product"
                 name="product"
+                data-agent="selected-product"
                 value={formData.product}
                 onChange={handleChange}
               >
@@ -265,12 +371,14 @@ export default function ContactPage() {
               </select>
             </label>
 
-            <label>
-              Requirement
+            <label htmlFor="rfq-requirement">
+              Technical Specifications & Requirements
               <textarea
+                id="rfq-requirement"
                 name="requirement"
                 rows="4"
-                placeholder="Application, quantity and any specifications..."
+                placeholder="Mention required viscosity (cps), mesh fineness, packaging preference (25 kg bags or 1 MT jumbo), or delivery timeline..."
+                data-agent="technical-requirements"
                 value={formData.requirement}
                 onChange={handleChange}
               ></textarea>
@@ -280,8 +388,9 @@ export default function ContactPage() {
               className="btn btn-primary"
               type="submit"
               disabled={isSubmitting}
+              data-agent="submit-rfq-button"
             >
-              {isSubmitting ? 'Sending...' : 'Send enquiry'} <span>↗</span>
+              {isSubmitting ? 'Sending Request...' : 'Submit Commercial RFQ'} <span>↗</span>
             </button>
           </form>
         </div>

@@ -469,7 +469,7 @@ export const products = [
     "highlights": [
       {
         "label": "Swelling Index (1 hr)",
-        "value": "= 95 ml"
+        "value": "≥ 95 ml"
       },
       {
         "label": "Particle Size (200 mesh)",
@@ -477,7 +477,7 @@ export const products = [
       },
       {
         "label": "Free Swell Volume",
-        "value": "1214 ml"
+        "value": "12–14 ml"
       },
       {
         "label": "Packing",
@@ -485,9 +485,9 @@ export const products = [
       }
     ],
     "tags": [
-      "Swelling Index (1 hr): = 95 ml",
+      "Swelling Index (1 hr): ≥ 95 ml",
       "Particle Size (200 mesh): 98% max passing",
-      "Free Swell Volume: 1214 ml"
+      "Free Swell Volume: 12–14 ml"
     ],
     "faqs": [
       {
@@ -559,7 +559,7 @@ export const products = [
       },
       {
         "parameter": "Surface area (BET) m2/g",
-        "requirement": "210 +10%",
+        "requirement": "210 ± 10%",
         "result": null
       },
       {
