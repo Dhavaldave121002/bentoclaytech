@@ -3603,14 +3603,6 @@ h2 span {
     background: rgba(128, 80, 46, 0.06);
   }
 
-  .nav-links>a.active-page::before {
-    content: "•";
-    color: var(--green);
-    font-size: 20px;
-    margin-right: 8px;
-    line-height: 1;
-  }
-
   /* Desktop-only subtle hover to prevent sticky touch hover on mobile */
   @media (hover: hover) and (pointer: fine) {
     .nav-links>a:not(.nav-cta):not(.active-page):hover {
