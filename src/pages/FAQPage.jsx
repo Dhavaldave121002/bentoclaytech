@@ -5,7 +5,7 @@ export default function FAQPage() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container" style={{ paddingTop: '155px', paddingBottom: '40px' }}>
+        <div className="container">
           <span className="section-number">SUPPORT</span>
           <h1>Frequently Asked Questions</h1>
           <p style={{ marginTop: '20px', maxWidth: '600px' }}>Find answers to common technical and commercial questions about our attapulgite and bentonite mineral products.</p>

@@ -4,7 +4,7 @@ export default function TermsConditionsPage() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container" style={{ padding: '80px 0 40px' }}>
+        <div className="container">
           <span className="section-number">COMMERCIAL & LEGAL</span>
           <h1>Terms & Conditions of Sale & Export</h1>
           <p style={{ marginTop: '16px', maxWidth: '650px' }}>

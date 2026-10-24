@@ -14,7 +14,7 @@ export default function BlogPage() {
   return (
     <main>
       <section className="page-hero">
-        <div className="container" style={{ paddingTop: '155px', paddingBottom: '40px' }}>
+        <div className="container">
           <span className="section-number">KNOWLEDGE BASE & PRODUCT SPOTLIGHTS</span>
           <h1>Mineral Insights, Guides & Product Spotlights</h1>
           <p style={{ marginTop: '16px', maxWidth: '680px' }}>

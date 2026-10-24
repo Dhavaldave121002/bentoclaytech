@@ -2231,7 +2231,7 @@ h2 span {
 
 /* Standalone / Subpage Styles - Bentoclay Unified Atmosphere */
 .page-hero {
-  padding: 126px 0 52px; /* 40px topbar + 76px nav + optimal headroom */
+  padding: 134px 0 44px; /* 40px topbar + 92px nav + 2px breathing */
   background: linear-gradient(
     95deg,
     rgba(255, 253, 249, 0.96) 0%,
@@ -4062,7 +4062,7 @@ h2 span {
   }
 
   .page-hero {
-    padding: 154px 0 75px; /* 44px topbar + 82px nav + 28px room */
+    padding: 130px 0 36px;
     background: #fffdf9;
   }
 
@@ -4113,11 +4113,11 @@ h2 span {
   }
 
   .contact-hero {
-    padding: 154px 0 60px;
+    padding: 130px 0 40px;
   }
 
   .product-detail-hero {
-    padding: 154px 0 50px;
+    padding: 130px 0 36px;
   }
 
   .contact-hero>.container {
@@ -8898,8 +8898,11 @@ h2 span {
   }
 
   .page-hero,
-  .blog-detail-hero {
-    padding-top: 140px !important;
+  .blog-detail-hero,
+  .contact-hero,
+  .product-detail-hero {
+    padding-top: 130px !important;
+    padding-bottom: 30px !important;
   }
 
   .faq-points-grid {
@@ -9951,7 +9954,7 @@ h2 span {
   position: relative;
   width: 100%;
   background: #ffffff;
-  padding-top: 132px; /* 40px topbar + 92px site header */
+  padding-top: 136px; /* 40px topbar + 92px site header + 4px breathing */
   overflow: hidden;
   border-bottom: 1px solid rgba(128, 80, 46, 0.12);
 }
@@ -10193,7 +10196,7 @@ h2 span {
 /* Responsive Adaptations for Banner Slider */
 @media (max-width: 991px) {
   .bentoclay-hero-banner-slider {
-    padding-top: 116px;
+    padding-top: 132px;
   }
 
   .banner-slider-container {
@@ -10249,7 +10252,7 @@ h2 span {
 
 @media (max-width: 540px) {
   .bentoclay-hero-banner-slider {
-    padding-top: 106px;
+    padding-top: 130px;
   }
 
   .banner-slider-container {

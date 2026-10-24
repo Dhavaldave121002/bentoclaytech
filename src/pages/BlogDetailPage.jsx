@@ -14,7 +14,7 @@ export default function BlogDetailPage() {
 
   return (
     <main>
-      <section className="page-hero blog-detail-hero" style={{ paddingTop: '155px', paddingBottom: '36px' }}>
+      <section className="page-hero blog-detail-hero">
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
           <Link to="/blog" className="blog-back-btn">
             ← Back to Blog
