@@ -47,7 +47,7 @@ export default function TopBar({ isScrolled }) {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/company/bentoclay"
+            href="https://www.linkedin.com/in/bentoclayclaytech"
             className="top-bar-social top-bar-social--li"
             target="_blank"
             rel="noopener noreferrer"
