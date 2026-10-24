@@ -30,13 +30,13 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 132px; /* 40px topbar + 92px header */
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   background: var(--paper);
   color: var(--ink);
   font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -59,7 +59,7 @@ p, h1, h2, h3, h4, h5, h6, li, span, dt, dd, th, td {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 #root.loaded {
@@ -4628,13 +4628,18 @@ h2 span {
 
 /* Sidebar */
 .product-sidebar {
+  position: -webkit-sticky;
   position: sticky;
-  top: 145px;
+  top: 140px;
   align-self: start;
   display: flex;
   flex-direction: column;
   gap: 20px;
   z-index: 10;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 80, 46, 0.25) transparent;
 }
 
 .sidebar-card {
@@ -5843,8 +5848,14 @@ h2 span {
 
 /* Right Side: Sticky Live Spec Sheet & Form */
 .customizer-sidebar {
+  position: -webkit-sticky;
   position: sticky;
-  top: 90px;
+  top: 100px;
+  align-self: start;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 80, 46, 0.25) transparent;
 }
 
 .live-spec-sheet {
@@ -6299,9 +6310,9 @@ h2 span {
   gap: 32px;
 }
 
-@media (min-width: 1060px) {
+@media (min-width: 992px) {
   .grade-customizer-layout {
-    grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.45fr) minmax(360px, 1fr);
     align-items: start;
   }
 }
@@ -6521,10 +6532,16 @@ h2 span {
 
 /* Sidebar & Sticky Live Spec Box */
 .grade-customizer-sidebar {
+  position: -webkit-sticky;
   position: sticky;
-  top: 96px;
+  top: 100px;
+  align-self: start;
   min-width: 0;
   max-width: 100%;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 80, 46, 0.25) transparent;
 }
 
 .grade-spec-sheet-box {
