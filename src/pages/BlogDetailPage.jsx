@@ -50,6 +50,12 @@ export default function BlogDetailPage() {
                 );
               }
 
+              const parseFormatting = (text) => {
+                return text
+                  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                  .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="seo-keyword-link" title="$1">$1</a>');
+              };
+
               if (trimmed.startsWith('- ')) {
                 const items = trimmed.split('\n').filter(line => line.trim().startsWith('- '));
                 return (
@@ -58,7 +64,7 @@ export default function BlogDetailPage() {
                       const cleanItem = item.replace(/^-\s+/, '');
                       return (
                         <li key={j} style={{ marginBottom: '10px' }}>
-                          <span dangerouslySetInnerHTML={{ __html: cleanItem.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+                          <span dangerouslySetInnerHTML={{ __html: parseFormatting(cleanItem) }} />
                         </li>
                       );
                     })}
@@ -74,7 +80,7 @@ export default function BlogDetailPage() {
                       const cleanItem = item.replace(/^\d+\.\s+/, '');
                       return (
                         <li key={j} style={{ marginBottom: '10px' }}>
-                          <span dangerouslySetInnerHTML={{ __html: cleanItem.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+                          <span dangerouslySetInnerHTML={{ __html: parseFormatting(cleanItem) }} />
                         </li>
                       );
                     })}
@@ -83,7 +89,7 @@ export default function BlogDetailPage() {
               }
 
               return (
-                <p key={i} style={{ marginBottom: '22px' }} dangerouslySetInnerHTML={{ __html: trimmed.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
+                <p key={i} style={{ marginBottom: '22px' }} dangerouslySetInnerHTML={{ __html: parseFormatting(trimmed) }} />
               );
             })}
           </div>

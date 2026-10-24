@@ -6,12 +6,12 @@ export default function AboutPage() {
   const yearsInOperation = Math.max(1, currentYear - 2023);
 
   const productsList = [
-    { num: '01', name: 'Attapulgite Powder', desc: 'High viscosity, sorptive & rheological powder for saline fluids, paints & formulations.' },
-    { num: '02', name: 'Attapulgite Granules', desc: 'Low-dust 1–5 mm absorbent granules for cat litter, carrier & spill control.' },
-    { num: '03', name: 'Attapulgite Lumps', desc: 'Raw high-purity mineral feedstock for specialized grinding and formulation.' },
-    { num: '04', name: 'Dolomite Powder', desc: 'High-purity calcium magnesium carbonate powder for construction & ceramics.' },
-    { num: '05', name: 'Bentonite Powder', desc: 'Industrial binder, suspension agent and sealing clay for foundry & drilling.' },
-    { num: '06', name: 'Bentonite Granules & Lumps', desc: 'Porous absorbents and heavy-duty industrial binding granules.' },
+    { num: '01', name: 'Attapulgite Powder', desc: 'High viscosity, sorptive & rheological powder for saline fluids, paints & formulations.', link: '/products' },
+    { num: '02', name: 'Attapulgite Granules', desc: 'Low-dust 1–5 mm absorbent granules for cat litter, carrier & spill control.', link: '/products/attapulgite-natural-granules-1-5mm' },
+    { num: '03', name: 'Attapulgite Lumps', desc: 'Raw high-purity mineral feedstock for specialized grinding and formulation.', link: '/products/attapulgite-natural-powder' },
+    { num: '04', name: 'Dolomite Powder', desc: 'High-purity calcium magnesium carbonate powder for construction & ceramics.', link: '/customizer' },
+    { num: '05', name: 'Bentonite Powder', desc: 'Industrial binder, suspension agent and sealing clay for foundry & drilling.', link: '/products/api-13a-section-12-attapulgite-powder' },
+    { num: '06', name: 'Bentonite Granules & Lumps', desc: 'Porous absorbents and heavy-duty industrial binding granules.', link: '/products/attapulgite-natural-granules-1-5mm' },
   ];
 
   const applicationsList = [
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <em>Bhavnagar, India.</em>
             </h1>
             <p>
-              Bento Clay Tech manufactures specialized attapulgite powder and granules from its processing works in Kardej, Bhavnagar, Gujarat, supplying drilling and industrial formulators worldwide.
+              Bento Clay Tech manufactures specialized <Link to="/products" className="seo-keyword-link">attapulgite powder and granules</Link> from its processing works in Kardej, Bhavnagar, Gujarat, supplying <Link to="/applications" className="seo-keyword-link">drilling and industrial formulators</Link> worldwide.
             </p>
             <div className="mineral-formula compact-formula">
               <small>CHEMICAL FORMULA &amp; CRYSTALLOGRAPHY</small>
@@ -91,13 +91,13 @@ export default function AboutPage() {
           </div>
           <div>
             <p>
-              Attapulgite is a naturally occurring, fibrous clay mineral renowned for its exceptional <strong>gel-forming, sorptive, rheological, and adsorption properties</strong>. It is widely used across a range of industrial applications where high absorption, viscosity control, suspension, and binding performance are required.
+              Attapulgite is a naturally occurring, fibrous clay mineral renowned for its exceptional <strong>gel-forming, sorptive, rheological, and adsorption properties</strong>. It is widely used across a range of <Link to="/applications" className="seo-keyword-link">16 target industrial applications</Link> where high absorption, viscosity control, suspension, and binding performance are required.
             </p>
             <p>
               The mineral was named after <strong>Attapulgus, Georgia (USA)</strong>, where an important source of the mineral was identified. It occurs naturally as characteristic needle-shaped fibrous crystals and bundles, often associated with minerals such as dolomite.
             </p>
             <p>
-              Unlike plate-structured swelling bentonite, attapulgite needles do not rely on osmotic swelling between silicate sheets. In liquid, high shear disperses these elongated crystals into a random brush-heap network that traps fluids mechanically — retaining viscosity fully in high-salt, high-calcium, and elevated-temperature environments.
+              Unlike plate-structured swelling bentonite, attapulgite needles do not rely on osmotic swelling between silicate sheets. In liquid, high shear disperses these elongated crystals into a random brush-heap network that traps fluids mechanically — retaining viscosity fully in <Link to="/products/salt-gel-attapulgite-powder" className="seo-keyword-link">high-salt, high-calcium, and elevated-temperature drilling environments</Link>.
             </p>
             <div className="material-tags">
               <span>Non-swelling</span>
@@ -182,11 +182,11 @@ export default function AboutPage() {
           </div>
           <div className="products-capability-grid">
             {productsList.map((prod) => (
-              <div key={prod.num} className="capability-card">
+              <Link key={prod.num} to={prod.link} className="capability-card capability-link-card" title={`Explore ${prod.name}`}>
                 <span className="capability-num">{prod.num}</span>
-                <h3>{prod.name}</h3>
+                <h3>{prod.name} ↗</h3>
                 <p>{prod.desc}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -228,11 +228,11 @@ export default function AboutPage() {
           </div>
           <div className="about-app-grid">
             {applicationsList.map((item) => (
-              <div key={item.label} className="about-app-card">
+              <Link key={item.label} to="/applications" className="about-app-card" style={{ textDecoration: 'none', color: 'inherit' }} title={`Explore ${item.title} Industrial Applications`}>
                 <span className="about-app-badge">{item.label}</span>
-                <h3>{item.title}</h3>
+                <h3>{item.title} ↗</h3>
                 <p>{item.desc}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

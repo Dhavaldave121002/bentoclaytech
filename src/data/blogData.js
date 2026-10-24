@@ -8,7 +8,7 @@ export const blogArticles = [
     badge: "Grade Spotlight: Salt Gel",
     productId: "salt-gel",
     image: "/assets/product-images/Attapulgite Salt Gel Grade Powder.webp",
-    content: `Bentoclay Salt Gel Grade is our premier high-viscosity attapulgite clay powder engineered specifically for demanding offshore, coastal, and high-salinity onshore oil & gas drilling operations where electrolytic salinity prevents standard sodium bentonite from hydrating.
+    content: `[Bentoclay Salt Gel Grade](/products/salt-gel-attapulgite-powder) is our premier high-viscosity [attapulgite clay powder](/products) engineered specifically for demanding offshore, coastal, and high-salinity onshore [oil & gas drilling operations](/applications) where electrolytic salinity prevents standard sodium bentonite from hydrating.
 
 ### Why Salt Gel Outperforms Sodium Bentonite in Saline Systems
 In conventional freshwater mud systems, sodium bentonite clay functions through osmotic swelling and platelet separation. However, the moment drilling operations encounter salt domes, saturated rock salt beds, or use seawater with high concentrations of dissolved electrolytes (NaCl, CaCl₂, MgCl₂, or KCl), sodium bentonite platelets collapse into tight clumps (flocculation), causing viscosity to drop to near zero.
@@ -25,11 +25,12 @@ Bentoclay Salt Gel utilizes pure needle-like magnesium aluminium phyllosilicate 
 3. **Geothermal & High-Temperature Wells:** Formations with bottom-hole temperatures exceeding 200°C where organic polymers degrade.
 4. **Water Well & Caisson Drilling:** Civil engineering slurry wall construction in coastal and tidal brackish water.
 
-### Certified Product Specifications
+### Certified Product Specifications & Customization
 - **Suspension Viscosity (600 rpm):** 35 cps Minimum (certified per PDS)
 - **Wet Sieve Residue (>75 μm / 200 Mesh):** 4.0% Maximum
 - **Free Moisture Content:** 8.0% Maximum
-- **Packaging:** 25 kg multi-wall HDPE bags with inner extruded polyethylene (PE) moisture barrier liner, unitized on ISPM-15 export pallets.`
+- **Packaging:** 25 kg multi-wall HDPE bags with inner extruded polyethylene (PE) moisture barrier liner, unitized on ISPM-15 export pallets.
+- **Custom Specification:** You can [customize rheology, mesh cut and packaging](/products/salt-gel-attapulgite-powder#customizer-section) via our interactive spec builder, or explore our companion [API Specification 13A Section 12 Drilling Grade](/products/api-13a-section-12-attapulgite-powder).`
   },
   {
     slug: "api-spec-13a-section-12-attapulgite-standards",
@@ -40,7 +41,7 @@ Bentoclay Salt Gel utilizes pure needle-like magnesium aluminium phyllosilicate 
     badge: "Grade Spotlight: API-13A",
     productId: "api-13a",
     image: "/assets/product-images/Attapulgite Powder API-13A Section 12 Grade.webp",
-    content: `The American Petroleum Institute (API) Specification 13A Section 12 establishes rigorous physical and rheological parameters for 'Attapulgite / Salt Water Drilling Clay'. Bentoclay API-13A Section 12 Grade powder is manufactured under strict quality assurance protocols to deliver global compliance on every export shipment.
+    content: `The [American Petroleum Institute (API) Specification 13A Section 12](/products/api-13a-section-12-attapulgite-powder) establishes rigorous physical and rheological parameters for 'Attapulgite / Salt Water Drilling Clay'. [Bentoclay API-13A Section 12 Grade powder](/products/api-13a-section-12-attapulgite-powder) is manufactured under strict quality assurance protocols at our [Bhavnagar, Gujarat processing facility](/about) to deliver global compliance on every export shipment.
 
 ### Rigorous API Section 12 Compliance & Testing Protocols
 Every production batch manufactured at our Bhavnagar facility undergoes mandatory laboratory verification before release:
@@ -53,9 +54,10 @@ Every production batch manufactured at our Bhavnagar facility undergoes mandator
 - **Immediate Viscosity Build:** Disperses rapidly through mud hoppers with minimal shear energy required.
 - **Superior Thixotropic Gel Strength:** Forms an immediate gel lattice when circulation stops, preventing heavy drill cuttings from settling around the drill bit.
 - **Compatibility:** Fully compatible with common mud additives, starch filtration reducers, barite weighting agents, and biocides.
+- **Offshore Drilling Applications:** Designed for [deep-water oil & gas exploration and caisson drilling](/applications). For higher 35 cps rheology in extreme salt saturation, review our [Salt Gel Attapulgite Powder](/products/salt-gel-attapulgite-powder).
 
 ### Global Logistics & Container Shipping
-Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India's coast. Dispatched in 20ft Full Container Loads (approx. 20–22 MT palletized net weight) with full Certificate of Analysis (COA) for international oilfield contractors.`
+Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India's coast. Dispatched in 20ft Full Container Loads (approx. 20–22 MT palletized net weight) with full Certificate of Analysis (COA) for international oilfield contractors. You can also [configure customized trial batches](/products/api-13a-section-12-attapulgite-powder#customizer-section) online.`
   },
   {
     slug: "premium-325-mesh-paint-thixotrope-guide",
@@ -66,7 +68,7 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
     badge: "Grade Spotlight: Premium 325",
     productId: "premium-325",
     image: "/assets/product-images/Attapulgite Premium 325 Powder.webp",
-    content: `In modern architectural paints, industrial protective coatings, elastomeric roof mastics, and tape joint compounds, maintaining dense pigments and mineral fillers in permanent colloidal suspension without vertical sagging is critical. Bentoclay Premium 325 delivers inorganic thixotropic perfection.
+    content: `In modern architectural paints, industrial protective coatings, elastomeric roof mastics, and tape joint compounds, maintaining dense pigments and mineral fillers in permanent colloidal suspension without vertical sagging is critical. [Bentoclay Premium 325](/products/premium-325-attapulgite-powder) delivers inorganic thixotropic perfection.
 
 ### Micronized Engineering: Sub-44 μm (325 Mesh)
 - **Ultra-High Surface Area:** BET surface area of 210 m²/g (±10%) ensures outstanding rheological thickening efficiency at economical loading rates (typically 0.5% to 2.5% by weight).
@@ -78,7 +80,10 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
 1. **Architectural Emulsion Paints:** Water-borne exterior and interior latex paints requiring spatter resistance and shelf stability.
 2. **Sealants & Adhesives:** Polyurethane, acrylic, and hybrid joint sealants requiring non-slump properties in vertical expansion joints.
 3. **Tape Joint Compounds:** Drywall joint cements providing crack resistance, feathering capability, and smooth troweling.
-4. **Printing Inks & Foundry Washes:** Stabilizing heavy organic and inorganic pigments in liquid vehicles.`
+4. **Printing Inks & Foundry Washes:** Stabilizing heavy organic and inorganic pigments in liquid vehicles. Explore our full range of [16 industrial application profiles](/applications).
+
+### Custom Micronization & Color Formulation
+Manufactured from high-purity [Bhavnagar deposits](/about), Premium 325 can be milled to custom particle distributions or matched to specific mineral brightness. Use our [Interactive Recipe Customizer](/products/premium-325-attapulgite-powder#customizer-section) to request test samples for your paint formulation.`
   },
   {
     slug: "flux-fine-200-foundry-core-wash",
@@ -89,7 +94,7 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
     badge: "Grade Spotlight: Flux Fine-200",
     productId: "flux-fine",
     image: "/assets/product-images/Attapulgite Flux Fine-200 (Foundry Flux) Powder.webp",
-    content: `Foundries and steel manufacturing plants require refractory coating washes that keep dense zircon, graphite, olivine, and silica fillers in continuous colloidal suspension without hard caking. Bentoclay Flux Fine-200 is specially milled and refined for high-temperature metallurgical applications.
+    content: `Foundries and steel manufacturing plants require refractory coating washes that keep dense zircon, graphite, olivine, and silica fillers in continuous colloidal suspension without hard caking. [Bentoclay Flux Fine-200](/products/flux-fine-200-attapulgite-powder) is specially milled and refined for high-temperature metallurgical applications.
 
 ### Key Foundry Metallurgical Performance Advantages
 - **Swelling Index (95 ml Minimum @ 1 hr):** Rapidly forms a stable colloidal suspension medium, keeping heavy refractory minerals dispersed even during extended dip-tank downtime.
@@ -100,8 +105,10 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
 ### Recommended Formulations & End Uses
 1. **Foundry Core & Mold Washes:** Water-based and alcohol-based refractory refractory slurry washes.
 2. **Continuous Casting Ingot Flux:** Thermal insulation and lubricating barrier in continuous steel casting molds.
-3. **Precision Sand Casting:** Inorganic high-temperature binder for green sand and resin-coated core systems.
-4. **Wax Emulsion & Lubricant Suspension:** Stabilizing heavy metal drawing lubricants and abrasive polishing compounds.`
+3. **Precision Sand Casting:** Inorganic high-temperature binder for green sand and resin-coated core systems. See our [foundry & metallurgical application guide](/applications).
+4. **Wax Emulsion & Lubricant Suspension:** Stabilizing heavy metal drawing lubricants and abrasive polishing compounds.
+
+Formulated directly at our [Bhavnagar manufacturing plant](/about). To configure custom packaging or mesh fineness, [request a custom foundry grade quotation](/products/flux-fine-200-attapulgite-powder#customizer-section).`
   },
   {
     slug: "natural-powder-agricultural-carriers",
@@ -112,13 +119,15 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
     badge: "Grade Spotlight: Natural Powder",
     productId: "natural-powder",
     image: "/assets/product-images/Attapulgite Natural Powder.webp",
-    content: `Modern agrochemical formulators require carrier substrates that can absorb high concentrations of active liquid technicals without clumping, chemical degradation, or loss of flowability. Bentoclay Natural Attapulgite Powder offers natural neutral pH (7.6), high pore volume, and exceptional chemical inertness.
+    content: `Modern agrochemical formulators require carrier substrates that can absorb high concentrations of active liquid technicals without clumping, chemical degradation, or loss of flowability. [Bentoclay Natural Attapulgite Powder](/products/attapulgite-natural-powder) offers natural neutral pH (7.6), high pore volume, and exceptional chemical inertness.
 
 ### Agrochemical, Fertilizer & Feed Formulation Applications
 - **Wettable Powders (WP) & Dry Flowables (DF):** Micronized 200 mesh particle distribution ensures rapid dispersion and suspension in agricultural spray tanks without nozzle clogging.
 - **High Active Technical Impregnation (120–150%):** Porous crystalline channel lattice absorbs liquid insecticides, herbicides, and fungicides up to 1.5x its own dry weight while remaining a completely dry, free-flowing powder.
 - **Fertilizer Anti-Caking & Granule Coating:** Forms a protective microscopic barrier around hygroscopic fertilizer granules (urea, DAP, NPK), preventing moisture absorption and storage caking.
-- **Animal Feed Mycotoxin Adsorbent:** Natural crystalline channels bind and neutralize polar aflatoxins and heavy metals in livestock digestive systems without adsorbing essential nutritional vitamins.`
+- **Animal Feed Mycotoxin Adsorbent:** Natural crystalline channels bind and neutralize polar aflatoxins and heavy metals in livestock digestive systems without adsorbing essential nutritional vitamins.
+
+Explore comprehensive [agrochemical and carrier application profiles](/applications). Formulated from selective [high-purity Bhavnagar deposits](/about), you can also [customize mesh cuts and moisture control](/products/attapulgite-natural-powder#customizer-section) online.`
   },
   {
     slug: "natural-granules-absorbent-pet-care",
@@ -129,14 +138,16 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
     badge: "Grade Spotlight: Granules (1-5mm)",
     productId: "granules",
     image: "/assets/product-images/Attapulgite Natural Granules 1 to 5 mm.webp",
-    content: `Bentoclay Natural & Calcined Granules (1–5 mm) represent the pinnacle of natural mineral absorption engineering. Unlike traditional swelling bentonite clays that turn into slippery mud when wet, our attapulgite granules maintain solid structural rigidity even when fully saturated.
+    content: `[Bentoclay Natural & Calcined Granules (1–5 mm)](/products/attapulgite-natural-granules-1-5mm) represent the pinnacle of natural mineral absorption engineering. Unlike traditional swelling bentonite clays that turn into slippery mud when wet, our attapulgite granules maintain solid structural rigidity even when fully saturated.
 
 ### Industrial Spill Cleanup & Premium Pet Care Advantages
 - **180% to 220% Liquid Uptake:** Rapidly wicks and encapsulates motor oils, chemical spills, hydraulic fluids, fuel oils, and aqueous waste into internal microscopic pore channels.
 - **Zero Mudding / Non-Swelling:** Granule particles remain firm and rigid under heavy foot or vehicle traffic, preventing slippery surfaces in workshops and manufacturing floors.
 - **Automated Vibrating Screening:** Precision screening eliminates fine dust, producing an ultra-clean, low-tracking product ideal for premium pet litter and cleanroom spill kits.
 - **Odor & VOC Encapsulation:** High internal micropore volume traps ammonia vapors and volatile organic compounds (VOCs) permanently.
-- **Non-Combustible & Chemically Inert:** 100% fireproof; safe for containment of flammable hydrocarbons and chemical solvents.`
+- **Non-Combustible & Chemically Inert:** 100% fireproof; safe for containment of flammable hydrocarbons and chemical solvents.
+
+Ideal for [industrial absorbent, pet care, and soil conditioning applications](/applications). Discover certified specifications on the [Attapulgite Absorbent Granules G15 product page](/products/attapulgite-natural-granules-1-5mm) or [configure custom bulk packaging](/products/attapulgite-natural-granules-1-5mm#customizer-section).`
   },
   {
     slug: "inside-bentoclay-quality-manufacturing",
@@ -147,14 +158,16 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
     badge: "Manufacturing & Quality",
     productId: null,
     image: "/assets/why-quality-lab.webp",
-    content: `Located in Bhavnagar, Gujarat—the industrial mineral hub of Western India—Bentoclay Claytech operates state-of-the-art mineral processing works with direct access to high-purity natural attapulgite (palygorskite) reserves.
+    content: `Located in Bhavnagar, Gujarat—the industrial mineral hub of Western India—Bentoclay Claytech operates state-of-the-art mineral processing works with direct access to high-purity [natural attapulgite (palygorskite) reserves](/about).
 
 ### Multi-Stage Advanced Manufacturing Workflow
 1. **Selective Deposit Mine Sorting:** Raw ore is sorted at source based on natural mineral shade (Off-White, Cream Tan, Buff Beige, Grey) and chemical purity.
 2. **Rotary Drying & Thermal Activation:** Temperature-controlled drying preserves delicate crystalline needle channels while removing unbound surface moisture.
 3. **Air-Swept Roller Mills & Dynamic Classifiers:** Ensures precise mesh cuts (100, 200, 325 mesh) with tight particle size distribution curves.
-4. **In-House Quality Testing Laboratory:** Every production batch is certified for Fann Model 35 rheology, wet sieve residue, BET surface area, and moisture before dispatch.
-5. **Certified Export Dispatch:** Multi-wall moisture barrier packaging unitized on ISPM-15 heat-treated export pallets for fast dispatch via Pipavav and Mundra Ports.`
+4. **In-House Quality Testing Laboratory:** Every production batch is certified for Fann Model 35 rheology, wet sieve residue, BET surface area, and moisture before dispatch per our [strict quality control methodology](/why-us).
+5. **Certified Export Dispatch:** Multi-wall moisture barrier packaging unitized on ISPM-15 heat-treated export pallets for fast dispatch via Pipavav and Mundra Ports.
+
+Explore our full catalog of [6 specialized attapulgite grades](/products) or learn about our [custom toll milling capabilities](/customizer).`
   },
   {
     slug: "custom-shade-and-color-formulation",
@@ -169,8 +182,10 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
 
 ### 100% On-Demand Mineral Customization
 - **Bespoke Color & Shade Matching:** Whether your formulation requires high-brightness Off-White (L* 82–88) for architectural coatings, natural Cream Tan for drilling muds, or an exact shade matched to your physical sample or Pantone standard, our Bhavnagar facility can formulate and blend the exact tone needed.
-- **Calibrated Mesh Cuts & Particle Sizing:** From coarse 100 mesh for dry powder fertilizer blends, standard 200 mesh for agrochemical carriers, to superfine 325 mesh (44 μm) for coatings, we calibrate air classifiers to your exact particle size curve.
+- **Calibrated Mesh Cuts & Particle Sizing:** From coarse 100 mesh for dry powder fertilizer blends, standard 200 mesh for [agrochemical carriers](/products/attapulgite-natural-powder), to superfine 325 mesh (44 μm) for [protective coatings](/products/premium-325-attapulgite-powder), we calibrate air classifiers to your exact particle size curve.
 - **Thermal Treatment & Moisture Control:** Standard natural moisture (8–12%) or kiln-calcined low moisture (<4–6%) for moisture-sensitive polyurethane sealants and reactive adhesives.
-- **Custom Export Packaging:** 25 kg HDPE bags with moisture liner, 50 kg sacks, or 1000 kg Jumbo Big Bags with custom private labeling and global containerization.`
+- **Custom Export Packaging:** 25 kg HDPE bags with moisture liner, 50 kg sacks, or 1000 kg Jumbo Big Bags with custom private labeling and global containerization.
+
+Start engineering your target batch using our [Interactive Formulation Customizer](/customizer), or check specifications on our [certified API-13A drilling clay](/products/api-13a-section-12-attapulgite-powder) and [Salt Gel drilling grade](/products/salt-gel-attapulgite-powder).`
   }
 ];

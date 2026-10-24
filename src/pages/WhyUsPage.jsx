@@ -20,15 +20,15 @@ export default function WhyUsPage() {
               Processing consists of drying and grinding crude clay to specific particle size distributions with specific ranges of gel viscosity, measured according to the end use.
             </p>
             <div className="inline-facts-grid">
-              <div className="fact-badge-card">
+              <Link to="/products" className="fact-badge-card" style={{ textDecoration: 'none', color: 'inherit' }} title="Explore all 6 attapulgite product grades">
                 <div className="fact-num-val">
                   <AnimatedCounter target={6} />
                 </div>
                 <div className="fact-text-group">
-                  <span className="fact-title">Standard Grades</span>
+                  <span className="fact-title">Standard Grades ↗</span>
                   <span className="fact-sub">Target-controlled attapulgite</span>
                 </div>
-              </div>
+              </Link>
 
               <div className="fact-badge-card">
                 <div className="fact-num-val">
@@ -57,28 +57,28 @@ export default function WhyUsPage() {
             <b>01</b>
             <h3>Parameter-controlled</h3>
             <p>
-              Grades are controlled on the value your process depends on: 600 rpm dial viscosity, wet mesh, BET surface area, swelling index or oil absorption.
+              Grades are controlled on the value your process depends on: <Link to="/products/api-13a-section-12-attapulgite-powder" className="seo-keyword-link">600 rpm dial viscosity</Link>, wet mesh, <Link to="/products/premium-325-attapulgite-powder" className="seo-keyword-link">BET surface area</Link>, swelling index or oil absorption.
             </p>
           </article>
           <article className="reveal-on-scroll stagger-2">
             <b>02</b>
             <h3>Published data sheets</h3>
             <p>
-              Requirements — and certified reported results where the data sheet provides them — are shown exactly as tested on daily production composite samples.
+              Requirements — and certified reported results where the data sheet provides them — are shown exactly as tested on daily production composite samples. Download official PDS on any <Link to="/products" className="seo-keyword-link">product grade page</Link>.
             </p>
           </article>
           <article className="reveal-on-scroll stagger-3">
             <b>03</b>
             <h3>Powder & granules</h3>
             <p>
-              From 325 mesh (44 μm) fine micronised powders through to 1–5 mm porous ball granules produced from the same high-purity mineral deposit.
+              From <Link to="/products/premium-325-attapulgite-powder" className="seo-keyword-link">325 mesh (44 μm) micronised powders</Link> through to <Link to="/products/attapulgite-natural-granules-1-5mm" className="seo-keyword-link">1–5 mm porous absorbent granules</Link> produced from our high-purity Bhavnagar deposits.
             </p>
           </article>
           <article className="reveal-on-scroll stagger-4">
             <b>04</b>
             <h3>Export-ready packing</h3>
             <p>
-              All grades are supplied in robust 25 kg HDPE woven bags with heat-sealed inner polyethylene liners, palletized for container export worldwide.
+              HDPE woven bags with extruded liners, unitized on ISPM-15 export pallets for global container shipment. Tailor container volumes via our <Link to="/customizer" className="seo-keyword-link">recipe customizer</Link>.
             </p>
           </article>
         </div>

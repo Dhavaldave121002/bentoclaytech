@@ -10678,3 +10678,35 @@ h2 span {
     height: 42px;
   }
 }
+
+/* ── Strategic SEO Internal Keyword Links ── */
+.seo-keyword-link {
+  color: #80502e;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(128, 80, 46, 0.45);
+  transition: all 0.2s ease;
+  border-radius: 3px;
+  padding: 1px 3px;
+}
+
+.seo-keyword-link:hover {
+  color: #1a472a;
+  text-decoration-color: #1a472a;
+  background-color: rgba(184, 121, 54, 0.1);
+}
+
+.capability-link-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+}
+
+.capability-link-card:hover {
+  border-color: var(--terracotta);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(56, 37, 29, 0.1);
+}
