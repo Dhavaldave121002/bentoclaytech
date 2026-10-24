@@ -206,7 +206,16 @@ export default function ProductDetailPage() {
                 </div>
 
                 {/* Luxury Golden Corner Fold Badge */}
-                <div className="card-golden-corner-fold" aria-hidden="true"></div>
+                <div className="card-golden-corner-fold" aria-hidden="true">
+                  <img
+                    src="/assets/gold-corner-curl.png"
+                    alt=""
+                    className="gold-corner-curl-img"
+                    width="62"
+                    height="55"
+                    loading="eager"
+                  />
+                </div>
               </div>
 
               {/* Merchant Store Trust Badges */}
