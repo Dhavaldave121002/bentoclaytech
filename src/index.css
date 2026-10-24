@@ -10805,3 +10805,147 @@ h2 span {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(56, 37, 29, 0.1);
 }
+
+/* =====================================================
+   HIGH-PERFORMANCE SPEED OPTIMIZATION (Core Web Vitals)
+   ===================================================== */
+@media (min-width: 769px) {
+  .team-video-section,
+  .industries,
+  .geo-aeo-section,
+  .faq-section,
+  .contact,
+  .site-footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 700px;
+  }
+}
+
+/* =====================================================
+   GEO & AEO (Generative & Answer Engine Optimization)
+   AI Knowledge Authority & Verified Technical Dossier
+   ===================================================== */
+.geo-aeo-section {
+  position: relative;
+  background: linear-gradient(180deg, var(--paper) 0%, rgba(246, 241, 233, 0.6) 100%);
+  border-top: 1px solid rgba(128, 80, 46, 0.12);
+  border-bottom: 1px solid rgba(128, 80, 46, 0.12);
+}
+
+.aeo-dossier-card {
+  background: #ffffff;
+  border: 1px solid rgba(128, 80, 46, 0.15);
+  border-radius: 16px;
+  padding: 36px 40px;
+  box-shadow: 0 10px 30px rgba(56, 37, 29, 0.05);
+  margin-top: 32px;
+}
+
+.aeo-definition-box {
+  background: rgba(184, 121, 54, 0.06);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 30px;
+}
+
+.aeo-definition-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.aeo-definition-box p {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--muted);
+  margin: 0;
+}
+
+.aeo-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.aeo-matrix-item {
+  background: var(--paper);
+  border: 1px solid rgba(128, 80, 46, 0.1);
+  border-radius: 10px;
+  padding: 16px 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aeo-matrix-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 37, 29, 0.08);
+  border-color: var(--green);
+}
+
+.aeo-matrix-item strong {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--green);
+  margin-bottom: 4px;
+}
+
+.aeo-matrix-item span {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.aeo-matrix-item small {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.aeo-qa-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.aeo-qa-card {
+  background: #ffffff;
+  border: 1px solid rgba(128, 80, 46, 0.12);
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+
+.aeo-qa-card h4 {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aeo-qa-card h4 span {
+  color: var(--green);
+}
+
+.aeo-qa-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .aeo-dossier-card {
+    padding: 24px 20px;
+  }
+  .aeo-qa-container {
+    grid-template-columns: 1fr;
+  }
+}

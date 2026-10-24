@@ -71,7 +71,12 @@
     <meta name="twitter:image" content="https://bentoclayclaytech.com/assets/product-range.webp" />
 
     <!-- Performance & Preloading for 100% Speed Score (CLS=0, LCP < 1.0s) -->
-    <link rel="preload" as="image" href="/assets/banners/banner-attapulgite-mines.jpg" type="image/jpeg" />
+    <meta http-equiv="x-dns-prefetch-control" content="on" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preload" as="image" href="/assets/banners/banner-attapulgite-mines.jpg" type="image/jpeg" fetchpriority="high" />
+    <link rel="preload" as="image" href="/assets/bentoclay-logo.webp" type="image/webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
