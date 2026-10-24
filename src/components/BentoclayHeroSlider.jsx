@@ -203,6 +203,40 @@ export default function BentoclayHeroSlider() {
           ))}
         </div>
       </div>
+
+      {/* High-Conversion Industrial Trust Badges Strip */}
+      <div className="hero-trust-strip" aria-label="Quality & Infrastructure Certifications">
+        <div className="container hero-trust-grid">
+          <div className="trust-badge-item">
+            <span className="trust-badge-icon">🛡️</span>
+            <div className="trust-badge-text">
+              <strong>API Spec 13A Section 12</strong>
+              <small>Certified Viscosity ≥ 35 cps</small>
+            </div>
+          </div>
+          <div className="trust-badge-item">
+            <span className="trust-badge-icon">🏭</span>
+            <div className="trust-badge-text">
+              <strong>Captive Mine & Plant</strong>
+              <small>Bhavnagar, Gujarat Works</small>
+            </div>
+          </div>
+          <div className="trust-badge-item">
+            <span className="trust-badge-icon">🚢</span>
+            <div className="trust-badge-text">
+              <strong>Mundra Port Dispatch</strong>
+              <small>Worldwide Container Shipping</small>
+            </div>
+          </div>
+          <div className="trust-badge-item">
+            <span className="trust-badge-icon">📦</span>
+            <div className="trust-badge-text">
+              <strong>25 Kg Moisture Barrier</strong>
+              <small>Export HDPE Sacks with PE Liner</small>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
