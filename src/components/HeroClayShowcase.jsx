@@ -119,7 +119,7 @@ export default function HeroClayShowcase() {
 
   return (
     <section
-      className="hero hero-clay-showcase-section"
+      className="hero-clay-showcase-section"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={handleMouseLeave}
     >

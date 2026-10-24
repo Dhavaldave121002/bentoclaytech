@@ -604,12 +604,12 @@ h2 span {
 }
 
 .section-pad {
-  padding: 110px 0;
+  padding: 48px 0;
 }
 
 .section-number {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .btn {
@@ -1183,7 +1183,7 @@ h2 span {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 
 .section-head .text-link {
@@ -2283,7 +2283,7 @@ h2 span {
 }
 
 .page-cta>.container {
-  padding: 48px 0;
+  padding: 36px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2403,7 +2403,7 @@ h2 span {
 
 /* Why Us Page Specific */
 .reason-section {
-  padding: 90px 0;
+  padding: 48px 0;
 }
 
 .reason-grid {
@@ -2449,7 +2449,7 @@ h2 span {
 }
 
 .quality-band {
-  padding: 95px 0;
+  padding: 48px 0;
   background: #38251d;
   color: #fff;
 }
@@ -2536,7 +2536,7 @@ h2 span {
 }
 
 .industry-section {
-  padding: 90px 0;
+  padding: 48px 0;
 }
 
 .industry-grid {
@@ -2796,7 +2796,7 @@ h2 span {
 }
 
 .story-section {
-  padding: 100px 0;
+  padding: 48px 0;
 }
 
 .story-grid {
@@ -2869,7 +2869,7 @@ h2 span {
 
 /* Capabilities Section */
 .capabilities-section {
-  padding: 95px 0;
+  padding: 48px 0;
   background: #fffdf9;
 }
 
@@ -2922,7 +2922,7 @@ h2 span {
 .capacity-band {
   background: #2d1c15;
   color: #fff;
-  padding: 75px 0;
+  padding: 48px 0;
 }
 
 .capacity-grid {
@@ -2968,7 +2968,7 @@ h2 span {
 
 /* Applications About Section */
 .applications-about-section {
-  padding: 95px 0;
+  padding: 48px 0;
   background: #fbf7f2;
 }
 
@@ -3085,7 +3085,7 @@ h2 span {
 }
 
 .location-section {
-  padding: 85px 0;
+  padding: 48px 0;
 }
 
 .location-section>.container {
@@ -3115,7 +3115,7 @@ h2 span {
 
 /* Contact Page Specific */
 .contact-hero {
-  padding: 140px 0 90px;
+  padding: 100px 0 48px;
   background: #f4ebdf;
 }
 
@@ -3834,7 +3834,7 @@ h2 span {
   }
 
   .hero-grid {
-    gap: 55px;
+    gap: 24px;
   }
 
   /* ── Metrics bar: 2×2 grid on mobile ── */
@@ -3917,16 +3917,17 @@ h2 span {
   }
 
   .section-pad {
-    padding: 75px 0;
+    padding: 36px 0;
   }
 
   .section-head {
     align-items: flex-start;
     flex-direction: column;
+    margin-bottom: 24px;
   }
 
   .section-head>p {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .filter-bar {
@@ -4753,7 +4754,7 @@ h2 span {
 .related-grades-section {
   background: #fffdf9;
   border-top: 1px solid var(--line);
-  padding: 80px 0 90px;
+  padding: 44px 0 48px;
 }
 
 .related-grades-grid {
@@ -6152,7 +6153,7 @@ h2 span {
 
 /* Customizer Callout Card on HomePage */
 .customizer-callout-section {
-  padding: 40px 0 60px;
+  padding: 24px 0 32px;
 }
 
 .customizer-callout-card {
@@ -6217,7 +6218,7 @@ h2 span {
    ========================================================================== */
 
 .grade-customizer-section {
-  padding: 80px 0;
+  padding: 46px 0 50px;
   background: linear-gradient(180deg, #fbf7f1 0%, #f4ede3 100%);
   border-top: 1.5px solid #ebdccb;
   border-bottom: 1.5px solid #ebdccb;
@@ -6977,7 +6978,7 @@ h2 span {
 
 /* ── Story Section ───────────────────────────────────────── */
 .story-section {
-  padding: 100px 0;
+  padding: 48px 0;
   background: var(--bg);
 }
 
@@ -7027,7 +7028,7 @@ h2 span {
 /* ── Deposit Section ─────────────────────────────────────── */
 .deposit-section {
   background: var(--surface);
-  padding: 90px 0;
+  padding: 48px 0;
 }
 
 .deposit-grid {
@@ -7130,7 +7131,7 @@ h2 span {
 
 /* ── Capabilities Section ────────────────────────────────── */
 .capabilities-section {
-  padding: 100px 0;
+  padding: 48px 0;
   background: var(--surface);
 }
 
@@ -7139,7 +7140,7 @@ h2 span {
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: start;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
 }
 
 .capabilities-section .section-head h2 {
@@ -7210,7 +7211,7 @@ h2 span {
 /* ── Capacity Band ───────────────────────────────────────── */
 .capacity-band {
   background: linear-gradient(135deg, #2d1a0e 0%, #3d2310 60%, #1c0f07 100%);
-  padding: 90px 0;
+  padding: 48px 0;
   border-top: 1px solid rgba(168, 100, 50, 0.3);
   border-bottom: 1px solid rgba(168, 100, 50, 0.3);
 }
@@ -7244,7 +7245,7 @@ h2 span {
 
 /* ── Applications Grid (About Page) ─────────────────────── */
 .applications-about-section {
-  padding: 100px 0;
+  padding: 48px 0;
   background: var(--bg);
 }
 
@@ -7306,7 +7307,7 @@ h2 span {
 .location-section {
   background: var(--surface);
   border-top: 1px solid var(--border);
-  padding: 72px 0;
+  padding: 48px 0;
 }
 
 .location-section .container {
@@ -7472,7 +7473,7 @@ h2 span {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   overflow: hidden;
-  padding: 60px 0 70px;
+  padding: 44px 0 48px;
 }
 
 .team-video-section::before {
@@ -9098,9 +9099,9 @@ h2 span {
 .hero-clay-showcase-section {
   position: relative;
   overflow: hidden;
-  padding: 168px 0 84px; /* breathing room below sticky topbar + header */
+  padding: 36px 0 36px;
   background: var(--paper);
-  min-height: 820px;
+  min-height: auto;
   display: flex;
   align-items: center;
 }
@@ -9792,7 +9793,7 @@ h2 span {
 /* ── Responsive Adaptations ── */
 @media (max-width: 991px) {
   .hero-clay-showcase-section {
-    padding: 140px 0 60px;
+    padding: 36px 0 40px;
     min-height: auto;
   }
 
@@ -9870,7 +9871,7 @@ h2 span {
 
 @media (max-width: 480px) {
   .hero-clay-showcase-section {
-    padding: 128px 0 44px;
+    padding: 24px 0 28px;
   }
 
   .clay-showcase-card {
@@ -10424,5 +10425,99 @@ h2 span {
   .product-hero-top-meta {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* ==========================================================================
+   UNIFIED GLOBAL SECTION SPACING PERFECTION (DESKTOP & MOBILE)
+   Prevents excessive gaps and aligns section balance across every screen
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .section-pad,
+  .story-section,
+  .deposit-section,
+  .reason-section,
+  .quality-band,
+  .industry-section,
+  .capabilities-section,
+  .capacity-band,
+  .applications-about-section,
+  .comparison-section,
+  .related-grades-section,
+  .grade-customizer-section,
+  .location-section,
+  .team-video-section,
+  .product-body-section {
+    padding: 38px 0 !important;
+  }
+
+  .hero-clay-showcase-section {
+    padding: 26px 0 28px !important;
+  }
+
+  .hero-grid {
+    gap: 28px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-pad,
+  .story-section,
+  .deposit-section,
+  .reason-section,
+  .quality-band,
+  .industry-section,
+  .capabilities-section,
+  .capacity-band,
+  .applications-about-section,
+  .comparison-section,
+  .related-grades-section,
+  .grade-customizer-section,
+  .location-section,
+  .team-video-section,
+  .product-body-section,
+  .customizer-body-section,
+  .customizer-capabilities-section,
+  .page-cta {
+    padding: 26px 0 !important;
+  }
+
+  .hero-clay-showcase-section {
+    padding: 16px 0 20px !important;
+  }
+
+  .hero-grid {
+    gap: 20px !important;
+  }
+
+  .customizer-callout-section {
+    padding: 16px 0 20px !important;
+  }
+
+  .customizer-callout-card {
+    padding: 22px 18px !important;
+    border-radius: 14px !important;
+    gap: 16px !important;
+  }
+
+  .section-head {
+    margin-bottom: 18px !important;
+    gap: 10px !important;
+  }
+
+  .section-head > p {
+    margin-top: 6px !important;
+    font-size: 14.5px !important;
+    line-height: 1.55 !important;
+  }
+
+  .section-number {
+    margin-bottom: 8px !important;
+  }
+
+  .page-cta > .container {
+    padding: 24px 0 !important;
+    gap: 16px !important;
   }
 }
