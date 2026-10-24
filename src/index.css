@@ -489,10 +489,10 @@ button {
 /* Mobile (480px): show both items but very compact */
 @media (max-width: 480px) {
   .top-bar {
-    height: 44px;
+    height: 38px;
   }
   .site-header {
-    top: 44px;
+    top: 38px;
   }
   .site-header.scrolled {
     top: 0;
@@ -3791,11 +3791,11 @@ h2 span {
   }
 
   .site-header {
-    height: 82px;
+    height: 68px;
   }
 
   .site-header.scrolled {
-    height: 72px;
+    height: 60px;
   }
 
   .nav-links {
@@ -10232,11 +10232,11 @@ h2 span {
 /* Responsive Adaptations for Banner Slider */
 @media (max-width: 991px) {
   .bentoclay-hero-banner-slider {
-    padding-top: 132px;
+    padding-top: 118px;
   }
 
   .banner-slider-container {
-    min-height: 320px;
+    min-height: 340px;
   }
 
   .banner-slide-cta-link {
@@ -10275,6 +10275,14 @@ h2 span {
 }
 
 @media (max-width: 768px) {
+  .bentoclay-hero-banner-slider {
+    padding-top: 108px;
+  }
+
+  .banner-slider-container {
+    min-height: 290px;
+  }
+
   .banner-slide-cta-wrapper {
     left: 4%;
     bottom: 12%;
@@ -10288,12 +10296,28 @@ h2 span {
 
 @media (max-width: 540px) {
   .bentoclay-hero-banner-slider {
-    padding-top: 130px;
+    padding-top: 106px;
   }
 
   .banner-slider-container {
-    min-height: 220px;
-    aspect-ratio: 16 / 9;
+    min-height: 250px;
+    height: clamp(245px, 68vw, 305px);
+    aspect-ratio: auto;
+  }
+
+  .banner-slide-img {
+    object-fit: cover;
+    object-position: 18% 30%;
+  }
+
+  .banner-slide-cta-wrapper {
+    left: 4%;
+    bottom: 13%;
+  }
+
+  .banner-cta-badge {
+    padding: 5px 11px;
+    font-size: 10.5px;
   }
 
   .banner-slide-subtext {
@@ -10306,6 +10330,13 @@ h2 span {
 
   .banner-slider-bullets {
     bottom: 8px;
+    padding: 3px 8px;
+    gap: 6px;
+  }
+
+  .bullet-dot {
+    width: 9px;
+    height: 9px;
   }
 }
 
