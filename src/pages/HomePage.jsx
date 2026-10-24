@@ -17,6 +17,7 @@ export default function HomePage() {
   const [filter, setFilter] = useState('all');
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [industryView, setIndustryView] = useState('scroll');
 
   // High-performance scroll reveal animation trigger
   useScrollReveal([filter, loading]);
@@ -224,19 +225,46 @@ export default function HomePage() {
                 <span>is specified worldwide.</span>
               </h2>
             </div>
+            <p>
+              Engineered for extreme salinity, high heat, and specialized thixotropy across 16 global industrial sectors.
+            </p>
           </div>
 
-          <div className="industries-pill-cloud">
+          {/* Mobile View Switcher & Swipe Hint */}
+          <div className="industry-mobile-controls">
+            <div className="industry-view-toggle" role="group" aria-label="Industries view mode">
+              <button
+                type="button"
+                className={`industry-toggle-btn ${industryView === 'scroll' ? 'active' : ''}`}
+                onClick={() => setIndustryView('scroll')}
+              >
+                <span>↔</span> Swipe View
+              </button>
+              <button
+                type="button"
+                className={`industry-toggle-btn ${industryView === 'grid' ? 'active' : ''}`}
+                onClick={() => setIndustryView('grid')}
+              >
+                <span>☷</span> Grid View
+              </button>
+            </div>
+            {industryView === 'scroll' && (
+              <span className="industry-swipe-tip">Swipe sideways ↔</span>
+            )}
+          </div>
+
+          <div className={`industries-pill-cloud mode-${industryView}`}>
             {industries.map((ind, i) => (
-              <Link key={i} to="/applications" className="industry-pill">
-                {ind.name}
+              <Link key={i} to="/applications" className="industry-pill" title={`${ind.name} - ${ind.shortDesc}`}>
+                <span className="industry-pill-icon" aria-hidden="true">{ind.icon}</span>
+                <span className="industry-pill-name">{ind.name}</span>
               </Link>
             ))}
           </div>
 
-          <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <Link className="text-link" to="/applications" style={{ display: 'inline-flex', fontSize: '16px', fontWeight: 'bold' }}>
-              See all industry applications <span style={{ marginLeft: '8px' }}>→</span>
+          <div style={{ textAlign: 'center', marginTop: '36px' }}>
+            <Link className="text-link" to="/applications" style={{ display: 'inline-flex', fontSize: '15px', fontWeight: 'bold' }}>
+              See all 16 industry applications with technical specs <span style={{ marginLeft: '8px' }}>→</span>
             </Link>
           </div>
         </div>
