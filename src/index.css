@@ -4929,19 +4929,35 @@ h2 span {
     max-width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--line);
     border-radius: 8px;
     margin-bottom: 16px;
   }
 
   .spec-table-detail {
     width: 100%;
-    min-width: 440px;
+    min-width: 0;
+    table-layout: auto;
+    border: none;
   }
 
   .spec-table-detail th,
   .spec-table-detail td {
-    padding: 10px 12px;
-    font-size: 13px;
+    padding: 10px 10px;
+    font-size: 12.5px;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .spec-table-detail td.param-title {
+    width: 58%;
+  }
+
+  .spec-table-detail td.param-req,
+  .spec-table-detail td.param-res {
+    width: 42%;
+    text-align: right;
+    font-weight: 700;
   }
 
   .spec-footnote {
@@ -5975,6 +5991,14 @@ h2 span {
   margin-bottom: 11px;
 }
 
+@media (max-width: 768px) {
+  .custom-input-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 .custom-inquiry-form input,
 .custom-inquiry-form textarea {
   width: 100%;
@@ -6244,6 +6268,18 @@ h2 span {
 .grade-customizer-container {
   width: min(1180px, calc(100% - 48px));
   margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  .grade-customizer-container {
+    width: calc(100% - 20px);
+  }
+  .spec-inquiry-container {
+    padding: 14px 12px !important;
+  }
+  .config-block {
+    padding: 18px 14px !important;
+  }
 }
 
 .customizer-header-bar {
@@ -6613,6 +6649,17 @@ h2 span {
   border-bottom: 1px solid #ebdccb;
 }
 
+@media (max-width: 600px) {
+  .spec-math-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  .spec-math-strip .math-val {
+    font-size: 16px;
+  }
+}
+
 .math-col {
   display: flex;
   flex-direction: column;
@@ -6654,6 +6701,14 @@ h2 span {
   grid-template-columns: 1fr 1fr;
   gap: 8px;
   margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .form-row-split {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .custom-quote-form input,
@@ -10656,14 +10711,35 @@ h2 span {
 }
 
 @media (max-width: 600px) {
+  .floating-actions-container {
+    right: 12px !important;
+    bottom: 12px !important;
+    gap: 8px !important;
+  }
+
   .whatsapp-direct-btn {
-    width: 54px;
-    height: 54px;
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .whatsapp-direct-btn svg {
+    width: 24px !important;
+    height: 24px !important;
   }
 
   .call-direct-btn {
-    width: 42px;
-    height: 42px;
+    width: 38px !important;
+    height: 38px !important;
+  }
+
+  .call-direct-btn svg {
+    width: 17px !important;
+    height: 17px !important;
+  }
+
+  .back-to-top-btn {
+    width: 38px !important;
+    height: 38px !important;
   }
 }
 
