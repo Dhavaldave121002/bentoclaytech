@@ -9953,7 +9953,7 @@ h2 span {
 .bentoclay-hero-banner-slider {
   position: relative;
   width: 100%;
-  background: #ffffff;
+  background: var(--paper);
   padding-top: 136px; /* 40px topbar + 92px site header + 4px breathing */
   overflow: hidden;
   border-bottom: 1px solid rgba(128, 80, 46, 0.12);
@@ -9967,7 +9967,7 @@ h2 span {
   aspect-ratio: 16 / 9;
   max-height: 720px;
   min-height: 440px;
-  background: #ffffff;
+  background: var(--paper);
   overflow: hidden;
 }
 
