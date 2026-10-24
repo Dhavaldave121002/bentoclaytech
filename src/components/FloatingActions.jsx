@@ -88,7 +88,7 @@ export default function FloatingActions() {
         title="Chat on WhatsApp"
       >
         <span className="whatsapp-pulse" aria-hidden="true"></span>
-        <span className="whatsapp-label-badge">WhatsApp Us</span>
+        <span className="floating-tooltip">Chat on WhatsApp</span>
         <svg
           viewBox="0 0 24 24"
           width="30"
