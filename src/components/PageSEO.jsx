@@ -546,11 +546,17 @@ export default function PageSEO() {
     let twImage = document.querySelector('meta[name="twitter:image"]');
     if (twImage && meta.image) twImage.setAttribute('content', meta.image);
 
-    // Update Canonical Link
+    // Update Canonical Link (strips tracking/cross-domain query params like _gl, gclid, utm_*)
     let canonicalTag = document.querySelector('link[rel="canonical"]');
-    if (canonicalTag) {
-      canonicalTag.setAttribute('href', `${BASE_URL}${location.pathname}`);
+    if (!canonicalTag) {
+      canonicalTag = document.createElement('link');
+      canonicalTag.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalTag);
     }
+    const cleanPath = location.pathname.endsWith('/') && location.pathname !== '/'
+      ? location.pathname.slice(0, -1)
+      : location.pathname;
+    canonicalTag.setAttribute('href', `${BASE_URL}${cleanPath}`);
 
     // Dynamic JSON-LD injection for Google, Perplexity, Bing, and AI crawlers
     let dynamicLdJsonScript = document.getElementById('dynamic-page-jsonld');
