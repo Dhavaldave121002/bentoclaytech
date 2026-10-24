@@ -5081,8 +5081,13 @@ h2 span {
   white-space: nowrap;
   pointer-events: none;
   opacity: 0;
+  visibility: hidden;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.whatsapp-label-badge {
+  display: none !important;
 }
 
 .floating-tooltip::after {
@@ -5100,6 +5105,7 @@ h2 span {
 .whatsapp-direct-btn:hover .floating-tooltip,
 .call-direct-btn:hover .floating-tooltip {
   opacity: 1;
+  visibility: visible;
   transform: translateY(-50%) translateX(0);
 }
 
