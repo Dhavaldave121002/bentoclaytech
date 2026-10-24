@@ -4636,10 +4636,6 @@ h2 span {
   flex-direction: column;
   gap: 20px;
   z-index: 10;
-  max-height: calc(100vh - 150px);
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(128, 80, 46, 0.25) transparent;
 }
 
 .sidebar-card {
@@ -5852,10 +5848,6 @@ h2 span {
   position: sticky;
   top: 100px;
   align-self: start;
-  max-height: calc(100vh - 110px);
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(128, 80, 46, 0.25) transparent;
 }
 
 .live-spec-sheet {
@@ -6538,10 +6530,6 @@ h2 span {
   align-self: start;
   min-width: 0;
   max-width: 100%;
-  max-height: calc(100vh - 110px);
-  overflow-y: auto;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(128, 80, 46, 0.25) transparent;
 }
 
 .grade-spec-sheet-box {
