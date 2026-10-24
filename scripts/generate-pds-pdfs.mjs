@@ -221,26 +221,26 @@ async function createPDS(data) {
 
   // Header Left: Logo + Company Name
   if (logoImage) {
-    const logoDims = logoImage.scale(0.048); // scale down crisp logo
+    const logoDims = logoImage.scale(0.135); // Prominent, clear logo size (~52.6pt x 35.1pt)
     page.drawImage(logoImage, {
       x: 45,
-      y: y - logoDims.height + 4,
+      y: y - logoDims.height + 2,
       width: logoDims.width,
       height: logoDims.height
     });
 
-    const textX = 45 + logoDims.width + 12;
+    const textX = 45 + logoDims.width + 10;
     page.drawText('Bento Clay Tech', {
       x: textX,
-      y: y - 4,
-      size: 18,
+      y: y - 8,
+      size: 18.5,
       font: fontBold,
       color: darkInk
     });
     page.drawText('Manufacturers of Attapulgite Minerals', {
       x: textX,
-      y: y - 18,
-      size: 9.5,
+      y: y - 24,
+      size: 10,
       font: fontRegular,
       color: lightGray
     });

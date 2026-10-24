@@ -10580,11 +10580,12 @@ h2 span {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 64px;
-  height: 57px;
+  width: 58px;
+  height: 58px;
   pointer-events: none;
   z-index: 10;
-  filter: drop-shadow(-2px -2px 6px rgba(56, 37, 29, 0.24));
+  line-height: 0;
+  filter: drop-shadow(-2px -2px 6px rgba(56, 37, 29, 0.22));
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
 }
 
@@ -10598,13 +10599,13 @@ h2 span {
 
 .product-image-card:hover .card-golden-corner-fold {
   transform: scale(1.08);
-  filter: drop-shadow(-3px -3px 8px rgba(56, 37, 29, 0.35));
+  filter: drop-shadow(-3px -3px 8px rgba(56, 37, 29, 0.32));
 }
 
 @media (max-width: 540px) {
   .card-golden-corner-fold {
-    width: 52px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
   }
 }
 

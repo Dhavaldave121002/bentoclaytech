@@ -211,8 +211,8 @@ export default function ProductDetailPage() {
                     src="/assets/gold-corner-curl.png"
                     alt=""
                     className="gold-corner-curl-img"
-                    width="62"
-                    height="55"
+                    width="58"
+                    height="58"
                     loading="eager"
                   />
                 </div>
