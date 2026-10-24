@@ -3,16 +3,6 @@ import { Link } from 'react-router-dom';
 
 const bannerSlides = [
   {
-    id: 'product-range-flagship',
-    title: 'MINERALS FOR A BETTER TOMORROW',
-    subtitle: 'Complete Attapulgite Clay Portfolio',
-    tag: 'Natural Mineral · Consistent Quality · Wide Applications',
-    image: '/assets/product-range.webp',
-    alt: 'Bento Clay Tech Complete Attapulgite Clay Mineral Product Range and Technical Formulations',
-    link: '/products',
-    ctaText: 'Explore Product Range',
-  },
-  {
     id: 'attapulgite-mines',
     title: 'ATTAPULGITE MINING',
     subtitle: 'Well Established Quarry Infrastructure',
