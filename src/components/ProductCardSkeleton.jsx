@@ -27,12 +27,17 @@ export default function ProductCardSkeleton() {
           </div>
         </div>
       </div>
-      <div className="product-card-actions" style={{ height: '38px' }}>
-        <div style={{ padding: '10px 14px', borderRight: '1px solid #ebdccb' }}>
-          <span className="skeleton-shimmer skeleton-line" style={{ width: '80px', height: '12px' }} />
+      <div className="product-card-actions">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', height: '40px', borderBottom: '1px solid #ebdccb' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', borderRight: '1px solid #ebdccb' }}>
+            <span className="skeleton-shimmer skeleton-line" style={{ width: '70px', height: '12px' }} />
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <span className="skeleton-shimmer skeleton-line" style={{ width: '65px', height: '12px' }} />
+          </div>
         </div>
-        <div style={{ padding: '10px' }}>
-          <span className="skeleton-shimmer skeleton-line" style={{ width: '65px', height: '12px' }} />
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '38px', background: '#f5ede4' }}>
+          <span className="skeleton-shimmer skeleton-line" style={{ width: '85px', height: '12px' }} />
         </div>
       </div>
     </article>

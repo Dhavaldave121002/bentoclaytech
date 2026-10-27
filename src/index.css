@@ -7101,8 +7101,8 @@ h2 span {
 
 /* Product Card Actions with Independent Hover Buttons */
 .product-card-actions {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid #ebdccb;
   margin-top: auto;
   background: #ffffff;
@@ -7110,23 +7110,30 @@ h2 span {
   border-bottom-right-radius: 10px;
   overflow: hidden;
   flex-shrink: 0;
-  height: 44px;
 }
 
-/* 1. View Specifications Button (Independent Hover Only) */
+.product-card-actions-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #ebdccb;
+  height: 40px;
+}
+
+/* 1. View Specifications Button */
 .product-card-actions .details-btn {
   border: none;
   border-right: 1px solid #ebdccb;
-  padding: 0 16px;
+  padding: 0 14px;
   height: 100%;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 800;
   color: var(--green);
   background: #ffffff;
   text-decoration: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 6px;
   transition: background-color 0.22s ease, color 0.22s ease;
   cursor: pointer;
   margin-top: 0;
@@ -7147,13 +7154,13 @@ h2 span {
   transform: translate(3px, -3px);
 }
 
-/* 2. Customize Button (Independent Hover Only) */
+/* 2. Customize Button */
 .customize-card-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
-  padding: 0 12px;
+  padding: 0 14px;
   height: 100%;
   font-weight: 800;
   font-size: 13px;
@@ -7162,6 +7169,7 @@ h2 span {
   text-decoration: none;
   transition: background-color 0.22s ease, color 0.22s ease;
   cursor: pointer;
+  border: none;
 }
 
 .customize-card-btn span {
@@ -7177,6 +7185,39 @@ h2 span {
 
 .customize-card-btn:hover span {
   transform: rotate(90deg);
+}
+
+/* 3. Get Quote Primary Action (Full-Width Bottom Bar) */
+.card-quote-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 38px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  background: #38251d;
+  text-decoration: none;
+  transition: background-color 0.22s ease;
+  cursor: pointer;
+}
+
+.card-quote-btn span {
+  display: inline-block;
+  font-size: 14px;
+  transition: transform 0.22s ease;
+}
+
+.card-quote-btn:hover {
+  background: #80502e;
+  color: #ffffff;
+}
+
+.card-quote-btn:hover span {
+  transform: translate(2px, -2px);
 }
 
 .btn-customize-hero {

@@ -37,28 +37,29 @@ export default function ProductCard({ product, index }) {
         </div>
       </Link>
       <div className="product-card-actions">
-        <Link
-          to={targetUrl}
-          className="details-btn"
-          aria-label={`View specifications for ${product.name}`}
-        >
-          View specs <span>↗</span>
-        </Link>
+        <div className="product-card-actions-row">
+          <Link
+            to={targetUrl}
+            className="details-btn"
+            aria-label={`View specifications for ${product.name}`}
+          >
+            View specs <span>↗</span>
+          </Link>
+          <Link
+            to={`${targetUrl}#customizer-section`}
+            className="customize-card-btn"
+            aria-label={`Customize ${product.name} specifications`}
+          >
+            Customize <span>⚙</span>
+          </Link>
+        </div>
         <Link
           to={`/contact?grade=${encodeURIComponent(product.name)}`}
-          className="details-btn"
+          className="card-quote-btn"
           title={`Get Quote for ${product.name}`}
           aria-label={`Get Quote for ${product.name}`}
-          style={{ background: 'var(--ink)', color: '#ffffff' }}
         >
           Get Quote <span>↗</span>
-        </Link>
-        <Link
-          to={`${targetUrl}#customizer-section`}
-          className="customize-card-btn"
-          aria-label={`Customize ${product.name} specifications`}
-        >
-          Customize <span>⚙</span>
         </Link>
       </div>
     </article>
