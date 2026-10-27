@@ -40,8 +40,22 @@ export default function AboutPage() {
               <em>Bhavnagar, India.</em>
             </h1>
             <p>
-              Bento Clay Tech manufactures specialized <Link to="/products" className="seo-keyword-link">attapulgite powder and granules</Link> from its processing works in Kardej, Bhavnagar, Gujarat, supplying <Link to="/applications" className="seo-keyword-link">drilling and industrial formulators</Link> worldwide.
+              Bento Clay Tech manufactures specialized <Link to="/products" className="seo-keyword-link">attapulgite powder and granules</Link> from its processing works in Kardej, Bhavnagar, Gujarat, supplying <Link to="/applications" className="seo-keyword-link">drilling and industrial formulators</Link> worldwide. As an established attapulgite powder manufacturer in India and attapulgite powder exporter from India, we operate dedicated milling, grading, and testing facilities in Bhavnagar, serving as a reliable palygorskite clay supplier for domestic and international markets.
             </p>
+            <div className="hero-cta-btns" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '20px 0 24px' }}>
+              <Link to="/contact" className="btn btn-primary" title="Request commercial quotation for attapulgite grades">
+                Get Quote <span>↗</span>
+              </Link>
+              <a
+                href="https://wa.me/917435818628?text=Hello%20Bento%20Clay%20Tech%2C%20I%20would%20like%20to%20know%20more%20about%20your%20attapulgite%20manufacturing%20and%20export%20capabilities."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-whatsapp"
+                title="Direct WhatsApp chat with Bento Clay Tech management"
+              >
+                WhatsApp <span>↗</span>
+              </a>
+            </div>
             <div className="mineral-formula compact-formula">
               <small>CHEMICAL FORMULA &amp; CRYSTALLOGRAPHY</small>
               <strong>(Mg, Al)₅Si₈O₂₂(OH)₄</strong>
@@ -258,8 +272,23 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── FAQ (original) ───────────────────────────────────────── */}
-      <FaqAccordion limit={4} showFilter={false} showViewAllBtn={true} />
+      {/* Related Products & Quick Navigation */}
+      <section className="related-links-strip" style={{ background: '#fdfbf7', borderTop: '1px solid #ebdccb', borderBottom: '1px solid #ebdccb', padding: '36px 0' }}>
+        <div className="container">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', marginBottom: '20px' }}>
+            <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>MANUFACTURED PRODUCT GRADES</span>
+            <Link to="/contact" className="text-link" style={{ fontSize: '14px', fontWeight: 700 }}>Contact Bento Clay Tech Bhavnagar Works ↗</Link>
+          </div>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Link to="/products/salt-gel-attapulgite-powder" className="grade-pill-link" title="Salt Gel Attapulgite Drilling Clay">Salt Gel Drilling Clay ↗</Link>
+            <Link to="/products/api-13a-section-12-attapulgite-powder" className="grade-pill-link" title="API 13A Section 12 Attapulgite Powder">API 13A Section 12 Powder ↗</Link>
+            <Link to="/products/premium-325-attapulgite-powder" className="grade-pill-link" title="325 Mesh Attapulgite Powder Supplier">325 Mesh Micronized Attapulgite ↗</Link>
+            <Link to="/products/flux-fine-200-attapulgite-powder" className="grade-pill-link" title="Flux Fine 200 Attapulgite for Foundry">Flux Fine-200 Foundry Clay ↗</Link>
+            <Link to="/products/attapulgite-natural-powder" className="grade-pill-link" title="Attapulgite for Animal Feed and Agriculture">Attapulgite Natural Powder ↗</Link>
+            <Link to="/products/attapulgite-natural-granules-1-5mm" className="grade-pill-link" title="Attapulgite Granules Supplier for Cat Litter">1-5 mm Attapulgite Granules ↗</Link>
+          </div>
+        </div>
+      </section>
 
       {/* ── CTA (original) ───────────────────────────────────────── */}
       <section className="page-cta">

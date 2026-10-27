@@ -52,7 +52,7 @@ export default function ProductsPage() {
             <em>granule grades.</em>
           </h1>
           <p>
-            Six grades produced from the same rod-structured hydrated aluminium magnesium silicate, each ground and controlled for a different performance parameter. All specifications are taken from published product data sheets.
+            Six grades produced from the same rod-structured hydrated aluminium magnesium silicate, each ground and controlled for a different performance parameter. All specifications are taken from published product data sheets. Operating as an attapulgite powder manufacturer India and attapulgite powder bulk supplier, we dispatch standard and custom orders from Bhavnagar via Mundra Port on FOB and CIF terms.
           </p>
           <div className="portfolio-hero-pills" aria-label="Available Product Grades">
             <span className="hero-grade-tag">⚡ SG: 35 cps Salt Gel</span>
@@ -61,6 +61,20 @@ export default function ProductsPage() {
             <span className="hero-grade-tag">🔥 FF200 Foundry Flux</span>
             <span className="hero-grade-tag">🐾 G15 Absorbent Granules</span>
             <span className="hero-grade-tag">🌾 NP Natural Agro Carrier</span>
+          </div>
+          <div className="hero-actions" style={{ marginTop: '24px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Link className="btn btn-primary" to="/contact" title="Get Quote for Attapulgite Powder and Granules">
+              Get Quote <span>↗</span>
+            </Link>
+            <a
+              className="btn btn-secondary"
+              href="https://wa.me/917435818628?text=Hello%20Bento%20Clay%20Tech,%20please%20send%20quote%20for%20attapulgite%20grades."
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Direct WhatsApp Quote"
+            >
+              💬 WhatsApp (+91 74358 18628)
+            </a>
           </div>
         </div>
       </section>

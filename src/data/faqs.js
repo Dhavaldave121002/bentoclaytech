@@ -20,13 +20,13 @@ export const faqs = [
     summary: 'Bento Clay Tech produces six dedicated standardized and custom-engineered industrial grades from our Bhavnagar facility:',
     points: [
       { title: '1. Salt Gel Grade Powder', desc: '35 cps min @ 600 rpm · For deep saline muds, brine drilling, and high-viscosity gelling.' },
-      { title: '2. API-13A Section 12 Grade', desc: '30 cps min · Certified drilling grade matching American Petroleum Institute specifications.' },
+      { title: '2. API-13A Section 12 Grade', desc: '30 cps min · Drilling grade meeting API 13A Section 12 specification matching American Petroleum Institute specifications.' },
       { title: '3. Natural Attapulgite Powder', desc: '200 mesh · High-porosity carrier for agrochemicals, fertilizer anti-caking, and binders.' },
       { title: '4. Flux Fine-200 Foundry Flux', desc: '95 ml swelling index · Metal casting binder, refractory mold wash, and continuous casting.' },
       { title: '5. Premium 325 Micronised Powder', desc: '44 μm / 210 m²/g BET · Superfine thixotropic rheology modifier for paints, mastics, and sealants.' },
       { title: '6. Natural Granules (1–5 mm)', desc: '180–220% absorption · Low-dust porous spherical/crushed granules for litter and spill absorbents.' }
     ],
-    tags: ['6 Dedicated Grades', 'API Certified', 'Micronised 325 Mesh', '1–5 mm Granules']
+    tags: ['6 Dedicated Grades', 'API 13A Section 12 Spec', 'Micronised 325 Mesh', '1–5 mm Granules']
   },
   {
     category: 'Custom Manufacturing',
@@ -58,12 +58,12 @@ export const faqs = [
     question: 'How does Bentoclay verify compliance with API Spec 13A Section 12?',
     summary: 'Every production batch is tested in our in-house laboratory per API Section 12 protocols and accompanied by an official Certificate of Analysis (COA).',
     points: [
-      { title: 'Fann 35 Rheometer Verification', desc: 'Dial reading at 600 rpm is certified ≥30 cps in saturated NaCl brine.' },
+      { title: 'Fann 35 Rheometer Verification', desc: 'Dial reading at 600 rpm meets API 13A Section 12 specification (≥30 cps) in saturated NaCl brine.' },
       { title: 'Wet Sieve Particle Classification', desc: 'Residue greater than 75 μm (200 mesh) strictly controlled to ≤8% max.' },
       { title: 'Moisture Control', desc: 'Standard moisture capped at ≤16% per API limit, with low-moisture (<10%) available on request.' },
       { title: 'Daily Composite Sampling', desc: 'Conformity assessed on composite samples representing no more than one day of production.' }
     ],
-    tags: ['API 13A Certified', 'Fann 35 Rheometer', 'Batch COA Included', 'Wet Screen Tested']
+    tags: ['API 13A Section 12 Spec', 'Fann 35 Rheometer', 'Batch COA Included', 'Wet Screen Tested']
   },
   {
     category: 'Export Logistics',
@@ -120,7 +120,7 @@ export const faqs = [
     question: 'Can I request laboratory trial samples before placing a bulk container order?',
     summary: 'Yes. We provide complimentary laboratory evaluation sample cartons dispatched worldwide via express air courier for validation testing.',
     points: [
-      { title: 'Sample Sizes', desc: '1 kg, 5 kg, or 25 kg evaluation cartons prepared with certified plant batch material.' },
+      { title: 'Sample Sizes', desc: '1 kg, 5 kg, or 25 kg evaluation cartons prepared with tested plant batch material.' },
       { title: 'Express Air Courier', desc: 'Dispatched via DHL or FedEx with international tracking directly to your R&D facility.' },
       { title: 'Complete Documentation', desc: 'Every sample package includes Batch COA, Product Data Sheet (PDS), and Safety Data Sheet (SDS).' }
     ],

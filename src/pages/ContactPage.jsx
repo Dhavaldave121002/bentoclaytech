@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import { products } from '../data/products';
 import { FORM_CONFIG, getDirectContactLinks } from '../config/formConfig';
 
@@ -179,13 +179,32 @@ export default function ContactPage() {
               <em>next requirement.</em>
             </h1>
             <p>
-              Tell us about your application, required grade or quantity. Our team will connect with you directly.
+              Tell us about your application, required grade or quantity. As an attapulgite manufacturer in Bhavnagar, Gujarat and attapulgite supplier via Mundra Port, we provide rapid commercial terms for attapulgite FOB Mundra, CIF international destination ports, and domestic full-truckload dispatches.
             </p>
+
+            <div className="hero-cta-btns" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '16px 0 20px' }}>
+              <a
+                href={`https://wa.me/917435818628?text=${encodeURIComponent(
+                  activeProductName
+                    ? `Hello Bento Clay Tech, I would like to request export quotation and specifications for ${activeProductName}.`
+                    : 'Hello Bento Clay Tech, I would like to request export quotation and specifications for attapulgite mineral grades.'
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-whatsapp"
+                title="Direct WhatsApp chat with Bento Clay Tech commercial desk"
+              >
+                Instant WhatsApp Quote ↗
+              </a>
+              <a href="tel:+917435818628" className="btn btn-primary" title="Call Bento Clay Tech Bhavnagar Office">
+                Direct Call: +91 74358 18628 ↗
+              </a>
+            </div>
 
             <div className="contact-image-card">
               <img
                 src="/assets/contect.webp"
-                alt="Bento Clay Tech Attapulgite Mineral Product Packaging"
+                alt="Bento Clay Tech Attapulgite Mineral Product Packaging and Export Logistics"
                 className="contact-hero-img"
                 loading="eager"
                 decoding="async"
@@ -393,6 +412,24 @@ export default function ContactPage() {
               {isSubmitting ? 'Sending Request...' : 'Submit Commercial RFQ'} <span>↗</span>
             </button>
           </form>
+        </div>
+      </section>
+
+      {/* Related Products & Quick Navigation */}
+      <section className="related-links-strip" style={{ background: '#fdfbf7', borderTop: '1px solid #ebdccb', borderBottom: '1px solid #ebdccb', padding: '36px 0' }}>
+        <div className="container">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', marginBottom: '20px' }}>
+            <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>POPULAR ATTAPULGITE MINERAL GRADES</span>
+            <Link to="/products" className="text-link" style={{ fontSize: '14px', fontWeight: 700 }}>Browse Complete Catalog (6 Grades) ↗</Link>
+          </div>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Link to="/products/salt-gel-attapulgite-powder" className="grade-pill-link" title="Salt Gel Attapulgite Drilling Clay">Salt Gel Drilling Clay ↗</Link>
+            <Link to="/products/api-13a-section-12-attapulgite-powder" className="grade-pill-link" title="API 13A Section 12 Attapulgite Powder">API 13A Section 12 Powder ↗</Link>
+            <Link to="/products/premium-325-attapulgite-powder" className="grade-pill-link" title="325 Mesh Attapulgite Powder Supplier">325 Mesh Micronized Attapulgite ↗</Link>
+            <Link to="/products/flux-fine-200-attapulgite-powder" className="grade-pill-link" title="Flux Fine 200 Attapulgite for Foundry">Flux Fine-200 Foundry Clay ↗</Link>
+            <Link to="/products/attapulgite-natural-powder" className="grade-pill-link" title="Attapulgite for Animal Feed and Agriculture">Attapulgite Natural Powder ↗</Link>
+            <Link to="/products/attapulgite-natural-granules-1-5mm" className="grade-pill-link" title="Attapulgite Granules Supplier for Cat Litter">1-5 mm Attapulgite Granules ↗</Link>
+          </div>
         </div>
       </section>
 

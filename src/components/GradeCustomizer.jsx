@@ -38,10 +38,10 @@ const GRADE_CUSTOMIZATION_CONFIGS = {
     ],
     defaultMoisture: '16pct',
     moistureOptions: [
-      { id: '16pct', label: 'Standard API Limit (Max 16%)', sub: 'Certified API Spec 13A baseline' },
+      { id: '16pct', label: 'Standard API Limit (Max 16%)', sub: 'Meeting API 13A Section 12 specification baseline' },
       { id: '10pct', label: 'Reduced Moisture (Max 10%)', sub: 'Improved flowability & anti-clumping' }
     ],
-    recommendedUses: ['API Certified Mud Systems', 'Seawater Drilling', 'Casing Cement Additive', 'Water Well Drilling']
+    recommendedUses: ['API Spec 13A Compliant Mud Systems', 'Seawater Drilling', 'Casing Cement Additive', 'Water Well Drilling']
   },
   'natural-powder': {
     codePrefix: 'NP',

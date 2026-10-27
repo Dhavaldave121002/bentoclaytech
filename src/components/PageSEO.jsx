@@ -16,14 +16,14 @@ const PAGE_META_CONFIG = {
   '/': {
     focusKeyword: 'Best API 13A Powder',
     title: 'Bento Clay Tech™ (Bentoclay) | Best API 13A Powder & Attapulgite Manufacturer',
-    description: "Official website of Bento Clay Tech™ (Bentoclay Tech / bentoclayclaytech.com) – India's #1 manufacturer & exporter of certified API 13A Powder (API Spec 13A Section 12 Drilling Clay), Salt Gel Attapulgite, and 325 Mesh. Direct supply from Bhavnagar Gujarat to worldwide seaports.",
+    description: "Official website of Bento Clay Tech™ (Bentoclay Tech / bentoclayclaytech.com) – Manufacturer & exporter of API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat (API Spec 13A Section 12 Drilling Clay), Salt Gel Attapulgite, and 325 Mesh. Direct supply from Bhavnagar Gujarat to worldwide seaports.",
     keywords: 'Bento Clay Tech, Bentoclay Tech, Bento Clay, Bentoclay, bentoclaytech, Bentoclay Claytech, Bento Clay Clay Tech, bentoclayclaytech, Attapulgite powder manufacturer India, Attapulgite clay global exporter, API 13A Section 12 drilling clay, api 13 a powder, api 13a powder, best api 13a powder, best API 13A powder Ahmedabad, best attapulgite powder Ahmedabad, best drilling clay Ahmedabad Gujarat, best attapulgite manufacturer Gujarat, Salt Gel attapulgite, Premium 325 mesh attapulgite, Flux Fine 200 foundry clay, Attapulgite granules 1-5mm, Palygorskite manufacturer Gujarat, CAS 12174-11-7 exporter, HS Code 25084000 supplier, drilling mud viscosifier Middle East, API drilling clay Dubai UAE, attapulgite supplier Saudi Arabia, attapulgite exporter to USA, attapulgite powder Europe Rotterdam, paint thixotrope additive, agricultural carrier clay, industrial absorbent cat litter, Bhavnagar mineral plant, Mundra port container shipping, attapulgite supplier Mumbai Maharashtra, drilling clay Ahmedabad Gujarat, foundry flux supplier Chennai Tamil Nadu, paint additives Delhi NCR, agro carriers Hyderabad Telangana, domestic FTL truckload India, bentoclay official website, bentoclay.com, bentoclay minerals, best attapulgite powder Surat, best attapulgite powder Bhavnagar, best attapulgite powder Vadodara, best attapulgite powder Rajkot, best attapulgite supplier Ankleshwar, best attapulgite supplier Bharuch, best attapulgite Morbi, best api 13a powder Mumbai Maharashtra, best drilling clay India, best api 13a powder USA, best API 13A Section 12 drilling clay Texas Houston, best attapulgite exporter Dubai UAE, best attapulgite supplier Saudi Arabia',
     type: 'website'
   },
   '/products': {
     focusKeyword: 'Attapulgite Clay Grades & Powder',
     title: 'Attapulgite Clay Grades & Powder | Bentoclay Catalog',
-    description: 'Explore certified Attapulgite Clay Grades & Powder by Bentoclay: API-13A Section 12, Salt Gel, Premium 325 mesh thixotrope, foundry flux, and 1-5mm granules.',
+    description: 'Explore Attapulgite Clay Grades & Powder by Bentoclay meeting API 13A Section 12 specification: API-13A Section 12, Salt Gel, Premium 325 mesh thixotrope, foundry flux, and 1-5mm granules.',
     keywords: 'Attapulgite Clay Grades & Powder, API 13A drilling clay, Salt Gel powder, Premium 325 mesh, foundry flux clay, absorbent granules 1-5mm, attapulgite catalog',
     type: 'website'
   },
@@ -44,7 +44,7 @@ const PAGE_META_CONFIG = {
   '/about': {
     focusKeyword: 'Bento Clay Tech Attapulgite Manufacturer',
     title: 'Bento Clay Tech | Attapulgite Mineral Specialists Bhavnagar',
-    description: "Bento Clay Tech is India's premier manufacturer and worldwide exporter of high-purity palygorskite minerals, dedicated to global quality standards.",
+    description: "Bento Clay Tech is a Manufacturer & exporter of API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat and worldwide exporter of high-purity palygorskite minerals.",
     keywords: 'Bento Clay Tech, Attapulgite manufacturer India, Bhavnagar mineral company, Kardej GIDC manufacturer, Gujarat clay mining exporter',
     type: 'website'
   },
@@ -82,21 +82,21 @@ const PRODUCT_SPECIFIC_META = {
   'salt-gel': {
     focusKeyword: 'Attapulgite Salt Gel Powder',
     title: 'Attapulgite Salt Gel Powder | API Viscosifier Bentoclay',
-    description: 'Attapulgite Salt Gel Powder with 35 cps minimum viscosity for saltwater drilling muds. Buy direct from certified manufacturer Bentoclay with fast container export.',
+    description: 'Attapulgite Salt Gel Powder with 35 cps minimum viscosity for saltwater drilling muds. Buy direct from manufacturer Bentoclay meeting API 13A Section 12 specification with fast container export.',
     sku: 'BC-SG-200',
     mpn: 'BC-SALT-GEL-200'
   },
   'api-13a': {
     focusKeyword: 'API 13A Attapulgite Drilling Clay',
     title: 'API 13A Attapulgite Drilling Clay | Bentoclay Export',
-    description: 'API 13A Attapulgite Drilling Clay certified to Section 12 standards with <8% residue and high gel strength. Global container shipping from Mundra Port by Bentoclay.',
+    description: 'API 13A Attapulgite Drilling Clay meeting API 13A Section 12 specification with <8% residue and high gel strength. Global container shipping from Mundra Port by Bentoclay.',
     sku: 'BC-API13A-200',
     mpn: 'BC-API13A-SEC12'
   },
   'natural-powder': {
     focusKeyword: 'Natural Attapulgite Powder',
     title: 'Natural Attapulgite Powder | Agrochemical Carrier Clay',
-    description: 'Natural Attapulgite Powder 200 mesh carrier clay with 120-150% liquid absorption for agrochemical pesticides and fertilizers. Certified manufacturer Bentoclay.',
+    description: 'Natural Attapulgite Powder 200 mesh carrier clay with 120-150% liquid absorption for agrochemical pesticides and fertilizers. Direct manufacturer Bentoclay.',
     sku: 'BC-NAT-200',
     mpn: 'BC-NAT-POWDER-200'
   },
@@ -202,7 +202,7 @@ export default function PageSEO() {
         meta = {
           focusKeyword: specific.focusKeyword || product.name,
           title: specific.title || `${product.name} | Bento Clay Tech Bhavnagar`,
-          description: specific.description || `${product.name}: ${product.inShort || product.desc}. Certified quality attapulgite clay available for worldwide container export.`,
+          description: specific.description || `${product.name}: ${product.inShort || product.desc}. Attapulgite clay meeting API 13A Section 12 specification available for worldwide container export.`,
           keywords: `${specific.focusKeyword || product.name}, ${product.shortName}, ${product.type}, Attapulgite ${product.shortName}, Bento Clay Tech Bhavnagar, CAS 12174-11-7, HS Code 25084000`,
           type: 'product',
           image: product.image ? `${BASE_URL}${product.image}` : `${BASE_URL}/assets/product-range.webp`
@@ -234,38 +234,9 @@ export default function PageSEO() {
             '@id': `${BASE_URL}/#organization`
           },
           category: product.type || 'Industrial Minerals',
-          material: 'Attapulgite / Palygorskite Clay (CAS 12174-11-7)',
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '4.9',
-            reviewCount: '48',
-            bestRating: '5',
-            worstRating: '1'
-          },
-          review: [
-            {
-              '@type': 'Review',
-              author: {
-                '@type': 'Person',
-                name: 'Drilling Fluids Procurement Manager'
-              },
-              datePublished: '2026-08-15',
-              reviewBody: 'Consistently meets API-13A Section 12 requirements with exceptional 35+ cps brine viscosity and prompt container dispatch.',
-              reviewRating: {
-                '@type': 'Rating',
-                ratingValue: '5',
-                bestRating: '5'
-              }
-            }
-          ],
           offers: {
             '@type': 'Offer',
             url: `${BASE_URL}/products/${product.slug || product.id}`,
-            priceSpecification: {
-              '@type': 'UnitPriceSpecification',
-              priceType: 'https://schema.org/InvoicePrice',
-              description: 'Commercial B2B quotation upon RFQ enquiry. Price based on required grade, packing, and destination Incoterms (FOB Mundra / CIF destination port). Contact sales desk for current export pricing.'
-            },
             availability: 'https://schema.org/InStock',
             itemCondition: 'https://schema.org/NewCondition',
             seller: {
@@ -430,12 +401,42 @@ export default function PageSEO() {
       structuredDataGraph.push(baseOrg, faqSchema);
     } else if (location.pathname === '/applications') {
       breadcrumbs.push({ name: 'Industrial Applications', url: `${BASE_URL}/applications` });
+      const appFaqSchema = {
+        '@type': 'FAQPage',
+        '@id': `${BASE_URL}/applications#faqpage`,
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'How does attapulgite perform in high-salinity drilling mud compared to bentonite?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Swelling bentonite clay flocculates in electrolyte-rich environments like saltwater and gypsum brines. Attapulgite needle crystals build mechanical suspension through physical entanglement rather than osmotic swelling, maintaining full viscosity and cuttings-carrying capacity even in saturated salt conditions.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'What grade is recommended for anti-sag and thixotropy in industrial paints and coatings?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Our Premium 325 mesh micronized attapulgite powder is engineered specifically for paint and coatings. It provides high shear-thinning thixotropy, excellent pigment anti-settling during storage, and smooth leveling during brush or spray application without altering finish gloss.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Can attapulgite granules be used for cat litter and industrial oil spill absorption?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes, our 1–5 mm natural calcined attapulgite granules have high internal pore volume, delivering 180% to 220% liquid absorption capacity by weight. They remain structurally intact when wet, making them low-dust and highly effective for cat litter, chemical spill control, and agricultural pesticide carrier granules.'
+            }
+          }
+        ]
+      };
       structuredDataGraph.push(baseOrg, {
         '@type': 'CollectionPage',
         '@id': `${BASE_URL}/applications#page`,
         name: 'Attapulgite Clay Industrial Applications',
         description: meta.description
-      });
+      }, appFaqSchema);
     } else if (location.pathname === '/why-us' || location.pathname === '/about') {
       breadcrumbs.push({ name: location.pathname === '/why-us' ? 'Why Us' : 'About Us', url: `${BASE_URL}${location.pathname}` });
       structuredDataGraph.push(baseOrg, {

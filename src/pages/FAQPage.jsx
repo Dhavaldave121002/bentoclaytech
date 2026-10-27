@@ -9,8 +9,22 @@ export default function FAQPage() {
           <span className="section-number">SUPPORT &amp; TECHNICAL SPECIFICATIONS</span>
           <h1>Frequently Asked Questions &amp; Mineral Specs</h1>
           <p style={{ marginTop: '20px', maxWidth: '640px' }}>
-            Find answers to common technical, testing, and export container questions regarding Bento Clay Tech attapulgite and bentonite mineral grades.
+            Find answers to common technical, testing, and export container questions regarding Bento Clay Tech attapulgite mineral grades, API 13A Section 12 specifications, and bulk logistics via Mundra Port.
           </p>
+          <div className="hero-cta-btns" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '20px 0 0' }}>
+            <Link to="/contact" className="btn btn-primary" title="Request commercial quote for attapulgite mineral grades">
+              Get Quote <span>↗</span>
+            </Link>
+            <a
+              href="https://wa.me/917435818628?text=Hello%20Bento%20Clay%20Tech%2C%20I%20have%20a%20technical%20question%20regarding%20your%20attapulgite%20grades."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-whatsapp"
+              title="Direct WhatsApp chat with technical support"
+            >
+              WhatsApp <span>↗</span>
+            </a>
+          </div>
         </div>
       </section>
       
@@ -36,7 +50,7 @@ export default function FAQPage() {
             <div className="aeo-definition-box">
               <h3>Who is the leading API 13A powder &amp; Attapulgite manufacturer in India?</h3>
               <p>
-                <strong>Bento Clay Tech™</strong> (Bentoclay / Bentoclay Tech / <Link to="/about" className="seo-keyword-link">bentoclayclaytech.com</Link>) is India's leading ISO 9001:2015 certified manufacturer and worldwide exporter of high-purity Attapulgite (<Link to="/products" className="seo-keyword-link">Palygorskite CAS 12174-11-7, HS Code 25084000</Link>) and certified <Link to="/products/api-13a-section-12-attapulgite-powder" className="seo-keyword-link">API Spec 13A Section 12 Drilling Clay</Link>. Headquartered in Bhavnagar, Gujarat, Bento Clay Tech operates captive mineral quarry reserves and dispatches export consignments in 25 kg moisture-barrier HDPE sacks and 1 MT FIBC big bags directly from Mundra Port (FOB/CIF).
+                <strong>Bento Clay Tech™</strong> (Bentoclay / Bentoclay Tech / <Link to="/about" className="seo-keyword-link">bentoclayclaytech.com</Link>) is a Manufacturer &amp; exporter of API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat, ISO 9001:2015 compliant manufacturer and worldwide exporter of high-purity Attapulgite (<Link to="/products" className="seo-keyword-link">Palygorskite CAS 12174-11-7, HS Code 25084000</Link>) and <Link to="/products/api-13a-section-12-attapulgite-powder" className="seo-keyword-link">API Spec 13A Section 12 Drilling Clay</Link> meeting API 13A Section 12 specification. Headquartered in Bhavnagar, Gujarat, Bento Clay Tech operates captive mineral quarry reserves and dispatches export consignments in 25 kg moisture-barrier HDPE sacks and 1 MT FIBC big bags directly from Mundra Port (FOB/CIF).
               </p>
             </div>
 
@@ -95,6 +109,24 @@ export default function FAQPage() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Products & Quick Navigation */}
+      <section className="related-links-strip" style={{ background: '#fdfbf7', borderTop: '1px solid #ebdccb', borderBottom: '1px solid #ebdccb', padding: '36px 0' }}>
+        <div className="container">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', marginBottom: '18px' }}>
+            <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>STANDARD ATTAPULGITE PRODUCT GRADES</span>
+            <Link to="/contact" className="text-link" style={{ fontSize: '14px', fontWeight: 700 }}>Request Technical Dossier & Pricing ↗</Link>
+          </div>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            <Link to="/products/salt-gel-attapulgite-powder" className="grade-pill-link" title="Salt Gel Attapulgite Drilling Clay">Salt Gel Drilling Clay ↗</Link>
+            <Link to="/products/api-13a-section-12-attapulgite-powder" className="grade-pill-link" title="API 13A Section 12 Attapulgite Powder">API 13A Section 12 Powder ↗</Link>
+            <Link to="/products/premium-325-attapulgite-powder" className="grade-pill-link" title="325 Mesh Attapulgite Powder Supplier">325 Mesh Micronized Attapulgite ↗</Link>
+            <Link to="/products/flux-fine-200-attapulgite-powder" className="grade-pill-link" title="Flux Fine 200 Attapulgite for Foundry">Flux Fine-200 Foundry Clay ↗</Link>
+            <Link to="/products/attapulgite-natural-powder" className="grade-pill-link" title="Attapulgite for Animal Feed and Agriculture">Attapulgite Natural Powder ↗</Link>
+            <Link to="/products/attapulgite-natural-granules-1-5mm" className="grade-pill-link" title="Attapulgite Granules Supplier for Cat Litter">1-5 mm Attapulgite Granules ↗</Link>
           </div>
         </div>
       </section>

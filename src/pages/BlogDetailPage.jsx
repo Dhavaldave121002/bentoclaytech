@@ -24,6 +24,22 @@ export default function BlogDetailPage() {
             <span style={{ fontSize: '13px', color: '#888' }}>{article.date}</span>
           </div>
           <h1 style={{ lineHeight: '1.25', fontSize: 'clamp(28px, 4vw, 42px)', margin: '0 0 16px 0' }}>{article.title}</h1>
+          <div className="hero-cta-btns" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '16px 0 0' }}>
+            <Link to="/contact" className="btn btn-primary" title="Request commercial quote for this mineral grade">
+              Get Quote <span>↗</span>
+            </Link>
+            <a
+              href={`https://wa.me/917435818628?text=${encodeURIComponent(
+                `Hello Bento Clay Tech, I was reading your article "${article.title}" and would like to request technical specifications and quote.`
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-whatsapp"
+              title="Direct WhatsApp inquiry about this article"
+            >
+              WhatsApp <span>↗</span>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -124,6 +140,24 @@ export default function BlogDetailPage() {
               <Link to="/products" className="btn btn-primary">Explore Products <span>→</span></Link>
               <Link to="/contact" className="btn btn-secondary">Request Specification Quote <span>↗</span></Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Products & Quick Navigation */}
+      <section className="related-links-strip" style={{ background: '#fdfbf7', borderTop: '1px solid #ebdccb', padding: '36px 0' }}>
+        <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', marginBottom: '18px' }}>
+            <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>POPULAR ATTAPULGITE MINERAL GRADES</span>
+            <Link to="/contact" className="text-link" style={{ fontSize: '14px', fontWeight: 700 }}>Request Technical Support ↗</Link>
+          </div>
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+            <Link to="/products/salt-gel-attapulgite-powder" className="grade-pill-link" title="Salt Gel Attapulgite Drilling Clay">Salt Gel Drilling Clay ↗</Link>
+            <Link to="/products/api-13a-section-12-attapulgite-powder" className="grade-pill-link" title="API 13A Section 12 Attapulgite Powder">API 13A Section 12 Powder ↗</Link>
+            <Link to="/products/premium-325-attapulgite-powder" className="grade-pill-link" title="325 Mesh Attapulgite Powder Supplier">325 Mesh Micronized Attapulgite ↗</Link>
+            <Link to="/products/flux-fine-200-attapulgite-powder" className="grade-pill-link" title="Flux Fine 200 Attapulgite for Foundry">Flux Fine-200 Foundry Clay ↗</Link>
+            <Link to="/products/attapulgite-natural-powder" className="grade-pill-link" title="Attapulgite for Animal Feed and Agriculture">Attapulgite Natural Powder ↗</Link>
+            <Link to="/products/attapulgite-natural-granules-1-5mm" className="grade-pill-link" title="Attapulgite Granules Supplier for Cat Litter">1-5 mm Attapulgite Granules ↗</Link>
           </div>
         </div>
       </section>

@@ -9637,55 +9637,74 @@ h2 span {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(128, 80, 46, 0.1);
 }
 
 .showcase-grade-meta {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .showcase-badge-pill {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.5px;
   color: var(--green);
-  background: var(--mint);
-  padding: 4px 9px;
+  background: #fbf5ee;
+  padding: 4px 8px;
   border-radius: 6px;
-  border: 1px solid rgba(128, 80, 46, 0.15);
+  border: 1px solid rgba(128, 80, 46, 0.16);
+  white-space: nowrap !important;
+  flex-shrink: 0;
+  line-height: 1;
+  box-shadow: 0 1px 2px rgba(56, 37, 29, 0.04);
 }
 
 .showcase-app-name {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 700;
   color: var(--ink);
   letter-spacing: -0.2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 
 /* View Mode Switcher (Powder vs 25kg Bag) */
 .view-mode-toggle {
   display: inline-flex;
   align-items: center;
-  background: var(--mint);
+  background: #f4eae0;
   padding: 3px;
   border-radius: 999px;
-  border: 1px solid rgba(128, 80, 46, 0.12);
+  border: 1px solid rgba(128, 80, 46, 0.14);
+  flex-shrink: 0;
+  box-shadow: inset 0 1px 2px rgba(56, 37, 29, 0.05);
 }
 
 .view-mode-toggle .toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   background: transparent;
   border: none;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 700;
-  color: var(--muted);
-  padding: 5px 12px;
+  color: #78695f;
+  padding: 5px 11px;
   border-radius: 999px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
+  line-height: 1;
 }
 
 .view-mode-toggle .toggle-btn:hover {
@@ -9695,7 +9714,7 @@ h2 span {
 .view-mode-toggle .toggle-btn.active {
   background: #ffffff;
   color: var(--green);
-  box-shadow: 0 2px 8px rgba(56, 37, 29, 0.12);
+  box-shadow: 0 1px 5px rgba(56, 37, 29, 0.14);
 }
 
 /* Central Stage */
@@ -11219,5 +11238,76 @@ h2 span {
   }
   .aeo-qa-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ── Sticky Mobile Bottom CTA Bar ── */
+.sticky-mobile-cta-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 62px;
+  }
+
+  .floating-actions-container {
+    bottom: 74px !important;
+  }
+
+  .sticky-mobile-cta-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99990;
+    background: #fffdfa;
+    background: rgba(255, 253, 249, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(56, 37, 29, 0.12);
+    box-shadow: 0 -4px 20px rgba(56, 37, 29, 0.08);
+    padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
+    gap: 8px;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  .mobile-cta-btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 44px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+    cursor: pointer;
+  }
+
+  .mobile-cta-btn:active {
+    transform: scale(0.97);
+  }
+
+  .mobile-cta-call {
+    background-color: #f3ece3;
+    color: var(--ink, #38251d);
+    border: 1px solid rgba(56, 37, 29, 0.14);
+  }
+
+  .mobile-cta-whatsapp {
+    background-color: #25D366;
+    color: #ffffff;
+    border: 1px solid #20ba5a;
+  }
+
+  .mobile-cta-quote {
+    background-color: var(--green, #2d5a27);
+    color: #ffffff;
+    border: 1px solid var(--green, #2d5a27);
   }
 }

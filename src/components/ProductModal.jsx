@@ -57,7 +57,7 @@ export default function ProductModal({ product, onClose }) {
             <thead>
               <tr>
                 <th>Controlled Parameter</th>
-                <th>Requirement / Certified Result</th>
+                <th>Requirement / Specification Result</th>
               </tr>
             </thead>
             <tbody>

@@ -15,7 +15,7 @@ In conventional freshwater mud systems, sodium bentonite clay functions through 
 
 Bentoclay Salt Gel utilizes pure needle-like magnesium aluminium phyllosilicate crystals (Palygorskite):
 - **Instant Mechanical Viscosity:** Hollow, elongated needles interlock into an unbreakable three-dimensional brush-heap matrix purely through physical entanglement, completely unaffected by dissolved salts (effective up to 300,000 ppm TDS).
-- **Certified 35 cps Minimum Rheology:** Fann 35 rheometer readings at 600 rpm guarantee strong yield points and cutting lifting capacity in high-density saturated brine drilling muds.
+- **Rheology Meeting API 13A Section 12 Specification (35 cps Minimum):** Fann 35 rheometer readings at 600 rpm guarantee strong yield points and cutting lifting capacity in high-density saturated brine drilling muds.
 - **Tight Residue Cut (<4% >75 μm):** Air-swept classification minimizes abrasive grit, dramatically reducing screen wear on high-frequency shale shakers and mud pump liners.
 - **Controlled Moisture (Max 8%):** Prevents clumping in tropical storage and ensures rapid, dust-free dispersion in mud hoppers.
 
@@ -25,8 +25,8 @@ Bentoclay Salt Gel utilizes pure needle-like magnesium aluminium phyllosilicate 
 3. **Geothermal & High-Temperature Wells:** Formations with bottom-hole temperatures exceeding 200°C where organic polymers degrade.
 4. **Water Well & Caisson Drilling:** Civil engineering slurry wall construction in coastal and tidal brackish water.
 
-### Certified Product Specifications & Customization
-- **Suspension Viscosity (600 rpm):** 35 cps Minimum (certified per PDS)
+### Product Specifications & Customization
+- **Suspension Viscosity (600 rpm):** 35 cps Minimum (per PDS specification meeting API 13A Section 12)
 - **Wet Sieve Residue (>75 μm / 200 Mesh):** 4.0% Maximum
 - **Free Moisture Content:** 8.0% Maximum
 - **Packaging:** 25 kg multi-wall HDPE bags with inner extruded polyethylene (PE) moisture barrier liner, unitized on ISPM-15 export pallets.
@@ -34,7 +34,7 @@ Bentoclay Salt Gel utilizes pure needle-like magnesium aluminium phyllosilicate 
   },
   {
     slug: "api-spec-13a-section-12-attapulgite-standards",
-    title: "Product Spotlight: Certified API Spec 13A Section 12 Drilling Attapulgite Powder",
+    title: "Product Spotlight: API Spec 13A Section 12 Drilling Attapulgite Powder",
     date: "August 28, 2026",
     excerpt: "Engineered strictly to API Specification 13A Section 12 standards for international oilfield service companies and deep-water mud systems.",
     category: "Product Spotlight",
@@ -45,10 +45,10 @@ Bentoclay Salt Gel utilizes pure needle-like magnesium aluminium phyllosilicate 
 
 ### Rigorous API Section 12 Compliance & Testing Protocols
 Every production batch manufactured at our Bhavnagar facility undergoes mandatory laboratory verification before release:
-- **Fann Model 35 Viscosity @ 600 rpm:** Certified at ≥30 cps minimum in saturated NaCl brine (Bentoclay typical batch range: 32 to 38 cps).
+- **Fann Model 35 Viscosity @ 600 rpm:** Meeting API 13A Section 12 specification at ≥30 cps minimum in saturated NaCl brine (Bentoclay typical batch range: 32 to 38 cps).
 - **Wet Screen Residue >75 μm (200 Mesh):** Maintained strictly below the 8.0% API ceiling for smooth pump circulation and minimal formation damage.
-- **Moisture Control:** Controlled rotary kiln drying maintains free moisture within certified limits (Max 16% per API standard, or <10% low-moisture custom).
-- **Composite Daily Sampling:** Certified conformity assessed on composite samples representing no more than one single day of production.
+- **Moisture Control:** Controlled rotary kiln drying maintains free moisture within specification limits (Max 16% per API standard, or <10% low-moisture custom).
+- **Composite Daily Sampling:** Specification conformity assessed on composite samples representing no more than one single day of production.
 
 ### Performance Advantages in Offshore & Saline Wells
 - **Immediate Viscosity Build:** Disperses rapidly through mud hoppers with minimal shear energy required.
@@ -147,7 +147,7 @@ Explore comprehensive [agrochemical and carrier application profiles](/applicati
 - **Odor & VOC Encapsulation:** High internal micropore volume traps ammonia vapors and volatile organic compounds (VOCs) permanently.
 - **Non-Combustible & Chemically Inert:** 100% fireproof; safe for containment of flammable hydrocarbons and chemical solvents.
 
-Ideal for [industrial absorbent, pet care, and soil conditioning applications](/applications). Discover certified specifications on the [Attapulgite Absorbent Granules G15 product page](/products/attapulgite-natural-granules-1-5mm) or [configure custom bulk packaging](/products/attapulgite-natural-granules-1-5mm#customizer-section).`
+Ideal for [industrial absorbent, pet care, and soil conditioning applications](/applications). Discover technical specifications on the [Attapulgite Absorbent Granules G15 product page](/products/attapulgite-natural-granules-1-5mm) or [configure custom bulk packaging](/products/attapulgite-natural-granules-1-5mm#customizer-section).`
   },
   {
     slug: "inside-bentoclay-quality-manufacturing",
@@ -164,8 +164,8 @@ Ideal for [industrial absorbent, pet care, and soil conditioning applications](/
 1. **Selective Deposit Mine Sorting:** Raw ore is sorted at source based on natural mineral shade (Off-White, Cream Tan, Buff Beige, Grey) and chemical purity.
 2. **Rotary Drying & Thermal Activation:** Temperature-controlled drying preserves delicate crystalline needle channels while removing unbound surface moisture.
 3. **Air-Swept Roller Mills & Dynamic Classifiers:** Ensures precise mesh cuts (100, 200, 325 mesh) with tight particle size distribution curves.
-4. **In-House Quality Testing Laboratory:** Every production batch is certified for Fann Model 35 rheology, wet sieve residue, BET surface area, and moisture before dispatch per our [strict quality control methodology](/why-us).
-5. **Certified Export Dispatch:** Multi-wall moisture barrier packaging unitized on ISPM-15 heat-treated export pallets for fast dispatch via Pipavav and Mundra Ports.
+4. **In-House Quality Testing Laboratory:** Every production batch is tested for Fann Model 35 rheology, wet sieve residue, BET surface area, and moisture before dispatch per our [strict quality control methodology](/why-us).
+5. **Direct Export Dispatch:** Multi-wall moisture barrier packaging unitized on ISPM-15 heat-treated export pallets for fast dispatch via Pipavav and Mundra Ports.
 
 Explore our full catalog of [6 specialized attapulgite grades](/products) or learn about our [custom toll milling capabilities](/customizer).`
   },
@@ -186,6 +186,6 @@ Explore our full catalog of [6 specialized attapulgite grades](/products) or lea
 - **Thermal Treatment & Moisture Control:** Standard natural moisture (8–12%) or kiln-calcined low moisture (<4–6%) for moisture-sensitive polyurethane sealants and reactive adhesives.
 - **Custom Export Packaging:** 25 kg HDPE bags with moisture liner, 50 kg sacks, or 1000 kg Jumbo Big Bags with custom private labeling and global containerization.
 
-Start engineering your target batch using our [Interactive Formulation Customizer](/customizer), or check specifications on our [certified API-13A drilling clay](/products/api-13a-section-12-attapulgite-powder) and [Salt Gel drilling grade](/products/salt-gel-attapulgite-powder).`
+Start engineering your target batch using our [Interactive Formulation Customizer](/customizer), or check specifications on our [API-13A drilling clay meeting API 13A Section 12 specification](/products/api-13a-section-12-attapulgite-powder) and [Salt Gel drilling grade](/products/salt-gel-attapulgite-powder).`
   }
 ];

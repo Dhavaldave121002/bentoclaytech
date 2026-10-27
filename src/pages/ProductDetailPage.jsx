@@ -129,6 +129,17 @@ export default function ProductDetailPage() {
                 >
                   Request price & sample <span>↗</span>
                 </Link>
+                <a
+                  href={`https://wa.me/917435818628?text=${encodeURIComponent(
+                    `Hello Bento Clay Tech, I would like to request price quote and sample specifications for ${product.name}.`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-whatsapp"
+                  title={`Direct WhatsApp quote for ${product.name}`}
+                >
+                  WhatsApp Quote <span>↗</span>
+                </a>
                 <button
                   type="button"
                   onClick={scrollToCustomizer}
@@ -189,7 +200,7 @@ export default function ProductDetailPage() {
                   <div className="detail-media-fade">
                     <ImageWithSkeleton
                       src={product.image}
-                      alt={`${product.name} - Certified High Purity Attapulgite Clay Mineral by Bento Clay Tech`}
+                      alt={`${product.name} - High Purity Attapulgite Clay Mineral meeting API 13A Section 12 specification by Bento Clay Tech`}
                       className="product-main-photo"
                     />
                   </div>
@@ -224,7 +235,7 @@ export default function ProductDetailPage() {
                   <span className="badge-icon">⭐</span>
                   <div className="badge-text">
                     <strong>Top Quality Store & Direct Manufacturer</strong>
-                    <span>ISO 9001:2015 & API-13A Quality Laboratory Certified</span>
+                    <span>ISO 9001:2015 Standards & Quality Laboratory Tested Meeting API-13A Section 12 Specification</span>
                   </div>
                 </div>
                 <div className="merchant-badge-item">
@@ -274,14 +285,14 @@ export default function ProductDetailPage() {
 
             {/* Physical & Chemical Parameters */}
             <div className="tech-specs-block">
-              <h2>{product.name} Physical Parameters & Certified Requirements</h2>
+              <h2>{product.name} Physical Parameters & Specification Requirements</h2>
               <div className="table-responsive">
                 <table className="spec-table-detail">
                   <thead>
                     <tr>
                       <th>Parameter</th>
                       <th>Requirement</th>
-                      {hasResults && <th>Certified Result</th>}
+                      {hasResults && <th>Tested Result</th>}
                     </tr>
                   </thead>
                   <tbody>

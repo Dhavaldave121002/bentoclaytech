@@ -196,7 +196,7 @@ export default function HomePage() {
               <b>02</b>
               <span className="value-icon">◎</span>
               <h3>Published data sheets</h3>
-              <p>Requirements and certified laboratory results are shown exactly as tested and printed without alteration.</p>
+              <p>Requirements and laboratory test results meeting API 13A Section 12 specification are shown exactly as tested and printed without alteration.</p>
             </article>
             <article className="reveal-on-scroll stagger-3">
               <b>03</b>

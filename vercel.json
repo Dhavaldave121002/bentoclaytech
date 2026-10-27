@@ -1,4 +1,17 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "bentoclaytech.vercel.app"
+        }
+      ],
+      "destination": "https://bentoclayclaytech.com/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!assets/|products/[^/]+/index\\.html|favicon\\.ico|robots\\.txt|sitemap\\.xml|site\\.webmanifest|llms\\.txt|llms-full\\.txt).*)",

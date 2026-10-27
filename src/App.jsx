@@ -14,6 +14,7 @@ import BlogDetailPage from './pages/BlogDetailPage';
 import FAQPage from './pages/FAQPage';
 import TermsConditionsPage from './pages/TermsConditionsPage';
 import FloatingActions from './components/FloatingActions';
+import StickyMobileBar from './components/StickyMobileBar';
 import PageSEO from './components/PageSEO';
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
       </Routes>
       <Footer />
       <FloatingActions />
+      <StickyMobileBar />
     </Router>
   );
 }

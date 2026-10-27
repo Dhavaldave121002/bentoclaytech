@@ -22,8 +22,22 @@ export default function ApplicationsPage() {
               <em>Multiple advantages.</em>
             </h1>
             <p>
-              From saline drilling mud to premium architectural coatings, attapulgite brings valuable rheology, absorption, binding and stability to demanding industrial processes.
+              From saline drilling mud to premium architectural coatings, attapulgite brings valuable rheology, absorption, binding and stability to demanding industrial processes. Specialized attapulgite clay for drilling mud maintains stable rheology in saturated brine and deepwater formations, while micronized grades serve as premium attapulgite for paint thickeners, binder carriers in foundry washes, and absorbent attapulgite for cat litter formulations.
             </p>
+            <div className="hero-cta-btns" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '20px 0 24px' }}>
+              <Link to="/contact" className="btn btn-primary" title="Request commercial quote for industrial attapulgite applications">
+                Get Quote <span>↗</span>
+              </Link>
+              <a
+                href="https://wa.me/917435818628?text=Hello%20Bento%20Clay%20Tech%2C%20I%20would%20like%20to%20discuss%20attapulgite%20grades%20for%20our%20industrial%20application."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-whatsapp"
+                title="Direct WhatsApp chat with Bento Clay Tech applications engineer"
+              >
+                WhatsApp <span>↗</span>
+              </a>
+            </div>
           </div>
           <figure className="page-visual">
             <img
@@ -55,7 +69,7 @@ export default function ApplicationsPage() {
                 <span>performance mapping.</span>
               </h2>
             </div>
-            <p>Select any grade to view certified parameters and specifications.</p>
+            <p>Select any grade to view parameters and specifications meeting API 13A Section 12 specification.</p>
           </div>
 
           <div className="industry-grid">
@@ -115,6 +129,55 @@ export default function ApplicationsPage() {
                 </Link>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Applications FAQ Section */}
+      <section className="faq-section" style={{ background: '#fdfbf7', padding: '60px 0', borderTop: '1px solid #ebdccb' }}>
+        <div className="container">
+          <div className="section-head" style={{ marginBottom: '32px' }}>
+            <span className="section-number">APPLICATION FAQS</span>
+            <h2>Industrial Application Questions &amp; Answers</h2>
+            <p>Practical technical answers on specifying attapulgite clay across drilling mud, paint, foundry, and absorbent formulations.</p>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '860px' }}>
+            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '20px 24px' }}>
+              <h3 style={{ fontSize: '17px', color: 'var(--green)', margin: '0 0 8px', fontWeight: 700 }}>How does attapulgite perform in high-salinity drilling mud compared to bentonite?</h3>
+              <p style={{ margin: 0, fontSize: '15px', color: 'var(--muted)', lineHeight: '1.7' }}>
+                Swelling bentonite clay flocculates in electrolyte-rich environments like saltwater and gypsum brines. Attapulgite needle crystals build mechanical suspension through physical entanglement rather than osmotic swelling, maintaining full viscosity and cuttings-carrying capacity even in saturated salt conditions.
+              </p>
+            </article>
+            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '20px 24px' }}>
+              <h3 style={{ fontSize: '17px', color: 'var(--green)', margin: '0 0 8px', fontWeight: 700 }}>What grade is recommended for anti-sag and thixotropy in industrial paints and coatings?</h3>
+              <p style={{ margin: 0, fontSize: '15px', color: 'var(--muted)', lineHeight: '1.7' }}>
+                Our Premium 325 mesh micronized attapulgite powder is engineered specifically for paint and coatings. It provides high shear-thinning thixotropy, excellent pigment anti-settling during storage, and smooth leveling during brush or spray application without altering finish gloss.
+              </p>
+            </article>
+            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '20px 24px' }}>
+              <h3 style={{ fontSize: '17px', color: 'var(--green)', margin: '0 0 8px', fontWeight: 700 }}>Can attapulgite granules be used for cat litter and industrial oil spill absorption?</h3>
+              <p style={{ margin: 0, fontSize: '15px', color: 'var(--muted)', lineHeight: '1.7' }}>
+                Yes, our 1–5 mm natural calcined attapulgite granules have high internal pore volume, delivering 180% to 220% liquid absorption capacity by weight. They remain structurally intact when wet, making them low-dust and highly effective for cat litter, chemical spill control, and agricultural pesticide carrier granules.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Products & Quick Navigation */}
+      <section className="related-links-strip" style={{ background: '#faf6f0', borderTop: '1px solid #ebdccb', borderBottom: '1px solid #ebdccb', padding: '36px 0' }}>
+        <div className="container">
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', marginBottom: '20px' }}>
+            <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>RECOMMENDED ATTAPULGITE PRODUCT GRADES</span>
+            <Link to="/contact" className="text-link" style={{ fontSize: '14px', fontWeight: 700 }}>Contact Bento Clay Tech Technical Sales ↗</Link>
+          </div>
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <Link to="/products/salt-gel-attapulgite-powder" className="grade-pill-link" title="Salt Gel Attapulgite for Drilling Mud">Salt Gel Drilling Clay ↗</Link>
+            <Link to="/products/api-13a-section-12-attapulgite-powder" className="grade-pill-link" title="API 13A Section 12 Attapulgite Powder">API 13A Section 12 Powder ↗</Link>
+            <Link to="/products/premium-325-attapulgite-powder" className="grade-pill-link" title="Attapulgite for Paint and Coatings">325 Mesh Paint Thixotrope ↗</Link>
+            <Link to="/products/flux-fine-200-attapulgite-powder" className="grade-pill-link" title="Attapulgite for Foundry Core Wash">Flux Fine-200 Foundry Clay ↗</Link>
+            <Link to="/products/attapulgite-natural-powder" className="grade-pill-link" title="Attapulgite for Animal Feed Carrier">Attapulgite Natural Powder ↗</Link>
+            <Link to="/products/attapulgite-natural-granules-1-5mm" className="grade-pill-link" title="Attapulgite for Cat Litter and Absorbents">1-5 mm Absorbent Granules ↗</Link>
           </div>
         </div>
       </section>

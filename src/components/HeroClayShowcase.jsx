@@ -162,8 +162,18 @@ export default function HeroClayShowcase() {
                 Explore the six grades <span>↓</span>
               </a>
               <Link className="btn btn-secondary" to="/contact" title="Get Quote for API 13A Attapulgite Powder">
-                Get Quote for API 13A Attapulgite Powder <span>↗</span>
+                Get Quote <span>↗</span>
               </Link>
+              <a
+                className="btn btn-whatsapp-hero"
+                href="https://wa.me/917435818628?text=Hello%20Bento%20Clay%20Tech,%20please%20send%20quote%20for%20API%2013A%20attapulgite%20powder."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Direct WhatsApp Quote"
+                style={{ backgroundColor: '#25D366', borderColor: '#20ba5a', color: '#ffffff' }}
+              >
+                💬 WhatsApp
+              </a>
             </div>
 
             {/* Quick Interactive Grade Selector Strip */}
@@ -207,7 +217,7 @@ export default function HeroClayShowcase() {
               {/* Card Header: View Mode Switcher */}
               <div className="showcase-card-topbar">
                 <div className="showcase-grade-meta">
-                  <span className="showcase-badge-pill">0{activeIdx + 1} / 06</span>
+                  <span className="showcase-badge-pill">0{activeIdx + 1}&nbsp;/&nbsp;06</span>
                   <span className="showcase-app-name">{activeGrade.application}</span>
                 </div>
 
@@ -216,17 +226,17 @@ export default function HeroClayShowcase() {
                     type="button"
                     className={`toggle-btn ${viewMode === 'powder' ? 'active' : ''}`}
                     onClick={() => setViewMode('powder')}
-                    title="View Powder / Granules Bowl"
+                    title="View Mineral Sample"
                   >
-                    <span>🥣 Powder / Granule</span>
+                    <span>🥣 {activeGrade.code === 'NG' ? 'Granules' : 'Powder'}</span>
                   </button>
                   <button
                     type="button"
                     className={`toggle-btn ${viewMode === 'bag' ? 'active' : ''}`}
                     onClick={() => setViewMode('bag')}
-                    title="View 25 kg Export Bag Packaging"
+                    title="View 25kg HDPE Bag Packaging"
                   >
-                    <span>📦 25kg HDPE Bag</span>
+                    <span>📦 25kg Bag</span>
                   </button>
                 </div>
               </div>

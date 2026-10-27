@@ -211,7 +211,7 @@ export default function BentoclayHeroSlider() {
             <span className="trust-badge-icon">🛡️</span>
             <div className="trust-badge-text">
               <strong>API Spec 13A Section 12</strong>
-              <small>Certified Viscosity ≥ 35 cps</small>
+              <small>Viscosity meeting API 13A Section 12 specification (≥ 35 cps)</small>
             </div>
           </div>
           <div className="trust-badge-item">
