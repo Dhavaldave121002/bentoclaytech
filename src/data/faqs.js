@@ -149,5 +149,18 @@ export const faqs = [
       { title: 'Barrier Protection', desc: 'Inner polyethylene liners protect against ambient air humidity and moisture absorption during storage.' }
     ],
     tags: ['36+ Months Shelf Life', 'Non-Hazardous', 'Moisture-Protected', 'Inert Mineral']
+  },
+  {
+    category: 'Export Procurement',
+    categoryIcon: '🚢',
+    question: 'How does Bento Clay Tech handle export orders, Mundra Port shipping, and quotation requests?',
+    summary: 'Bento Clay Tech exports API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat via Mundra Port and Pipavav Port on FOB, CIF, and CFR terms with third-party lab inspection and complete shipping documentation.',
+    points: [
+      { title: 'Manufacturing & Export Base', desc: 'Direct manufacturing plant in Kardej, Bhavnagar, Gujarat with captive quarry reserves and in-house testing lab.' },
+      { title: 'Discharge & Gateway Ports', desc: 'Containerized consignments dispatched via Mundra Port (INMUN1) and Pipavav Port for direct global shipping routes.' },
+      { title: 'Container MOQ & Packaging', desc: 'Standard export MOQ is 1 x 20ft FCL (~20–22 MT) in 25 kg HDPE moisture-barrier bags or 1 MT jumbo FIBC sacks on ISPM-15 pallets.' },
+      { title: 'Fast Quote & Sample Dispatch', desc: 'Connect directly at +91 74358 18628 or dipak@bentoclay.com with your specifications for FOB/CIF pricing and express air courier trial samples.' }
+    ],
+    tags: ['Bhavnagar Plant', 'Mundra Port Export', 'FOB & CIF Incoterms', '1 x 20ft FCL MOQ']
   }
 ];

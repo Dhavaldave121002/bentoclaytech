@@ -7,9 +7,10 @@ export default function FaqAccordion({
   showFilter = true,
   showViewAllBtn = true,
   title = null,
-  subtitle = null
+  subtitle = null,
+  defaultOpenIndex = -1
 }) {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(defaultOpenIndex);
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   const categories = useMemo(() => {

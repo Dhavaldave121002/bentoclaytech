@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { industries } from '../data/industries';
 import { products } from '../data/products';
 import ProductModal from '../components/ProductModal';
+import FaqAccordion from '../components/FaqAccordion';
 
 export default function ApplicationsPage() {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -134,35 +135,18 @@ export default function ApplicationsPage() {
       </section>
 
       {/* Applications FAQ Section */}
-      <section className="faq-section" style={{ background: '#fdfbf7', padding: '60px 0', borderTop: '1px solid #ebdccb' }}>
-        <div className="container">
-          <div className="section-head" style={{ marginBottom: '32px' }}>
-            <span className="section-number">APPLICATION FAQS</span>
-            <h2>Industrial Application Questions &amp; Answers</h2>
-            <p>Practical technical answers on specifying attapulgite clay across drilling mud, paint, foundry, and absorbent formulations.</p>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '860px' }}>
-            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '20px 24px' }}>
-              <h3 style={{ fontSize: '17px', color: 'var(--green)', margin: '0 0 8px', fontWeight: 700 }}>How does attapulgite perform in high-salinity drilling mud compared to bentonite?</h3>
-              <p style={{ margin: 0, fontSize: '15px', color: 'var(--muted)', lineHeight: '1.7' }}>
-                Swelling bentonite clay flocculates in electrolyte-rich environments like saltwater and gypsum brines. Attapulgite needle crystals build mechanical suspension through physical entanglement rather than osmotic swelling, maintaining full viscosity and cuttings-carrying capacity even in saturated salt conditions.
-              </p>
-            </article>
-            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '20px 24px' }}>
-              <h3 style={{ fontSize: '17px', color: 'var(--green)', margin: '0 0 8px', fontWeight: 700 }}>What grade is recommended for anti-sag and thixotropy in industrial paints and coatings?</h3>
-              <p style={{ margin: 0, fontSize: '15px', color: 'var(--muted)', lineHeight: '1.7' }}>
-                Our Premium 325 mesh micronized attapulgite powder is engineered specifically for paint and coatings. It provides high shear-thinning thixotropy, excellent pigment anti-settling during storage, and smooth leveling during brush or spray application without altering finish gloss.
-              </p>
-            </article>
-            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '20px 24px' }}>
-              <h3 style={{ fontSize: '17px', color: 'var(--green)', margin: '0 0 8px', fontWeight: 700 }}>Can attapulgite granules be used for cat litter and industrial oil spill absorption?</h3>
-              <p style={{ margin: 0, fontSize: '15px', color: 'var(--muted)', lineHeight: '1.7' }}>
-                Yes, our 1–5 mm natural calcined attapulgite granules have high internal pore volume, delivering 180% to 220% liquid absorption capacity by weight. They remain structurally intact when wet, making them low-dust and highly effective for cat litter, chemical spill control, and agricultural pesticide carrier granules.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
+      <FaqAccordion
+        limit={4}
+        showFilter={false}
+        showViewAllBtn={true}
+        title={
+          <>
+            Industrial Application Questions,<br />
+            <span>answered with data.</span>
+          </>
+        }
+        subtitle="Practical technical answers on specifying attapulgite clay across drilling mud, paint, foundry, and absorbent formulations."
+      />
 
       {/* Related Products & Quick Navigation */}
       <section className="related-links-strip" style={{ background: '#faf6f0', borderTop: '1px solid #ebdccb', borderBottom: '1px solid #ebdccb', padding: '36px 0' }}>
