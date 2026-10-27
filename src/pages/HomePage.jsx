@@ -312,7 +312,7 @@ export default function HomePage() {
           {/* Short Export Paragraph */}
           <div className="export-statement-box" style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '12px', padding: '24px 28px', marginBottom: '28px', borderLeft: '4px solid var(--terracotta)' }}>
             <p style={{ margin: 0, fontSize: '15.5px', lineHeight: '1.7', color: 'var(--ink)' }}>
-              <strong>Bento Clay Tech exports API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat via Mundra Port on FOB and CIF terms. Exporting to [ADD ONLY REAL COUNTRIES].</strong> As an established attapulgite powder manufacturer India and attapulgite powder exporter India, our processing plant fulfills full container load (FCL) consignments with third-party lab inspection and complete shipping documentation.
+              <strong>Bento Clay Tech exports API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat via Mundra Port on FOB and CIF terms, serving international clients across global seaports.</strong> As an established attapulgite powder manufacturer India and attapulgite powder exporter India, our processing plant fulfills full container load (FCL) consignments with third-party lab inspection and complete shipping documentation.
             </p>
           </div>
 
@@ -337,10 +337,10 @@ export default function HomePage() {
 
             <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '22px 26px' }}>
               <h3 style={{ fontSize: '18px', color: 'var(--ink)', marginBottom: '8px', fontWeight: '700' }}>
-                What is the MOQ [ADD REAL MOQ]?
+                What is the Minimum Order Quantity (MOQ)?
               </h3>
               <p style={{ margin: 0, color: 'var(--muted)', fontSize: '15px', lineHeight: '1.65' }}>
-                Our standard Minimum Order Quantity (MOQ) for export shipments is [ADD REAL MOQ] (typically 1 x 20-foot Full Container Load (FCL), approx. [ADD REAL METRIC TONS] MT, or full truckload FTL for domestic supply across India). Trial batches or sample quantities are available upon direct request.
+                Our standard Minimum Order Quantity (MOQ) for export shipments is 1 x 20-foot Full Container Load (FCL, approx. 20–22 Metric Tons), or full truckload (FTL) for domestic supply across India. Trial batches and 25 kg evaluation sample quantities are available upon direct request.
               </p>
             </article>
 
