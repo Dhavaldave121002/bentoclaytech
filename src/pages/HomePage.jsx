@@ -61,10 +61,10 @@ export default function HomePage() {
           </div>
           <div className="intro-text">
             <p>
-              Attapulgite is a naturally occurring hydrated aluminium magnesium silicate. Unlike plate-structured swelling clays (such as bentonite), its rigid rod-like needle crystals build viscosity through mechanical lattice entrapment.
+              Attapulgite is a naturally occurring hydrated aluminium magnesium silicate. Unlike plate-structured swelling clays (such as bentonite), its rigid rod-like needle crystals build viscosity through mechanical lattice entrapment. As an established attapulgite powder manufacturer India, we supply high-grade palygorskite clay supplier products engineered for challenging industrial applications.
             </p>
             <p>
-              Because its suspension relies on mechanical interlocking rather than chemical double-layer hydration, attapulgite maintains high viscosity and suspension even in saturated salt water, brine, and high-temperature environments.
+              Because its suspension relies on mechanical interlocking rather than chemical double-layer hydration, attapulgite maintains high viscosity and suspension even in saturated salt water, brine, and high-temperature environments. This makes our salt gel attapulgite powder and API 13A Section 12 attapulgite the preferred attapulgite clay for drilling mud across offshore and deep-well exploration.
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
                 <span>six different jobs.</span>
               </h2>
             </div>
-            <p>Every specification below is reproduced from the published Bento Clay Tech product data sheet for that grade.</p>
+            <p>Every specification below is reproduced from the published Bento Clay Tech product data sheet for that grade. As an attapulgite powder bulk supplier and attapulgite granules supplier, our processing plant delivers 325 mesh attapulgite powder supplier grades alongside low-dust granules.</p>
           </div>
 
           <div className="filter-bar" role="tablist" aria-label="Product filters">
@@ -182,7 +182,7 @@ export default function HomePage() {
                 <span>not generic clay.</span>
               </h2>
             </div>
-            <p>From mineral grading to final export packaging, every parameter is verified to standard data sheets.</p>
+            <p>From mineral grading to final export packaging, every parameter is verified to standard data sheets. As a dedicated attapulgite manufacturer Gujarat and attapulgite manufacturer Bhavnagar, we manage captive deposits to guarantee uniform batch quality.</p>
           </div>
 
           <div className="value-grid">
@@ -202,13 +202,13 @@ export default function HomePage() {
               <b>03</b>
               <span className="value-icon">◇</span>
               <h3>Powder & granules</h3>
-              <p>Specialized fine micronised powders through to 1–5 mm porous ball granules from the same pure mineral deposit.</p>
+              <p>Specialized fine micronised powders through to 1–5 mm porous ball granules from the same pure mineral deposit, supplying attapulgite for foundry, attapulgite for paint, attapulgite for animal feed, and attapulgite for cat litter.</p>
             </article>
             <article className="reveal-on-scroll stagger-4">
               <b>04</b>
               <span className="value-icon">↗</span>
               <h3>Export-ready packing</h3>
-              <p>25 kg HDPE moisture-proof bags with inner liner, palletized and dispatched from Bhavnagar, Gujarat.</p>
+              <p>25 kg HDPE moisture-proof bags with inner liner, palletized and dispatched from Bhavnagar, Gujarat. Our logistics operations serve as an attapulgite supplier Mundra port for attapulgite powder export from India, API 13A attapulgite export, and competitive attapulgite FOB Mundra and attapulgite CIF supplier terms.</p>
             </article>
           </div>
         </div>
@@ -292,6 +292,80 @@ export default function HomePage() {
             <a className="phone" href="tel:+917435818628">
               Call us: +91 74358 18628
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Key Procurement & Export Questions (Visible Factual FAQ Block) ── */}
+      <section className="faq-procurement-section section-pad" id="procurement-faq" style={{ background: '#fbf8f3', borderTop: '1px solid #ebdccb' }}>
+        <div className="container">
+          <div className="section-head reveal-on-scroll">
+            <div>
+              <span className="section-number">EXPORT &amp; PROCUREMENT OVERVIEW</span>
+              <h2>
+                Frequently Asked Procurement &amp; Export Questions
+              </h2>
+            </div>
+            <p>Direct technical answers from Bento Clay Tech export management.</p>
+          </div>
+
+          {/* Short Export Paragraph */}
+          <div className="export-statement-box" style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '12px', padding: '24px 28px', marginBottom: '28px', borderLeft: '4px solid var(--terracotta)' }}>
+            <p style={{ margin: 0, fontSize: '15.5px', lineHeight: '1.7', color: 'var(--ink)' }}>
+              <strong>Bento Clay Tech exports API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat via Mundra Port on FOB and CIF terms. Exporting to [ADD ONLY REAL COUNTRIES].</strong> As an established attapulgite powder manufacturer India and attapulgite powder exporter India, our processing plant fulfills full container load (FCL) consignments with third-party lab inspection and complete shipping documentation.
+            </p>
+          </div>
+
+          <div className="procurement-faq-stack" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '22px 26px' }}>
+              <h3 style={{ fontSize: '18px', color: 'var(--ink)', marginBottom: '8px', fontWeight: '700' }}>
+                Are you an API 13A attapulgite powder manufacturer in India?
+              </h3>
+              <p style={{ margin: 0, color: 'var(--muted)', fontSize: '15px', lineHeight: '1.65' }}>
+                Yes, Bento Clay Tech is an established attapulgite powder manufacturer India with processing works in Kardej, Bhavnagar, Gujarat. We manufacture API 13A Section 12 attapulgite and salt gel attapulgite powder controlled to published American Petroleum Institute specification standards for drilling mud and industrial formulations.
+              </p>
+            </article>
+
+            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '22px 26px' }}>
+              <h3 style={{ fontSize: '18px', color: 'var(--ink)', marginBottom: '8px', fontWeight: '700' }}>
+                Which port do you ship from?
+              </h3>
+              <p style={{ margin: 0, color: 'var(--muted)', fontSize: '15px', lineHeight: '1.65' }}>
+                We ship international container consignments primarily via Mundra Port (INMUN1), Gujarat, operating as an attapulgite supplier Mundra port for attapulgite powder export from India on FOB Mundra and CIF destination port terms. Shipments can also be dispatched via Pipavav Port upon client preference.
+              </p>
+            </article>
+
+            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '22px 26px' }}>
+              <h3 style={{ fontSize: '18px', color: 'var(--ink)', marginBottom: '8px', fontWeight: '700' }}>
+                What is the MOQ [ADD REAL MOQ]?
+              </h3>
+              <p style={{ margin: 0, color: 'var(--muted)', fontSize: '15px', lineHeight: '1.65' }}>
+                Our standard Minimum Order Quantity (MOQ) for export shipments is [ADD REAL MOQ] (typically 1 x 20-foot Full Container Load (FCL), approx. [ADD REAL METRIC TONS] MT, or full truckload FTL for domestic supply across India). Trial batches or sample quantities are available upon direct request.
+              </p>
+            </article>
+
+            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '22px 26px' }}>
+              <h3 style={{ fontSize: '18px', color: 'var(--ink)', marginBottom: '8px', fontWeight: '700' }}>
+                Attapulgite vs bentonite for saline drilling?
+              </h3>
+              <p style={{ margin: 0, color: 'var(--muted)', fontSize: '15px', lineHeight: '1.65' }}>
+                Standard sodium bentonite relies on electrostatic plate swelling that collapses and flocculates in high-salinity brine or seawater drilling muds. Attapulgite clay for drilling mud consists of rigid needle-like crystalline fibres that mechanically entrap fluid into a 3D lattice, maintaining full rheology, suspension, and gel strength in saturated salt formations exceeding 300,000 ppm TDS.
+              </p>
+            </article>
+
+            <article style={{ background: '#ffffff', border: '1px solid #ebdccb', borderRadius: '10px', padding: '22px 26px' }}>
+              <h3 style={{ fontSize: '18px', color: 'var(--ink)', marginBottom: '8px', fontWeight: '700' }}>
+                How to request a quote?
+              </h3>
+              <p style={{ margin: 0, color: 'var(--muted)', fontSize: '15px', lineHeight: '1.65' }}>
+                You can click any "Get Quote for API 13A Attapulgite Powder" button on our website, call our export sales desk at +91 74358 18628, connect via WhatsApp at +91 74358 18628, or email dipak@bentoclay.com. Share your required mineral grade, mesh fineness, packing preference, volume in metric tons, and destination port to receive a fast FOB or CIF quotation.
+              </p>
+              <div style={{ marginTop: '16px' }}>
+                <Link to="/contact" className="btn btn-primary" title="Get Quote for API 13A Attapulgite Powder" style={{ display: 'inline-flex' }}>
+                  Get Quote for API 13A Attapulgite Powder <span>↗</span>
+                </Link>
+              </div>
+            </article>
           </div>
         </div>
       </section>

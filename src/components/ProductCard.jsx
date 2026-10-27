@@ -9,7 +9,7 @@ export default function ProductCard({ product, index }) {
         <div className={`product-photo product-photo-${index + 1}`}>
           <img
             src={product.image || "/assets/product-range.webp"}
-            alt={`${product.name} - High Purity Attapulgite Clay by Bento Clay Tech`}
+            alt={`${product.name} - High Purity Attapulgite Clay by Bento Clay Tech, Attapulgite Powder Manufacturer India`}
             loading="lazy"
             decoding="async"
             width="600"
@@ -43,6 +43,15 @@ export default function ProductCard({ product, index }) {
           aria-label={`View specifications for ${product.name}`}
         >
           View specs <span>↗</span>
+        </Link>
+        <Link
+          to={`/contact?grade=${encodeURIComponent(product.name)}`}
+          className="details-btn"
+          title={`Get Quote for ${product.name}`}
+          aria-label={`Get Quote for ${product.name}`}
+          style={{ background: 'var(--ink)', color: '#ffffff' }}
+        >
+          Get Quote <span>↗</span>
         </Link>
         <Link
           to={`${targetUrl}#customizer-section`}

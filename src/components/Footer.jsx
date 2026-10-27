@@ -118,9 +118,14 @@ export default function Footer() {
       </div>
 
       <div className="footer-base">
-        <div className="container">
-          <span>© 2026 Bento Clay Tech. All rights reserved.</span>
-          <span className="footer-formula">Hydrated aluminium magnesium silicate</span>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'center', textAlign: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center', flexWrap: 'wrap', gap: '8px' }}>
+            <span>© 2026 Bento Clay Tech. All rights reserved.</span>
+            <span className="footer-formula">Hydrated aluminium magnesium silicate</span>
+          </div>
+          <div style={{ fontSize: '13px', color: '#b9a598', letterSpacing: '0.2px', paddingTop: '4px' }}>
+            Bento Clay Tech | Attapulgite Powder Manufacturer &amp; Exporter | Bhavnagar, Gujarat, India
+          </div>
         </div>
       </div>
     </footer>

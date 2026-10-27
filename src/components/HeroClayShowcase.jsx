@@ -154,15 +154,15 @@ export default function HeroClayShowcase() {
             </h1>
 
             <p className="hero-lead">
-              Bento Clay Tech manufactures six specialized attapulgite grades — from 35 cps salt gel for saline drilling fluids to 210 m²/g Premium 325 for paint and coatings — each controlled to a published data sheet in 25 kg HDPE packing.
+              Bento Clay Tech manufactures six specialized attapulgite grades — from 35 cps salt gel for saline drilling fluids to 210 m²/g Premium 325 for paint and coatings — each controlled to a published data sheet in 25 kg HDPE packing. As an established attapulgite powder manufacturer India and attapulgite powder exporter India, our processing works supply API 13A Section 12 attapulgite and salt gel attapulgite powder for worldwide industrial clients.
             </p>
 
             <div className="hero-actions">
               <a className="btn btn-primary" href="#products">
                 Explore the six grades <span>↓</span>
               </a>
-              <Link className="btn btn-secondary" to="/contact">
-                Request a quote <span>↗</span>
+              <Link className="btn btn-secondary" to="/contact" title="Get Quote for API 13A Attapulgite Powder">
+                Get Quote for API 13A Attapulgite Powder <span>↗</span>
               </Link>
             </div>
 
@@ -239,7 +239,7 @@ export default function HeroClayShowcase() {
                   <div className="showcase-media-box showcase-powder-box" key={`powder-${activeGrade.id}`}>
                     <img
                       src={activeGrade.image}
-                      alt={`${activeGrade.name} - Pure Attapulgite Clay Mineral by Bento Clay Tech`}
+                      alt={`${activeGrade.name} - Pure Attapulgite Clay Mineral by Bento Clay Tech, Attapulgite Powder Manufacturer India`}
                       className="showcase-main-img floating-clay-anim"
                       width="540"
                       height="540"
@@ -252,7 +252,7 @@ export default function HeroClayShowcase() {
                   <div className="showcase-media-box showcase-bag-box" key="bag-view">
                     <img
                       src="/assets/bentoclay-hdpe-bag.jpg"
-                      alt="Bento Clay Tech 25 kg HDPE Woven Sack with PE Liner"
+                      alt="Bento Clay Tech 25 kg HDPE Woven Sack with PE Liner - Attapulgite Powder Bulk Supplier & Exporter India"
                       className="showcase-main-img floating-clay-anim bag-photo"
                       width="540"
                       height="540"
