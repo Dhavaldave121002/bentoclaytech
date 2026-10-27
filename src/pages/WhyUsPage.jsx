@@ -11,7 +11,7 @@ export default function WhyUsPage() {
       <section className="page-hero split-hero visual-split">
         <div className="container">
           <div>
-            <span className="section-number">WHY BENTOCLAY CLAYTECH</span>
+            <span className="section-number">WHY BENTO CLAY TECH</span>
             <h1>
               Specification-led supply,<br />
               <em>not generic clay.</em>
