@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -16,8 +17,13 @@ import TermsConditionsPage from './pages/TermsConditionsPage';
 import FloatingActions from './components/FloatingActions';
 import StickyMobileBar from './components/StickyMobileBar';
 import PageSEO from './components/PageSEO';
+import { initGlobalAnalyticsListeners } from './utils/analytics';
 
 export default function App() {
+  useEffect(() => {
+    initGlobalAnalyticsListeners();
+  }, []);
+
   return (
     <Router>
       <PageSEO />

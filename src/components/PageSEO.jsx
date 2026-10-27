@@ -3,6 +3,7 @@ import { useLocation, useParams } from 'react-router-dom';
 import { products } from '../data/products';
 import { blogArticles } from '../data/blogData';
 import { faqs } from '../data/faqs';
+import { trackPageView } from '../utils/analytics';
 
 const BASE_URL = 'https://bentoclayclaytech.com';
 
@@ -571,6 +572,9 @@ export default function PageSEO() {
       '@context': 'https://schema.org',
       '@graph': structuredDataGraph
     });
+
+    // Send SPA pageview to Google Analytics 4
+    trackPageView(location.pathname, meta?.title || document.title);
 
   }, [location.pathname, params]);
 
