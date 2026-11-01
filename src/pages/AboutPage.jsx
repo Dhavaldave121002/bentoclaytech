@@ -6,12 +6,12 @@ export default function AboutPage() {
   const yearsInOperation = Math.max(1, currentYear - 2023);
 
   const productsList = [
-    { num: '01', name: 'Attapulgite Powder', desc: 'High viscosity, sorptive & rheological powder for saline fluids, paints & formulations.', link: '/products' },
-    { num: '02', name: 'Attapulgite Granules', desc: 'Low-dust 1–5 mm absorbent granules for cat litter, carrier & spill control.', link: '/products/attapulgite-natural-granules-1-5mm' },
-    { num: '03', name: 'Attapulgite Lumps', desc: 'Raw high-purity mineral feedstock for specialized grinding and formulation.', link: '/products/attapulgite-natural-powder' },
-    { num: '04', name: 'Dolomite Powder', desc: 'High-purity calcium magnesium carbonate powder for construction & ceramics.', link: '/customizer' },
-    { num: '05', name: 'Bentonite Powder', desc: 'Industrial binder, suspension agent and sealing clay for foundry & drilling.', link: '/products/api-13a-section-12-attapulgite-powder' },
-    { num: '06', name: 'Bentonite Granules & Lumps', desc: 'Porous absorbents and heavy-duty industrial binding granules.', link: '/products/attapulgite-natural-granules-1-5mm' },
+    { num: '01', name: 'API 13A Section 12 Attapulgite Powder', desc: 'Drilling-grade attapulgite powder; review the published grade requirements.', link: '/products/api-13a-section-12-attapulgite-powder' },
+    { num: '02', name: 'Salt Gel Attapulgite Powder', desc: 'Attapulgite grade for saline drilling-fluid applications.', link: '/products/salt-gel-attapulgite-powder' },
+    { num: '03', name: 'Natural Attapulgite Powder', desc: 'Natural powder grade for agricultural and industrial uses.', link: '/products/attapulgite-natural-powder' },
+    { num: '04', name: 'Flux Fine-200 Foundry Powder', desc: 'Attapulgite powder grade for foundry applications.', link: '/products/flux-fine-200-attapulgite-powder' },
+    { num: '05', name: 'Premium 325 Mesh Attapulgite', desc: 'Fine powder grade for selected paints, coatings and related applications.', link: '/products/premium-325-attapulgite-powder' },
+    { num: '06', name: 'Attapulgite Granules 1–5 mm', desc: 'Granule grade for absorbent, litter and carrier applications.', link: '/products/attapulgite-natural-granules-1-5mm' },
   ];
 
   const applicationsList = [
@@ -40,7 +40,7 @@ export default function AboutPage() {
               <em>Bhavnagar, India.</em>
             </h1>
             <p>
-              Bento Clay Tech manufactures specialized <Link to="/products" className="seo-keyword-link">attapulgite powder and granules</Link> from its processing works in Kardej, Bhavnagar, Gujarat, supplying <Link to="/applications" className="seo-keyword-link">drilling and industrial formulators</Link> worldwide. As an established attapulgite powder manufacturer in India and attapulgite powder exporter from India, we operate dedicated milling, grading, and testing facilities in Bhavnagar, serving as a reliable palygorskite clay supplier for domestic and international markets.
+              Bento Clay Tech is an attapulgite powder manufacturer in India, producing <Link to="/products" className="seo-keyword-link">attapulgite powder and granule grades</Link> in Kardej, Bhavnagar, Gujarat. Explore the published product information for <Link to="/applications" className="seo-keyword-link">drilling and industrial applications</Link>, or contact our team as your palygorskite clay supplier enquiry point to confirm specifications and delivery options.
             </p>
             <div className="hero-cta-btns" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '20px 0 24px' }}>
               <Link to="/contact" className="btn btn-primary" title="Request commercial quotation for attapulgite grades">
@@ -65,7 +65,7 @@ export default function AboutPage() {
           <figure className="page-visual">
             <img
               src="/assets/about-processing-plant.webp"
-              alt="Modern attapulgite mineral processing plant in Bhavnagar"
+              alt="Attapulgite powder beside mineral processing equipment"
             />
           </figure>
         </div>

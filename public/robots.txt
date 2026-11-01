@@ -56,10 +56,5 @@ Allow: /
 User-agent: Cohere-ai
 Allow: /
 
-# Host Specification
-Host: bentoclayclaytech.com
-
-# Canonical XML Sitemap & AI Knowledge Dossier (AEO/GEO)
+# Canonical XML Sitemap
 Sitemap: https://bentoclayclaytech.com/sitemap.xml
-Sitemap: https://bentoclayclaytech.com/llms.txt
-Sitemap: https://bentoclayclaytech.com/llms-full.txt

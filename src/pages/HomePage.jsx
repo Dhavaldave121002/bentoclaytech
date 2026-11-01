@@ -61,10 +61,10 @@ export default function HomePage() {
           </div>
           <div className="intro-text">
             <p>
-              Attapulgite is a naturally occurring hydrated aluminium magnesium silicate. Unlike plate-structured swelling clays (such as bentonite), its rigid rod-like needle crystals build viscosity through mechanical lattice entrapment. As an established attapulgite powder manufacturer India, we supply high-grade palygorskite clay supplier products engineered for challenging industrial applications.
+              Attapulgite is a naturally occurring hydrated aluminium magnesium silicate. Unlike plate-structured swelling clays such as bentonite, its rod-like crystals can build viscosity through mechanical entanglement. Bento Clay Tech is an attapulgite powder manufacturer in India and a Bhavnagar-based supplier of palygorskite clay grades for industrial applications.
             </p>
             <p>
-              Because its suspension relies on mechanical interlocking rather than chemical double-layer hydration, attapulgite maintains high viscosity and suspension even in saturated salt water, brine, and high-temperature environments. This makes our salt gel attapulgite powder and API 13A Section 12 attapulgite the preferred attapulgite clay for drilling mud across offshore and deep-well exploration.
+              Attapulgite is used in saline drilling fluids as well as in selected industrial applications. Explore our Salt Gel and API 13A Section 12 drilling grades, and review each product data sheet for its stated requirements and specifications.
             </p>
           </div>
         </div>
@@ -84,12 +84,13 @@ export default function HomePage() {
                 <span>six different jobs.</span>
               </h2>
             </div>
-            <p>Every specification below is reproduced from the published Bento Clay Tech product data sheet for that grade. As an attapulgite powder bulk supplier and attapulgite granules supplier, our processing plant delivers 325 mesh attapulgite powder supplier grades alongside low-dust granules.</p>
+            <p>Specifications below are taken from the published Bento Clay Tech data sheet for each grade. We supply attapulgite powder in bulk and 1–5 mm granules, including a 325 mesh attapulgite powder grade. Compare products or contact us to confirm availability and suitability for your application.</p>
           </div>
 
-          <div className="filter-bar" role="tablist" aria-label="Product filters">
+          <div className="filter-bar" role="group" aria-label="Product filters">
             <button
               className={`filter ${filter === 'all' ? 'active' : ''}`}
+              aria-pressed={filter === 'all'}
               onClick={() => handleFilterChange('all')}
               type="button"
             >
@@ -97,6 +98,7 @@ export default function HomePage() {
             </button>
             <button
               className={`filter ${filter === 'drilling' ? 'active' : ''}`}
+              aria-pressed={filter === 'drilling'}
               onClick={() => handleFilterChange('drilling')}
               type="button"
             >
@@ -104,6 +106,7 @@ export default function HomePage() {
             </button>
             <button
               className={`filter ${filter === 'industrial' ? 'active' : ''}`}
+              aria-pressed={filter === 'industrial'}
               onClick={() => handleFilterChange('industrial')}
               type="button"
             >
@@ -111,6 +114,7 @@ export default function HomePage() {
             </button>
             <button
               className={`filter ${filter === 'natural' ? 'active' : ''}`}
+              aria-pressed={filter === 'natural'}
               onClick={() => handleFilterChange('natural')}
               type="button"
             >

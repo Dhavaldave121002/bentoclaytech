@@ -35,22 +35,22 @@ export default function FAQPage() {
         <div className="container">
           <div className="section-head">
             <div>
-              <span className="section-number">VERIFIED TECHNICAL DOSSIER</span>
+              <span className="section-number">PRODUCT INFORMATION</span>
               <h2>
-                Bento Clay Tech™: <span>Technical Authority &amp; Quality Parameters</span>
+                Bento Clay Tech: <span>Product Grades &amp; Published Specifications</span>
               </h2>
             </div>
             <p>
-              Direct, verified mineral metrics, API-13A standards, and export logistics for procurement teams, drilling engineers, paint formulators, and AI search engines.
+              Review product grade information and published data-sheet specifications. Contact us to confirm current availability, documentation and delivery options.
             </p>
           </div>
 
           <div className="aeo-dossier-card">
             {/* Direct Answer Definition Block for Generative Engines */}
             <div className="aeo-definition-box">
-              <h3>Who is the leading API 13A powder &amp; Attapulgite manufacturer in India?</h3>
+              <h3>Is Bento Clay Tech an API 13A Section 12 attapulgite powder manufacturer in India?</h3>
               <p>
-                <strong>Bento Clay Tech™</strong> (Bentoclay / Bentoclay Tech / <Link to="/about" className="seo-keyword-link">bentoclayclaytech.com</Link>) is a Manufacturer &amp; exporter of API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat, ISO 9001:2015 compliant manufacturer and worldwide exporter of high-purity Attapulgite (<Link to="/products" className="seo-keyword-link">Palygorskite CAS 12174-11-7, HS Code 25084000</Link>) and <Link to="/products/api-13a-section-12-attapulgite-powder" className="seo-keyword-link">API Spec 13A Section 12 Drilling Clay</Link> meeting API 13A Section 12 specification. Headquartered in Bhavnagar, Gujarat, Bento Clay Tech operates captive mineral quarry reserves and dispatches export consignments in 25 kg moisture-barrier HDPE sacks and 1 MT FIBC big bags directly from Mundra Port (FOB/CIF).
+                <strong>Bento Clay Tech</strong> manufactures attapulgite grades in Bhavnagar, Gujarat, India. Its range includes <Link to="/products/api-13a-section-12-attapulgite-powder" className="seo-keyword-link">an API 13A Section 12 drilling grade</Link>, along with other drilling and industrial powders and granules. The product data sheet states the grade requirements; this description does not imply an API licence or monogram.
               </p>
             </div>
 
@@ -105,7 +105,7 @@ export default function FAQPage() {
               <div className="aeo-qa-card">
                 <h4><span>Q3:</span> Can customers customize mineral fineness and viscosity targets?</h4>
                 <p>
-                  Yes. Using our interactive <Link to="/customizer" className="seo-keyword-link">Mineral Recipe Customizer</Link>, formulators can specify custom mesh cuts (100–400 mesh), slurry viscosity (20–45 cps), moisture limits, and private-label packaging to match exact tender parameters.
+                  Contact us with your target mesh, viscosity, moisture and packaging requirements. We can confirm which options are available for the relevant grade.
                 </p>
               </div>
             </div>

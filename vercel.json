@@ -5,10 +5,26 @@
       "has": [
         {
           "type": "host",
+          "value": "www.bentoclayclaytech.com"
+        }
+      ],
+      "destination": "https://bentoclayclaytech.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
           "value": "bentoclaytech.vercel.app"
         }
       ],
       "destination": "https://bentoclayclaytech.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/products/",
+      "destination": "/products",
       "permanent": true
     }
   ],

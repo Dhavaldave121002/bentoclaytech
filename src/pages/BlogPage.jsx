@@ -104,7 +104,7 @@ export default function BlogPage() {
                 >
                   <img
                     src={article.image}
-                    alt={article.title}
+                    alt={article.imageAlt}
                     style={{
                       width: '100%',
                       height: '100%',

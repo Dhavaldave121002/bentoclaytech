@@ -55,10 +55,11 @@ export default function FaqAccordion({
 
         {/* Category Filter Pills (Only shown when full filter is enabled) */}
         {showFilter && (
-          <div className="faq-category-pills" role="tablist" aria-label="FAQ Categories">
+          <div className="faq-category-pills" role="group" aria-label="FAQ Categories">
             <button
               type="button"
               className={`faq-pill-btn ${selectedCategory === 'all' ? 'active' : ''}`}
+              aria-pressed={selectedCategory === 'all'}
               onClick={() => {
                 setSelectedCategory('all');
                 setOpenIndex(0);
@@ -73,6 +74,7 @@ export default function FaqAccordion({
                   key={cat}
                   type="button"
                   className={`faq-pill-btn ${selectedCategory === cat ? 'active' : ''}`}
+                  aria-pressed={selectedCategory === cat}
                   onClick={() => {
                     setSelectedCategory(cat);
                     setOpenIndex(0);

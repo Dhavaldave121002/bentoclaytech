@@ -8,6 +8,7 @@ export const blogArticles = [
     badge: "Grade Spotlight: Salt Gel",
     productId: "salt-gel",
     image: "/assets/product-images/Attapulgite Salt Gel Grade Powder.webp",
+    imageAlt: "Bowl of Salt Gel attapulgite powder",
     content: `[Bentoclay Salt Gel Grade](/products/salt-gel-attapulgite-powder) is our premier high-viscosity [attapulgite clay powder](/products) engineered specifically for demanding offshore, coastal, and high-salinity onshore [oil & gas drilling operations](/applications) where electrolytic salinity prevents standard sodium bentonite from hydrating.
 
 ### Why Salt Gel Outperforms Sodium Bentonite in Saline Systems
@@ -41,6 +42,7 @@ Bentoclay Salt Gel utilizes pure needle-like magnesium aluminium phyllosilicate 
     badge: "Grade Spotlight: API-13A",
     productId: "api-13a",
     image: "/assets/product-images/Attapulgite Powder API-13A Section 12 Grade.webp",
+    imageAlt: "Bowl of API 13A Section 12 attapulgite powder",
     content: `The [American Petroleum Institute (API) Specification 13A Section 12](/products/api-13a-section-12-attapulgite-powder) establishes rigorous physical and rheological parameters for 'Attapulgite / Salt Water Drilling Clay'. [Bentoclay API-13A Section 12 Grade powder](/products/api-13a-section-12-attapulgite-powder) is manufactured under strict quality assurance protocols at our [Bhavnagar, Gujarat processing facility](/about) to deliver global compliance on every export shipment.
 
 ### Rigorous API Section 12 Compliance & Testing Protocols
@@ -68,6 +70,7 @@ Supplied from Pipavav Port (~135 km) and Mundra Port (~350 km) on Western India'
     badge: "Grade Spotlight: Premium 325",
     productId: "premium-325",
     image: "/assets/product-images/Attapulgite Premium 325 Powder.webp",
+    imageAlt: "Bowl of Premium 325 attapulgite powder",
     content: `In modern architectural paints, industrial protective coatings, elastomeric roof mastics, and tape joint compounds, maintaining dense pigments and mineral fillers in permanent colloidal suspension without vertical sagging is critical. [Bentoclay Premium 325](/products/premium-325-attapulgite-powder) delivers inorganic thixotropic perfection.
 
 ### Micronized Engineering: Sub-44 μm (325 Mesh)
@@ -94,6 +97,7 @@ Manufactured from high-purity [Bhavnagar deposits](/about), Premium 325 can be m
     badge: "Grade Spotlight: Flux Fine-200",
     productId: "flux-fine",
     image: "/assets/product-images/Attapulgite Flux Fine-200 (Foundry Flux) Powder.webp",
+    imageAlt: "Bowl of Flux Fine-200 attapulgite foundry powder",
     content: `Foundries and steel manufacturing plants require refractory coating washes that keep dense zircon, graphite, olivine, and silica fillers in continuous colloidal suspension without hard caking. [Bentoclay Flux Fine-200](/products/flux-fine-200-attapulgite-powder) is specially milled and refined for high-temperature metallurgical applications.
 
 ### Key Foundry Metallurgical Performance Advantages
@@ -119,6 +123,7 @@ Formulated directly at our [Bhavnagar manufacturing plant](/about). To configure
     badge: "Grade Spotlight: Natural Powder",
     productId: "natural-powder",
     image: "/assets/product-images/Attapulgite Natural Powder.webp",
+    imageAlt: "Bowl of natural attapulgite powder",
     content: `Modern agrochemical formulators require carrier substrates that can absorb high concentrations of active liquid technicals without clumping, chemical degradation, or loss of flowability. [Bentoclay Natural Attapulgite Powder](/products/attapulgite-natural-powder) offers natural neutral pH (7.6), high pore volume, and exceptional chemical inertness.
 
 ### Agrochemical, Fertilizer & Feed Formulation Applications
@@ -138,6 +143,7 @@ Explore comprehensive [agrochemical and carrier application profiles](/applicati
     badge: "Grade Spotlight: Granules (1-5mm)",
     productId: "granules",
     image: "/assets/product-images/Attapulgite Natural Granules 1 to 5 mm.webp",
+    imageAlt: "Bowl of natural attapulgite granules measuring 1 to 5 mm",
     content: `[Bentoclay Natural & Calcined Granules (1–5 mm)](/products/attapulgite-natural-granules-1-5mm) represent the pinnacle of natural mineral absorption engineering. Unlike traditional swelling bentonite clays that turn into slippery mud when wet, our attapulgite granules maintain solid structural rigidity even when fully saturated.
 
 ### Industrial Spill Cleanup & Premium Pet Care Advantages
@@ -158,6 +164,7 @@ Ideal for [industrial absorbent, pet care, and soil conditioning applications](/
     badge: "Manufacturing & Quality",
     productId: null,
     image: "/assets/why-quality-lab.webp",
+    imageAlt: "Attapulgite powder beside processing conveyors and storage silos",
     content: `Located in Bhavnagar, Gujarat—the industrial mineral hub of Western India—Bentoclay Claytech operates state-of-the-art mineral processing works with direct access to high-purity [natural attapulgite (palygorskite) reserves](/about).
 
 ### Multi-Stage Advanced Manufacturing Workflow
@@ -167,7 +174,7 @@ Ideal for [industrial absorbent, pet care, and soil conditioning applications](/
 4. **In-House Quality Testing Laboratory:** Every production batch is tested for Fann Model 35 rheology, wet sieve residue, BET surface area, and moisture before dispatch per our [strict quality control methodology](/why-us).
 5. **Direct Export Dispatch:** Multi-wall moisture barrier packaging unitized on ISPM-15 heat-treated export pallets for fast dispatch via Pipavav and Mundra Ports.
 
-Explore our full catalog of [6 specialized attapulgite grades](/products) or learn about our [custom toll milling capabilities](/customizer).`
+Explore our full catalog of [6 specialized attapulgite grades](/products) or contact us to ask about available processing options.`
   },
   {
     slug: "custom-shade-and-color-formulation",
@@ -178,6 +185,7 @@ Explore our full catalog of [6 specialized attapulgite grades](/products) or lea
     badge: "Custom Engineering",
     productId: null,
     image: "/assets/product-range.webp",
+    imageAlt: "Bento Clay Tech product range of attapulgite powders and granules",
     content: `Every manufacturing and chemical formulation process has unique physical, rheological, and aesthetic demands. At Bentoclay Claytech, we don't believe in one-size-fits-all mineral supply.
 
 ### 100% On-Demand Mineral Customization
@@ -186,6 +194,6 @@ Explore our full catalog of [6 specialized attapulgite grades](/products) or lea
 - **Thermal Treatment & Moisture Control:** Standard natural moisture (8–12%) or kiln-calcined low moisture (<4–6%) for moisture-sensitive polyurethane sealants and reactive adhesives.
 - **Custom Export Packaging:** 25 kg HDPE bags with moisture liner, 50 kg sacks, or 1000 kg Jumbo Big Bags with custom private labeling and global containerization.
 
-Start engineering your target batch using our [Interactive Formulation Customizer](/customizer), or check specifications on our [API-13A drilling clay meeting API 13A Section 12 specification](/products/api-13a-section-12-attapulgite-powder) and [Salt Gel drilling grade](/products/salt-gel-attapulgite-powder).`
+Contact us about your target batch requirements, or check the published information for our [API 13A Section 12 drilling grade](/products/api-13a-section-12-attapulgite-powder) and [Salt Gel grade](/products/salt-gel-attapulgite-powder).`
   }
 ];

@@ -17,7 +17,7 @@ export default function WhyUsPage() {
               <em>not generic clay.</em>
             </h1>
             <p>
-              Processing consists of drying and grinding crude clay to specific particle size distributions with specific ranges of gel viscosity, measured according to the end use. As an established palygorskite clay supplier and attapulgite manufacturer in Gujarat, Bento Clay Tech delivers specification-controlled mineral grades from Bhavnagar with reliable export logistics as an attapulgite supplier via Mundra Port.
+              Processing consists of drying and grinding clay to particle-size distributions and grade specifications for the intended use. Bento Clay Tech manufactures attapulgite grades in Bhavnagar, Gujarat; review the product data sheets and contact us to confirm specifications and delivery options.
             </p>
             <div className="hero-cta-btns" style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', margin: '20px 0 24px' }}>
               <Link to="/contact" className="btn btn-primary" title="Request commercial quote for attapulgite mineral grades">
@@ -58,7 +58,7 @@ export default function WhyUsPage() {
           <figure className="page-visual">
             <img
               src="/assets/why-quality-lab.webp"
-              alt="Attapulgite quality control laboratory bench with viscometer and sample beakers"
+              alt="Attapulgite powder beside processing conveyors and storage silos"
             />
           </figure>
         </div>
@@ -92,7 +92,7 @@ export default function WhyUsPage() {
             <b>04</b>
             <h3>Export-ready packing</h3>
             <p>
-              HDPE woven bags with extruded liners, unitized on ISPM-15 export pallets for global container shipment. Tailor container volumes via our <Link to="/customizer" className="seo-keyword-link">recipe customizer</Link>.
+              Packaging details are listed on the relevant product pages. Contact our team to confirm order quantities, packaging and destination-specific shipping options.
             </p>
           </article>
         </div>

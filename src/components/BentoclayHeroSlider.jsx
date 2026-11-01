@@ -8,7 +8,7 @@ const bannerSlides = [
     subtitle: 'Well Established Quarry Infrastructure',
     tag: 'Direct Open-Pit Mining & Processing in Bhavnagar, Gujarat',
     image: '/assets/banners/banner-attapulgite-mines.jpg',
-    alt: 'Bento Clay Tech Attapulgite Mineral Infrastructure & Open-Pit Mining Quarry in Bhavnagar',
+    alt: 'Open-pit attapulgite quarry with mining equipment and a bowl of clay',
     link: '/about',
     ctaText: 'Our Infrastructure',
   },
@@ -18,7 +18,7 @@ const bannerSlides = [
     subtitle: 'Offshore & Deep Well Mud Systems',
     tag: 'API Spec 13A Section 12 Compliant',
     image: '/assets/banners/banner-drilling-api13a.jpg',
-    alt: 'API 13A Section 12 Compliant Attapulgite Drilling Clay for Oil & Gas Exploration',
+    alt: 'Offshore drilling rig at sunset beside a bowl of attapulgite drilling clay',
     link: '/products/api-13a-section-12-attapulgite-powder',
     ctaText: 'View API-13A Specs',
   },
@@ -28,7 +28,7 @@ const bannerSlides = [
     subtitle: 'Paint & Coatings Rheology Modifier',
     tag: 'Superfine 325 Mesh · 210 m²/g High Surface Area',
     image: '/assets/banners/banner-paint-premium325.jpg',
-    alt: 'Bentoclay Premium 325 Mesh High Purity Attapulgite Rheology Modifier for Paints and Coatings',
+    alt: 'Mineral testing laboratory and a bowl of Premium 325 attapulgite powder',
     link: '/products/premium-325-attapulgite-powder',
     ctaText: 'View Premium 325',
   },
@@ -38,11 +38,21 @@ const bannerSlides = [
     subtitle: 'Container Shipping via Mundra Port',
     tag: '25 Kg HDPE Sacks with PE Moisture Liner',
     image: '/assets/banners/banner-export-packaging.jpg',
-    alt: 'Bento Clay Tech 25 Kg HDPE Export Packaging & Container Shipping from Mundra Port',
+    alt: 'Container port beside a Bento Clay Tech 25 kg attapulgite sack',
     link: '/products',
     ctaText: 'View Export Grades',
   },
 ];
+
+const getResponsiveSrcSet = (image) => {
+  const filename = image.split('/').pop().replace(/\.jpg$/, '');
+  return [480, 768, 1024, 1376]
+    .map((width) => `/assets/optimized/${filename}-${width}.jpg ${width}w`)
+    .join(', ');
+};
+
+const getOptimizedFallback = (image) =>
+  image.replace('/assets/banners/', '/assets/optimized/').replace('.jpg', '-1376.jpg');
 
 export default function BentoclayHeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -69,6 +79,18 @@ export default function BentoclayHeroSlider() {
       if (timerRef.current) clearInterval(timerRef.current);
     };
   }, [isHovered]);
+
+  useEffect(() => {
+    const nextSlide = (currentSlide + 1) % bannerSlides.length;
+    const timeoutId = window.setTimeout(() => {
+      const image = new Image();
+      image.srcset = getResponsiveSrcSet(bannerSlides[nextSlide].image);
+      image.sizes = '100vw';
+      image.src = getOptimizedFallback(bannerSlides[nextSlide].image);
+    }, 1800);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [currentSlide]);
 
   const goToSlide = (idx) => {
     setCurrentSlide(idx);
@@ -136,13 +158,16 @@ export default function BentoclayHeroSlider() {
               >
                 <div className="banner-image-wrapper">
                   <img
-                    src={slide.image}
+                    src={isActive ? getOptimizedFallback(slide.image) : undefined}
+                    srcSet={isActive ? getResponsiveSrcSet(slide.image) : undefined}
+                    sizes="100vw"
                     alt={slide.alt}
                     className={`banner-slide-img ${isActive ? 'ken-burns-active' : ''}`}
-                    loading={idx === 0 ? 'eager' : 'lazy'}
-                    fetchpriority={idx === 0 ? 'high' : 'auto'}
-                    width="1920"
-                    height="1080"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority={isActive && idx === 0 ? 'high' : 'auto'}
+                    width="1376"
+                    height="768"
                   />
 
                   {/* Animated Interactive CTA Badge with Staggered Entrance */}
@@ -187,13 +212,12 @@ export default function BentoclayHeroSlider() {
         </button>
 
         {/* Bottom Pagination Dots (Matching bentoclay.com style) */}
-        <div className="banner-slider-bullets" role="tablist" aria-label="Slider Pagination">
+        <div className="banner-slider-bullets" role="group" aria-label="Slider Pagination">
           {bannerSlides.map((s, idx) => (
             <button
               key={s.id}
               type="button"
-              role="tab"
-              aria-selected={idx === currentSlide}
+              aria-pressed={idx === currentSlide}
               aria-label={`Go to slide ${idx + 1}: ${s.title}`}
               className={`bullet-dot ${idx === currentSlide ? 'active' : ''}`}
               onClick={() => goToSlide(idx)}

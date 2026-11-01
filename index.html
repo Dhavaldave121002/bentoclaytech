@@ -4,42 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXRECFVJ7G"></script>
+    <!-- Queue analytics events immediately; load the third-party library after the initial page load. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-HXRECFVJ7G');
+
+      function loadGoogleAnalytics() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-HXRECFVJ7G';
+        document.head.appendChild(script);
+      }
+
+      window.setTimeout(function() {
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(loadGoogleAnalytics, { timeout: 3000 });
+        } else if (document.readyState === 'complete') {
+          window.setTimeout(loadGoogleAnalytics, 1000);
+        } else {
+          window.addEventListener('load', loadGoogleAnalytics, { once: true });
+        }
+      }, 1200);
     </script>
     
-    <!-- Primary High-Ranking SEO Meta Tags (Brand: Bento Clay Tech, Variations: Bentoclay Tech / Bento Clay / Bentoclay / Bentoclay Claytech) -->
-    <title>Bento Clay Tech™ (Bentoclay) | Best API 13A Powder &amp; Attapulgite Manufacturer</title>
-    <meta
-      name="title"
-      content="Bento Clay Tech™ (Bentoclay) | Best API 13A Powder &amp; Attapulgite Manufacturer"
-    />
+    <!-- Search and social metadata -->
+    <title>Bento Clay Tech | API 13A Attapulgite Powder Manufacturer India</title>
     <meta
       name="description"
-      content="Official website of Bento Clay Tech™ (Bentoclay Tech / bentoclayclaytech.com) — Manufacturer & exporter of API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat (API Spec 13A Section 12 Drilling Clay), Salt Gel Attapulgite, and 325 Mesh. Direct supply from Bhavnagar Gujarat to worldwide seaports."
+      content="Bento Clay Tech: API 13A Section 12 attapulgite, salt gel and 325 mesh powder manufacturer and exporter from Bhavnagar, Gujarat. Export via Mundra Port."
     />
-    <meta name="keywords" content="Bento Clay Tech, Bentoclay, Attapulgite powder manufacturer India, API 13A Section 12 drilling clay, Salt Gel attapulgite, Premium 325 mesh attapulgite, Flux Fine 200 foundry clay, Attapulgite granules 1-5mm, Palygorskite manufacturer Gujarat, CAS 12174-11-7 exporter, HS Code 25084000, drilling mud viscosifier, Bhavnagar mineral plant, Mundra port mineral export, API 13A Section 12 attapulgite, salt gel attapulgite powder, attapulgite clay for drilling mud, attapulgite powder exporter India, attapulgite powder bulk supplier, palygorskite clay supplier, attapulgite supplier Mundra port, attapulgite manufacturer Gujarat, attapulgite manufacturer Bhavnagar, attapulgite for foundry, attapulgite for paint, attapulgite for animal feed, attapulgite for cat litter, attapulgite granules supplier, 325 mesh attapulgite powder supplier, attapulgite powder export from India, API 13A attapulgite export, attapulgite FOB Mundra, attapulgite CIF supplier" />
+    <meta name="keywords" content="Bento Clay Tech, Bentoclay, Attapulgite powder manufacturer India, API 13A Section 12 drilling clay, Salt Gel attapulgite, Premium 325 mesh attapulgite, Flux Fine 200 foundry clay, Attapulgite granules 1-5mm, Palygorskite manufacturer Gujarat, CAS 12174-11-7 exporter, HS Code 25084000, drilling mud viscosifier, Bhavnagar mineral plant, Mundra port mineral export, API 13A Section 12 attapulgite, salt gel attapulgite powder, attapulgite clay for drilling mud, attapulgite powder exporter India, attapulgite powder bulk supplier, palygorskite clay supplier, attapulgite supplier Mundra port, attapulgite manufacturer Gujarat, attapulgite manufacturer Bhavnagar, attapulgite for foundry, attapulgite for paint, attapulgite for animal feed, attapulgite for cat litter, attapulgite granules supplier, 325 mesh attapulgite powder supplier, attapulgite powder export from India, API 13A attapulgite export, attapulgite FOB Mundra, attapulgite CIF supplier, attapulgite market, attapulgite clay, attapulgite powder, attapulgite clay supplier" />
     <meta name="author" content="Bento Clay Tech" />
     <meta name="publisher" content="Bento Clay Tech" />
     <meta name="copyright" content="Bento Clay Tech" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://bentoclayclaytech.com/" />
 
-    <!-- Multi-Market Commercial & Geo-Targeting SEO Tags -->
-    <meta name="coverage" content="Worldwide, Pan-India, Gujarat, Maharashtra, GCC, USA, Europe" />
-    <meta name="distribution" content="Global" />
-    <meta name="target" content="all" />
-    <meta name="rating" content="general" />
-    <meta name="revisit-after" content="1 days" />
-    <meta name="classification" content="API 13A Drilling Clay, Attapulgite Powder, Oilfield Chemicals, Industrial Minerals Manufacturer & Exporter" />
-
-    <!-- Geo & Local SEO Tags (Bhavnagar, Gujarat, India - Captive Mineral Hub) -->
+    <!-- Business location -->
     <meta name="geo.region" content="IN-GJ" />
     <meta name="geo.placename" content="Bhavnagar, Gujarat, India" />
     <meta name="geo.position" content="21.7645;72.1519" />
@@ -48,41 +52,51 @@
     <!-- Open Graph / Social Media Optimization -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bentoclayclaytech.com/" />
-    <meta property="og:site_name" content="Bento Clay Tech (Bentoclay)" />
-    <meta property="og:title" content="Bento Clay Tech™ (Bentoclay) | Best API 13A Powder &amp; Attapulgite Manufacturer" />
+    <meta property="og:site_name" content="Bento Clay Tech" />
+    <meta property="og:title" content="Bento Clay Tech | API 13A Attapulgite Powder Manufacturer India" />
     <meta
       property="og:description"
-      content="Manufacturer & worldwide exporter of API 13A Powder, Salt Gel Attapulgite, and Industrial Palygorskite minerals. Fast dispatch to Pan-India cities & global seaports."
+      content="API 13A Section 12 attapulgite, salt gel and 325 mesh powder manufacturer and exporter. Export via Mundra Port."
     />
     <meta property="og:image" content="https://bentoclayclaytech.com/assets/product-range.webp" />
     <meta property="og:image:width" content="1672" />
     <meta property="og:image:height" content="941" />
-    <meta property="og:image:alt" content="Bento Clay Tech Best API 13A Powder & Attapulgite Mineral Range - Attapulgite Powder Manufacturer & Exporter India" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:alt" content="Bento Clay Tech attapulgite mineral product range" />
+    <meta property="og:locale" content="en_IN" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Bentoclay" />
-    <meta name="twitter:title" content="Bento Clay Tech™ (Bentoclay) | Best API 13A Powder &amp; Attapulgite Manufacturer" />
+    <meta name="twitter:title" content="Bento Clay Tech | API 13A Attapulgite Powder Manufacturer India" />
     <meta
       name="twitter:description"
-      content="High-performance API 13A Section 12 Drilling Clay and Attapulgite Minerals. Viscosity meeting API 13A Section 12 specification in saturated brine drilling fluids. Fast export via Mundra Port."
+      content="Bento Clay Tech: API 13A Section 12 attapulgite, salt gel and 325 mesh powder manufacturer and exporter from Bhavnagar, Gujarat. Export via Mundra Port."
     />
     <meta name="twitter:image" content="https://bentoclayclaytech.com/assets/product-range.webp" />
 
-    <!-- Performance & Preloading for 100% Speed Score (CLS=0, LCP < 1.0s) -->
+    <!-- Preload the critical homepage imagery. -->
     <meta http-equiv="x-dns-prefetch-control" content="on" />
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <link rel="preload" as="image" href="/assets/banners/banner-attapulgite-mines.jpg" type="image/jpeg" fetchpriority="high" />
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/optimized/banner-attapulgite-mines-1376.jpg"
+      imagesrcset="/assets/optimized/banner-attapulgite-mines-480.jpg 480w, /assets/optimized/banner-attapulgite-mines-768.jpg 768w, /assets/optimized/banner-attapulgite-mines-1024.jpg 1024w, /assets/optimized/banner-attapulgite-mines-1376.jpg 1376w"
+      imagesizes="100vw"
+      type="image/jpeg"
+      fetchpriority="high"
+    />
     <link rel="preload" as="image" href="/assets/bentoclay-logo.webp" type="image/webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@600;700;800&display=swap" />
+    </noscript>
     <style>
       :root {
         --paper: #fffdf9;
@@ -127,7 +141,7 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": ["Organization", "LocalBusiness", "Manufacturer"],
+          "@type": ["Organization", "LocalBusiness"],
           "@id": "https://bentoclayclaytech.com/#organization",
           "name": "Bento Clay Tech",
           "legalName": "Bento Clay Tech",
@@ -135,60 +149,16 @@
             "@type": "Brand",
             "name": "Bento Clay Tech",
             "alternateName": [
-              "Bentoclay Tech",
-              "Bento Clay",
-              "Bentoclay",
-              "Bentoclaytech",
-              "Bentoclay Claytech",
-              "Bento Clay Clay Tech",
-              "bentoclayclaytech",
-              "Bentoclay Minerals",
-              "Bentoclay India"
+              "Bentoclay"
             ]
           },
-          "alternateName": [
-            "Bentoclay Tech",
-            "Bento Clay",
-            "Bentoclay",
-            "Bentoclaytech",
-            "Bentoclay Claytech",
-            "Bento Clay Clay Tech",
-            "bentoclayclaytech",
-            "Bentoclay Claytech India",
-            "Bentoclay Minerals",
-            "Bentoclay Attapulgite Global",
-            "Bentoclay API 13A",
-            "Bentoclay Tech International",
-            "attapulgite powder manufacturer India",
-            "API 13A Section 12 attapulgite",
-            "salt gel attapulgite powder",
-            "attapulgite clay for drilling mud",
-            "attapulgite powder exporter India",
-            "attapulgite powder bulk supplier",
-            "palygorskite clay supplier",
-            "attapulgite supplier Mundra port",
-            "attapulgite manufacturer Gujarat",
-            "attapulgite manufacturer Bhavnagar",
-            "attapulgite granules supplier",
-            "325 mesh attapulgite powder supplier"
-          ],
+          "alternateName": "Bentoclay",
           "url": "https://bentoclayclaytech.com/",
-          "logo": "https://bentoclayclaytech.com/assets/bentoclay-logo.png",
+          "logo": "https://bentoclayclaytech.com/assets/bentoclay-logo.webp",
           "image": "https://bentoclayclaytech.com/assets/product-range.webp",
-          "description": "Bento Clay Tech (Bentoclay / bentoclayclaytech.com) is India's leading global manufacturer and worldwide exporter of high-purity Attapulgite (Palygorskite CAS 12174-11-7, HS Code 25084000) clays: API 13A Powder meeting API 13A Section 12 specification (API Spec 13A Section 12 Drilling Clay), Salt Gel attapulgite, Premium 325 mesh paint thixotropes, Flux Fine-200 foundry wash, and 1-5 mm absorbent granules.",
+          "description": "Bento Clay Tech manufactures attapulgite clay products in Bhavnagar, Gujarat, India, including drilling, industrial powder and granule grades.",
           "telephone": "+91-7435818628",
           "email": ["dipak@bentoclay.com", "bentoclayclaytech@gmail.com"],
-          "sameAs": [
-            "https://www.linkedin.com/in/bentoclayclaytech",
-            "https://commonchemistry.cas.org/detail?cas_rn=12174-11-7",
-            "https://en.wikipedia.org/wiki/Attapulgite",
-            "https://www.wikidata.org/wiki/Q416719",
-            "https://pubchem.ncbi.nlm.nih.gov/compound/Attapulgite",
-            "https://www.mindat.org/min-3067.html",
-            "https://www.api.org/products-and-services/standards",
-            "https://bentoclayclaytech.com/llms.txt",
-            "https://bentoclayclaytech.com/llms-full.txt"
-          ],
           "hasMap": "https://www.google.com/maps?q=21.7645,72.1519",
           "address": {
             "@type": "PostalAddress",
@@ -203,8 +173,6 @@
             "latitude": 21.7645,
             "longitude": 72.1519
           },
-          "currenciesAccepted": "USD, EUR, AED, SAR, GBP, INR",
-          "paymentAccepted": "Letter of Credit (LC), T/T, Wire Transfer, NEFT/RTGS, GST Invoice",
           "knowsAbout": [
             "Bentoclay",
             "API 13A powder",
@@ -218,102 +186,12 @@
             "Industrial Absorbent Granules",
             "CAS 12174-11-7",
             "HS Code 25084000",
-            "attapulgite powder manufacturer India",
-            "API 13A Section 12 attapulgite",
-            "salt gel attapulgite powder",
-            "attapulgite clay for drilling mud",
-            "attapulgite powder exporter India",
-            "attapulgite powder bulk supplier",
-            "palygorskite clay supplier",
-            "attapulgite supplier Mundra port",
-            "attapulgite manufacturer Gujarat",
-            "attapulgite manufacturer Bhavnagar",
-            "attapulgite for foundry",
-            "attapulgite for paint",
-            "attapulgite for animal feed",
-            "attapulgite for cat litter",
-            "attapulgite granules supplier",
-            "325 mesh attapulgite powder supplier",
-            "attapulgite powder export from India",
-            "API 13A attapulgite export",
-            "attapulgite FOB Mundra",
-            "attapulgite CIF supplier"
+            "Attapulgite for foundry applications",
+            "Attapulgite for paint and coatings",
+            "Attapulgite for agricultural carriers",
+            "Attapulgite granules for absorbents"
           ],
-          "areaServed": [
-            { "@type": "AdministrativeArea", "name": "Worldwide" },
-            { "@type": "Country", "name": "India" },
-            { "@type": "City", "name": "Bhavnagar" },
-            { "@type": "City", "name": "Ahmedabad" },
-            { "@type": "City", "name": "Vadodara" },
-            { "@type": "City", "name": "Surat" },
-            { "@type": "City", "name": "Rajkot" },
-            { "@type": "City", "name": "Ankleshwar" },
-            { "@type": "City", "name": "Bharuch" },
-            { "@type": "City", "name": "Dahej" },
-            { "@type": "City", "name": "Vapi" },
-            { "@type": "City", "name": "Morbi" },
-            { "@type": "City", "name": "Jamnagar" },
-            { "@type": "City", "name": "Gandhinagar" },
-            { "@type": "City", "name": "Mundra" },
-            { "@type": "City", "name": "Gandhidham" },
-            { "@type": "City", "name": "Mumbai" },
-            { "@type": "City", "name": "Navi Mumbai" },
-            { "@type": "City", "name": "Thane" },
-            { "@type": "City", "name": "Pune" },
-            { "@type": "City", "name": "Nagpur" },
-            { "@type": "City", "name": "Chennai" },
-            { "@type": "City", "name": "Coimbatore" },
-            { "@type": "City", "name": "Hyderabad" },
-            { "@type": "City", "name": "Bengaluru" },
-            { "@type": "City", "name": "Kolkata" },
-            { "@type": "City", "name": "Delhi NCR" },
-            { "@type": "City", "name": "Gurgaon" },
-            { "@type": "City", "name": "Noida" },
-            { "@type": "City", "name": "Faridabad" },
-            { "@type": "City", "name": "Jaipur" },
-            { "@type": "City", "name": "Jodhpur" },
-            { "@type": "City", "name": "Barmer" },
-            { "@type": "City", "name": "Visakhapatnam" },
-            { "@type": "State", "name": "Gujarat" },
-            { "@type": "State", "name": "Maharashtra" },
-            { "@type": "State", "name": "Rajasthan" },
-            { "@type": "State", "name": "Tamil Nadu" },
-            { "@type": "State", "name": "Telangana" },
-            { "@type": "State", "name": "Andhra Pradesh" },
-            { "@type": "State", "name": "Karnataka" },
-            { "@type": "State", "name": "West Bengal" },
-            { "@type": "State", "name": "Uttar Pradesh" },
-            { "@type": "State", "name": "Madhya Pradesh" },
-            { "@type": "State", "name": "Haryana" },
-            { "@type": "State", "name": "Punjab" },
-            { "@type": "Country", "name": "United States" },
-            { "@type": "State", "name": "Texas" },
-            { "@type": "State", "name": "Louisiana" },
-            { "@type": "City", "name": "Houston" },
-            { "@type": "City", "name": "Midland" },
-            { "@type": "City", "name": "New Orleans" },
-            { "@type": "Country", "name": "United Arab Emirates" },
-            { "@type": "City", "name": "Dubai" },
-            { "@type": "City", "name": "Abu Dhabi" },
-            { "@type": "City", "name": "Jebel Ali" },
-            { "@type": "City", "name": "Sharjah" },
-            { "@type": "Country", "name": "Saudi Arabia" },
-            { "@type": "City", "name": "Dammam" },
-            { "@type": "City", "name": "Riyadh" },
-            { "@type": "City", "name": "Jubail" },
-            { "@type": "Country", "name": "Oman" },
-            { "@type": "Country", "name": "Qatar" },
-            { "@type": "Country", "name": "Kuwait" },
-            { "@type": "Country", "name": "Netherlands" },
-            { "@type": "City", "name": "Rotterdam" },
-            { "@type": "Country", "name": "Germany" },
-            { "@type": "Country", "name": "United Kingdom" },
-            { "@type": "Country", "name": "Singapore" },
-            { "@type": "Country", "name": "Malaysia" },
-            { "@type": "Country", "name": "Indonesia" },
-            { "@type": "Country", "name": "Egypt" },
-            { "@type": "Country", "name": "South Africa" }
-          ]
+          "areaServed": "India and international export markets"
         },
         {
           "@type": "WebSite",
@@ -321,15 +199,7 @@
           "url": "https://bentoclayclaytech.com/",
           "name": "Bento Clay Tech",
           "alternateName": [
-            "Bentoclay Tech",
-            "Bento Clay",
-            "Bentoclay",
-            "Bentoclaytech",
-            "Bentoclay Claytech",
-            "Bento Clay Clay Tech",
-            "bentoclayclaytech",
-            "Bentoclay India",
-            "bentoclayclaytech.com"
+            "Bentoclay"
           ],
           "publisher": {
             "@id": "https://bentoclayclaytech.com/#organization"
@@ -337,26 +207,18 @@
           "speakable": {
             "@type": "SpeakableSpecification",
             "cssSelector": ["#hero h1", "#hero p", ".aeo-knowledge-box", "#faq"]
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://bentoclayclaytech.com/products?search={search_term_string}",
-            "query-input": "required name=search_term_string"
           }
         },
         {
           "@type": "Product",
           "@id": "https://bentoclayclaytech.com/products/api-13a-section-12-attapulgite-powder#product",
-          "name": "Best API 13A Powder - API Spec 13A Section 12 Drilling Attapulgite Clay",
+          "name": "API 13A Section 12 Attapulgite Drilling Clay",
           "alternateName": [
-            "Best API 13A Powder",
             "API 13A Powder",
             "API 13 A Powder",
             "API-13A Section 12 Attapulgite Powder",
             "API 13A Drilling Clay",
-            "Bentoclay API 13A",
-            "Best Saltwater Drilling Mud Viscosifier",
-            "Salt Gel API 13A Powder"
+            "Bentoclay API 13A"
           ],
           "brand": {
             "@type": "Brand",
@@ -365,19 +227,8 @@
           "manufacturer": {
             "@id": "https://bentoclayclaytech.com/#organization"
           },
-          "sku": "BC-API13A-01",
-          "mpn": "API-13A-SEC12",
           "image": "https://bentoclayclaytech.com/assets/product-images/Attapulgite%20Powder%20API-13A%20Section%2012%20Grade.webp",
-          "description": "Best API 13A Powder in India. Drilling clay meeting API 13A Section 12 specification for saltwater and high-salinity offshore drilling fluids, saturated brine workovers, and deep wells where standard bentonite fails. Tested on Fann Model 35 rheometer: 600 rpm dial reading ≥ 30 cps, moisture ≤ 16%, wet sieve residue ≤ 8%.",
-          "offers": {
-            "@type": "Offer",
-            "url": "https://bentoclayclaytech.com/products/api-13a-section-12-attapulgite-powder",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition",
-            "seller": {
-              "@id": "https://bentoclayclaytech.com/#organization"
-            }
-          }
+          "description": "Attapulgite drilling grade for saline conditions. The product data sheet lists 30 cps minimum viscosity at 600 rpm, 8% maximum residue above 75 μm and 16% maximum moisture."
         },
         {
           "@type": "FAQPage",
@@ -385,26 +236,26 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Why is Bentoclay the Best API 13A Powder manufacturer in India?",
+              "name": "What is the API 13A Section 12 attapulgite grade?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Bentoclay API 13A Powder is manufactured meeting API 13A Section 12 specification standards. Operating from captive deposits in Bhavnagar, Gujarat, Bentoclay delivers guaranteed viscometer dial readings at 600 RPM of 32 to 36 cps (surpassing the minimum 30 cps standard), low moisture, and zero viscosity loss in saturated salt brines up to 300,000 ppm TDS."
+                "text": "It is an attapulgite drilling grade for saline conditions. The product data sheet lists 30 cps minimum viscosity at 600 rpm, 8% maximum residue above 75 micrometers and 16% maximum moisture. Refer to the current data sheet and request batch-specific documents for verification."
               }
             },
             {
               "@type": "Question",
-              "name": "Which Indian cities and states do you supply with direct FTL truckloads?",
+              "name": "Where is Bento Clay Tech based?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We supply domestic full truckload (FTL) orders across all major industrial centers in India, including Bhavnagar, Ahmedabad, Vadodara, Surat, Rajkot, Mumbai, Pune, Chennai, Coimbatore, Hyderabad, Bengaluru, Kolkata, Jaipur, and Delhi NCR with rapid 24-48 hour dispatch."
+                "text": "Bento Clay Tech is based in Bhavnagar, Gujarat, India. Contact the company to confirm delivery availability and timing for your location."
               }
             },
             {
               "@type": "Question",
-              "name": "Which international countries and seaports do you export API 13A powder to?",
+              "name": "How can buyers confirm international shipping options?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We export worldwide containerized consignments (20ft/40ft FCL) from Mundra Port (INMUN1), Pipavav Port, and Nhava Sheva (JNPT). Primary destinations include Houston & New Orleans (USA), Jebel Ali & Abu Dhabi (UAE), Dammam & Jubail (Saudi Arabia), Sohar & Muscat (Oman), Rotterdam (Netherlands), Hamburg (Germany), and Singapore."
+                "text": "Contact Bento Clay Tech with your destination and order requirements to confirm shipping availability, freight, lead time and commercial terms."
               }
             },
             {
@@ -412,7 +263,7 @@
               "name": "Why is Bentoclay Attapulgite preferred over standard bentonite for saltwater drilling?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Standard sodium bentonite relies on electrostatic swelling plates that completely collapse and flocculate in the presence of dissolved salts (such as NaCl, KCl, CaCl₂, and seawater). Bentoclay Attapulgite features a 3D needle-like crystalline structure that creates a physical entanglement gel network. This mechanical mesh is unaffected by electrolytes, maintaining full viscosity and yield point even in saturated salt concentrations exceeding 300,000 ppm TDS."
+                "text": "Attapulgite has a rod-like crystal structure and is used as a viscosifier in saline drilling fluids. Review the product data sheet for the stated grade requirements and test results."
               }
             },
             {
@@ -420,7 +271,7 @@
               "name": "How can I request an instant factory price quote and laboratory samples?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can connect instantly with our technical sales engineers via WhatsApp at +91-7435818628, call directly at +91-7435818628, or email dipak@bentoclay.com / bentoclayclaytech@gmail.com. We provide immediate FOB/CIF pricing, Technical Data Sheets (PDS), and dispatch complimentary lab evaluation samples."
+                "text": "Contact Bento Clay Tech by phone at +91-7435818628 or email dipak@bentoclay.com to ask about quotations, product data sheets and sample availability."
               }
             },
             {
@@ -428,7 +279,7 @@
               "name": "Is Bentoclay Tech also known as Bento Clay, Bentoclay, or Bentoclay Claytech?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Bentoclay Tech (official domain bentoclayclaytech.com) is widely recognized and searched by buyers as Bento Clay Tech, Bento Clay, Bentoclay, and Bentoclay Claytech. All these names refer to the same premier Bhavnagar-based manufacturer and exporter of API 13A Section 12 drilling clay meeting API 13A Section 12 specification and high-purity Attapulgite minerals."
+                "text": "The company website uses the name Bento Clay Tech and also refers to the business as Bentoclay."
               }
             },
             {
@@ -436,7 +287,7 @@
               "name": "Are you an API 13A attapulgite powder manufacturer in India?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, Bento Clay Tech is an established attapulgite powder manufacturer India with processing works in Kardej, Bhavnagar, Gujarat, manufacturing API 13A Section 12 attapulgite and salt gel attapulgite powder for drilling mud and industrial formulations."
+                "text": "Bento Clay Tech manufactures attapulgite products in Bhavnagar, Gujarat, India. Its API 13A Section 12 grade is described by the company as meeting the physical specification requirements; this does not by itself imply an API licence or monogram."
               }
             },
             {
@@ -444,7 +295,7 @@
               "name": "Which port do you ship from?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We ship international container consignments primarily via Mundra Port (INMUN1), Gujarat, operating as an attapulgite supplier Mundra port for attapulgite powder export from India on FOB Mundra and CIF destination port terms."
+                "text": "Contact Bento Clay Tech to confirm the export port and shipping terms available for a particular order and destination."
               }
             },
             {
@@ -460,7 +311,7 @@
               "name": "Attapulgite vs bentonite for saline drilling?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Standard sodium bentonite relies on electrostatic plate swelling that collapses and flocculates in high-salinity brine or seawater. Attapulgite clay for drilling mud consists of rigid needle-like crystalline fibres that mechanically entrap fluid into a 3D lattice, maintaining full rheology, suspension, and gel strength in saturated salt formations exceeding 300,000 ppm TDS."
+                "text": "Attapulgite has a rod-like crystal structure and is used as a viscosifier in saline drilling fluids. Consult the product data sheet for the stated grade requirements and test results."
               }
             },
             {
@@ -468,7 +319,7 @@
               "name": "How to request a quote?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can click any Get Quote button on our website, call +91 74358 18628, WhatsApp +91 74358 18628, or email dipak@bentoclay.com to receive an immediate FOB or CIF quotation based on your required grade, mesh, volume, and destination port."
+                "text": "Use the contact page or call +91 74358 18628 to request a quotation. Pricing and shipping terms depend on the grade, quantity and destination."
               }
             }
           ]
@@ -492,7 +343,7 @@
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "Best API 13A Powder",
+              "name": "API 13A Section 12 Attapulgite Drilling Clay",
               "item": "https://bentoclayclaytech.com/products/api-13a-section-12-attapulgite-powder"
             }
           ]
@@ -509,49 +360,19 @@
     <!-- Fallback for Crawlers Without JavaScript -->
     <noscript>
       <div style="padding:40px; font-family:sans-serif; max-width:800px; margin:0 auto; line-height:1.6;">
-        <h2>Bento Clay Tech - Best API 13A Powder &amp; Attapulgite Manufacturer India</h2>
+        <h2>Bento Clay Tech - Attapulgite Manufacturer in India</h2>
         <p>
-          Bento Clay Tech (Bentoclay) is a leading manufacturer of API-13A Section 12 Drilling Attapulgite Clay, Salt Gel Grade viscosifiers, 
-          Premium 325 mesh paint thixotropes, Flux Fine-200 foundry flux, and 1-5 mm absorbent granules. Supplying Pan-India 
-          and exporting to USA, UAE, Saudi Arabia, Europe, and Asia from Mundra Port.
+          Bento Clay Tech (Bentoclay) manufactures API-13A Section 12 drilling attapulgite, salt gel viscosifier,
+          Premium 325 mesh paint thixotropes, Flux Fine-200 foundry flux, and 1-5 mm absorbent granules.
         </p>
         <p>
-          Bento Clay Tech exports API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat via Mundra Port on FOB and CIF terms to major global seaports.
+          Bento Clay Tech is based in Bhavnagar, Gujarat. Contact the company to confirm export availability and shipping terms for your destination.
         </p>
         <p><strong>Contact Export Desk:</strong> Phone: +91-7435818628 | Email: dipak@bentoclay.com | Address: Plot No. 12/A, GIDC Kardej, Bhavnagar, Gujarat 364004, India.</p>
         <p>Bento Clay Tech | Attapulgite Powder Manufacturer &amp; Exporter | Bhavnagar, Gujarat, India</p>
       </div>
     </noscript>
 
-    <!-- GA4 Conversion Tracking for Continuous Inquiries (WhatsApp, Call, Email) -->
-    <script>
-      document.addEventListener('click', function(e) {
-        var link = e.target.closest('a');
-        if (!link) return;
-        var href = link.getAttribute('href') || '';
-        if (typeof gtag === 'function') {
-          if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
-            gtag('event', 'generate_lead', {
-              event_category: 'Contact',
-              event_label: 'WhatsApp Inquiry',
-              value: 1.0
-            });
-          } else if (href.indexOf('tel:') !== -1) {
-            gtag('event', 'generate_lead', {
-              event_category: 'Contact',
-              event_label: 'Phone Call Inquiry',
-              value: 1.0
-            });
-          } else if (href.indexOf('mailto:') !== -1) {
-            gtag('event', 'generate_lead', {
-              event_category: 'Contact',
-              event_label: 'Email Inquiry',
-              value: 1.0
-            });
-          }
-        }
-      });
-    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

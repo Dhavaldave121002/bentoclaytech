@@ -76,9 +76,9 @@ export default function Navbar() {
           <Link to="/" className="brand" aria-label="Bento Clay Tech home" onClick={closeMenu}>
             <img
               src="/assets/bentoclay-logo.webp"
-              alt="Bento Clay Tech"
+              alt="Bento Clay Tech logo"
               width="110"
-              height="auto"
+              height="73"
               style={{ height: 'auto' }}
             />
           </Link>

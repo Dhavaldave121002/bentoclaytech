@@ -832,7 +832,7 @@ h2 span {
 
 .badge-form.granules {
   background: #f7ede0;
-  color: #a45a19;
+  color: #87420f;
 }
 
 .text-highlight {
@@ -2044,7 +2044,7 @@ h2 span {
   line-height: 1.75;
 }
 
-.site-footer h4 {
+.site-footer h2 {
   font: 700 12.5px 'Manrope', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.8px;
@@ -2084,7 +2084,7 @@ h2 span {
   gap: 14px;
 }
 
-.footer-contact h4 {
+.footer-contact h2 {
   margin: 0 0 16px;
 }
 
@@ -2340,7 +2340,7 @@ h2 span {
     180deg,
     rgba(255, 253, 249, 0.95) 0%,
     rgba(255, 253, 249, 0.98) 100%
-  ), url('/assets/bentoclay-mine-bg.jpg') center 30% / cover no-repeat;
+  ), url('/assets/optimized/bentoclay-mine-bg-1376.jpg') center 30% / cover no-repeat;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--line);
@@ -3909,7 +3909,7 @@ h2 span {
     grid-template-columns: 1fr;
   }
 
-  .footer-contact h4 {
+  .footer-contact h2 {
     grid-column: auto;
   }
 
@@ -8026,10 +8026,13 @@ h2 span {
 }
 
 .video-progress-bar {
+  width: 100%;
   height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
   background: linear-gradient(90deg, #f59e0b, #eab308);
   box-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
-  transition: width 0.15s linear;
+  transition: transform 0.15s linear;
 }
 
 /* Paused State Indicator Overlay */
@@ -8307,24 +8310,41 @@ h2 span {
 }
 
 .video-dot-btn {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.video-dot-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 12px;
   height: 12px;
   border-radius: 100px;
   background: #dfd1bf;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+  transform: translate(-50%, -50%);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.video-dot-btn:hover {
+.video-dot-btn:hover::before {
   background: var(--gold);
-  transform: scale(1.25);
+  transform: translate(-50%, -50%) scale(1.25);
 }
 
 .video-dot-btn.active {
   width: 34px;
+}
+
+.video-dot-btn.active::before {
+  width: 24px;
   height: 12px;
   background: var(--gold);
   box-shadow: 0 3px 10px rgba(184, 121, 54, 0.4);
@@ -9458,12 +9478,19 @@ h2 span {
   inset: -5%;
   width: 110%;
   height: 110%;
+  background-image: url('/assets/optimized/bentoclay-mine-bg-1376.jpg');
   background-size: cover;
   background-position: center 32%;
   background-repeat: no-repeat;
   filter: saturate(1.1) contrast(1.05);
   animation: kenBurnsDrift 32s ease-in-out infinite alternate;
   will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .hero-bg-photo {
+    background-image: url('/assets/optimized/bentoclay-mine-bg-768.jpg');
+  }
 }
 
 @keyframes kenBurnsDrift {
@@ -9639,7 +9666,7 @@ h2 span {
 }
 
 .grade-pill.active .pill-code {
-  background: rgba(255, 255, 255, 0.2);
+  background: #5e361f;
   color: #ffffff;
 }
 
@@ -9935,7 +9962,7 @@ h2 span {
   margin-top: 4px;
 }
 
-.footer-grade-details h4 {
+.footer-grade-details h2 {
   font-size: 16px;
   font-weight: 800;
   color: var(--ink);
@@ -9984,10 +10011,12 @@ h2 span {
 }
 
 .showcase-progress-fill {
+  width: 100%;
   height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
   background: linear-gradient(90deg, var(--green) 0%, var(--terracotta) 100%);
   border-radius: 999px;
-  width: 0%;
 }
 
 .showcase-progress-fill.running {
@@ -9999,8 +10028,8 @@ h2 span {
 }
 
 @keyframes progressTimer {
-  0% { width: 0%; }
-  100% { width: 100%; }
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
 }
 
 .hero-formula-chip {
@@ -10330,7 +10359,9 @@ h2 span {
 .progressbar-fill {
   height: 100%;
   background: linear-gradient(90deg, var(--green) 0%, var(--gold) 100%);
-  width: 0%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
 }
 
 .progressbar-fill.running {
@@ -10342,8 +10373,8 @@ h2 span {
 }
 
 @keyframes bannerProgressFill {
-  0% { width: 0%; }
-  100% { width: 100%; }
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
 }
 
 /* Stacked Stage (Slider Revolution transition with Ken Burns zoom) */
@@ -10518,21 +10549,30 @@ h2 span {
 }
 
 .bullet-dot {
-  width: 14px;
-  height: 14px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background: #ffffff;
-  border: 2px solid #000000;
+  background: transparent;
+  border: 0;
   padding: 0;
   cursor: pointer;
-  transition: all 0.25s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bullet-dot:hover,
-.bullet-dot.active {
+.bullet-inner {
+  width: 10px;
+  height: 10px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #000000;
+  transition: all 0.25s ease;
+}
+
+.bullet-dot:hover .bullet-inner,
+.bullet-dot.active .bullet-inner {
   background: #000000;
   border-color: var(--green);
   transform: scale(1.3);
@@ -10580,8 +10620,13 @@ h2 span {
   }
 
   .bullet-dot {
-    width: 11px;
-    height: 11px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .bullet-inner {
+    width: 7px;
+    height: 7px;
   }
 }
 
@@ -10657,8 +10702,13 @@ h2 span {
   }
 
   .bullet-dot {
-    width: 9px;
-    height: 9px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .bullet-inner {
+    width: 5px;
+    height: 5px;
   }
 }
 
@@ -11279,76 +11329,5 @@ h2 span {
   }
   .aeo-qa-container {
     grid-template-columns: 1fr;
-  }
-}
-
-/* ── Sticky Mobile Bottom CTA Bar ── */
-.sticky-mobile-cta-bar {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  body {
-    padding-bottom: 62px;
-  }
-
-  .floating-actions-container {
-    bottom: 74px !important;
-  }
-
-  .sticky-mobile-cta-bar {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99990;
-    background: #fffdfa;
-    background: rgba(255, 253, 249, 0.98);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-top: 1px solid rgba(56, 37, 29, 0.12);
-    box-shadow: 0 -4px 20px rgba(56, 37, 29, 0.08);
-    padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px));
-    gap: 8px;
-    align-items: center;
-    justify-content: stretch;
-  }
-
-  .mobile-cta-btn {
-    flex: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    height: 44px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: transform 0.15s ease, background-color 0.15s ease;
-    cursor: pointer;
-  }
-
-  .mobile-cta-btn:active {
-    transform: scale(0.97);
-  }
-
-  .mobile-cta-call {
-    background-color: #f3ece3;
-    color: var(--ink, #38251d);
-    border: 1px solid rgba(56, 37, 29, 0.14);
-  }
-
-  .mobile-cta-whatsapp {
-    background-color: #25D366;
-    color: #ffffff;
-    border: 1px solid #20ba5a;
-  }
-
-  .mobile-cta-quote {
-    background-color: var(--green, #2d5a27);
-    color: #ffffff;
-    border: 1px solid var(--green, #2d5a27);
   }
 }

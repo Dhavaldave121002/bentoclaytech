@@ -7,120 +7,99 @@ import { trackPageView } from '../utils/analytics';
 
 const BASE_URL = 'https://bentoclayclaytech.com';
 
-// Strict Google SEO Meta Configuration
-// Rules enforced:
-// 1. Focus keyword at the very beginning of the meta title.
-// 2. Meta title strictly between 50-70 characters.
-// 3. Meta description strictly between 120-200 characters containing the focus keyword.
-// 4. URL contains the focus keyword once.
+const PAGE_KEYWORDS = {
+  '/': 'Bento Clay Tech, Bentoclay Tech, Bento Clay, Bentoclay, bentoclaytech, Bentoclay Claytech, Bento Clay Clay Tech, bentoclayclaytech, Attapulgite powder manufacturer India, Attapulgite clay global exporter, API 13A Section 12 drilling clay, api 13 a powder, api 13a powder, best api 13a powder, best API 13A powder Ahmedabad, best attapulgite powder Ahmedabad, best drilling clay Ahmedabad Gujarat, best attapulgite manufacturer Gujarat, Salt Gel attapulgite, Premium 325 mesh attapulgite, Flux Fine 200 foundry clay, Attapulgite granules 1-5mm, Palygorskite manufacturer Gujarat, CAS 12174-11-7 exporter, HS Code 25084000 supplier, drilling mud viscosifier Middle East, API drilling clay Dubai UAE, attapulgite supplier Saudi Arabia, attapulgite exporter to USA, attapulgite powder Europe Rotterdam, paint thixotrope additive, agricultural carrier clay, industrial absorbent cat litter, Bhavnagar mineral plant, Mundra port container shipping, attapulgite supplier Mumbai Maharashtra, drilling clay Ahmedabad Gujarat, foundry flux supplier Chennai Tamil Nadu, paint additives Delhi NCR, agro carriers Hyderabad Telangana, domestic FTL truckload India, bentoclay official website, bentoclay.com, bentoclay minerals, best attapulgite powder Surat, best attapulgite powder Bhavnagar, best attapulgite powder Vadodara, best attapulgite powder Rajkot, best attapulgite supplier Ankleshwar, best attapulgite supplier Bharuch, best attapulgite Morbi, best api 13a powder Mumbai Maharashtra, best drilling clay India, best api 13a powder USA, best API 13A Section 12 drilling clay Texas Houston, best attapulgite exporter Dubai UAE, best attapulgite supplier Saudi Arabia, API 13A Section 12 attapulgite, salt gel attapulgite powder, attapulgite powder exporter India, attapulgite powder bulk supplier, palygorskite clay supplier, attapulgite supplier Mundra port, attapulgite for foundry, attapulgite for paint, attapulgite for animal feed, attapulgite for cat litter, attapulgite powder export from India, API 13A attapulgite export, attapulgite CIF supplier, attapulgite market, attapulgite clay, attapulgite powder',
+  '/products': 'Attapulgite Clay Grades & Powder, API 13A drilling clay, Salt Gel powder, Premium 325 mesh, foundry flux clay, absorbent granules 1-5mm, attapulgite catalog, Bento Clay Tech, Bentoclay Tech, Bento Clay, Bentoclay, best attapulgite powder Ahmedabad, best attapulgite supplier Ahmedabad Gujarat, best API 13A powder Ahmedabad, attapulgite grades, API 13A Section 12 attapulgite, api 13 a powder, 325 mesh attapulgite, Flux Fine 200, attapulgite granules, palygorskite minerals India, attapulgite market, attapulgite clay, attapulgite powder',
+  '/why-us': 'Attapulgite Clay Manufacturing Plant, Why choose Bentoclay, Attapulgite factory Bhavnagar, ISO quality control clay, Mundra port mineral export, attapulgite market, attapulgite clay, attapulgite powder',
+  '/applications': 'Attapulgite Clay Applications, drilling fluids clay, paint thixotrope, foundry flux additive, pesticide carrier granules, pet care absorbents, attapulgite market, attapulgite clay, attapulgite powder',
+  '/about': 'Bento Clay Tech, Attapulgite manufacturer India, Bhavnagar mineral company, Kardej GIDC manufacturer, Gujarat clay mining exporter, attapulgite market, attapulgite clay, attapulgite powder',
+  '/contact': 'Buy Attapulgite Clay Direct, Bento Clay Tech quote, free lab sample COA, mineral sales Bhavnagar WhatsApp, attapulgite market, attapulgite clay, attapulgite powder',
+  '/blog': 'Attapulgite Mineral Insights & Guides, drilling mud articles, paint thixotrope guides, API Spec 13A Section 12 tutorial, mineralogy Bhavnagar, attapulgite market, attapulgite clay, attapulgite powder',
+  '/faq': 'Attapulgite Clay FAQ & Specs, drilling clay questions, API 13A moisture residue standards, export packaging 25kg HDPE, Mundra port shipping FAQ, attapulgite market, attapulgite clay, attapulgite powder',
+  '/terms-conditions': 'Attapulgite Supply Terms & Warranty, mineral supply warranty, Incoterms 2020 Mundra, COA batch analysis warranty, attapulgite market, attapulgite clay, attapulgite powder',
+};
+
+const PRODUCT_KEYWORDS = {
+  'salt-gel': 'salt gel attapulgite powder, best salt gel attapulgite powder, salt gel clay, attapulgite salt gel, saltwater drilling mud viscosifier, bento clay tech, bentoclay tech, bentoclay, bento clay, bentoclayclaytech, bento clay clay tech, bentoclaytech, best salt gel powder ahmedabad, best salt gel powder surat, best salt gel powder bhavnagar, best salt gel powder vadodara, best salt gel powder rajkot, best salt gel powder mumbai maharashtra, offshore drilling clay india, palygorskite salt gel, CAS 12174-11-7, HS Code 25084000, best drilling mud viscosifier dubai uae, salt gel exporter usa houston texas, attapulgite market, attapulgite clay, attapulgite powder',
+  'api-13a': 'api 13a powder, api 13 a powder, best api 13a powder ahmedabad, best api 13 a powder ahmedabad, best drilling clay ahmedabad, best api 13a powder gujarat, api 13a, api 13 a, api 13a section 12, api spec 13a section 12, api drilling clay, api 13a attapulgite, api 13a salt gel, api 13a drilling mud viscosifier, saltwater drilling clay, offshore drilling clay, bentoclay api 13a, bentoclay tech, bento clay tech, bentoclay, bento clay, bentoclay claytech, bento clay clay tech, bentoclayclaytech, bentoclaytech, attapulgite powder manufacturer india, api 13a powder supplier dubai, api 13a powder houston texas, api 13a saudi arabia dammam, CAS 12174-11-7, HS Code 25084000, best api 13a powder surat, best api 13a powder bhavnagar, best api 13a powder vadodara, best api 13a powder rajkot, best api 13a powder ankleshwar, best api 13a powder mumbai maharashtra, best api 13a powder india, best api 13a powder usa, best api 13a powder uae, API 13A Section 12 attapulgite powder, attapulgite market, attapulgite clay, attapulgite powder',
+  'natural-powder': 'natural attapulgite powder, best agrochemical carrier clay, pesticide carrier powder ahmedabad, agro carriers hyderabad telangana, bentoclay natural powder, bento clay tech, bentoclay tech, bentoclay, bento clay, bentoclayclaytech, bento clay clay tech, bentoclaytech, animal feed binder clay, 200 mesh attapulgite, agrochemical carrier gujarat ankleshwar, CAS 12174-11-7, HS Code 25084000, pesticide carrier exporter usa, attapulgite powder vadodara surat, attapulgite market, attapulgite clay, attapulgite powder',
+  'flux-fine': 'flux fine 200 attapulgite, best foundry flux clay, foundry core wash refractory clay, foundry mold wash bentoclay, bento clay tech, bentoclay tech, bentoclay, bento clay, bentoclayclaytech, bento clay clay tech, bentoclaytech, foundry flux supplier ahmedabad, foundry flux supplier chennai tamil nadu, foundry clay rajkot gujarat, metallurgical flux attapulgite, CAS 12174-11-7, HS Code 25084000, foundry flux exporter uae saudi arabia, best foundry flux coimbatore kolkata, attapulgite market, attapulgite clay, attapulgite powder',
+  'premium-325': 'premium 325 mesh attapulgite, best 325 mesh attapulgite powder, 325 mesh attapulgite powder ahmedabad, best paint thixotrope powder ahmedabad, paint thixotrope powder surat, paint additives delhi ncr, bento clay tech, bentoclay tech, bentoclay, bento clay, bentoclayclaytech, bento clay clay tech, bentoclaytech, coatings rheology modifier, bentoclay 325 mesh, palygorskite paint additive, CAS 12174-11-7, HS Code 25084000, paint additives mumbai maharashtra, thixotropic agent exporter usa europe, best attapulgite vadodara rajkot ankleshwar, attapulgite market, attapulgite clay, attapulgite powder',
+  'granules': 'attapulgite granules 1-5mm, best industrial absorbent granules, cat litter clay granules, industrial absorbent ahmedabad, oil spill absorbent surat, bento clay tech, bentoclay tech, bentoclay, bento clay, bentoclayclaytech, bento clay clay tech, bentoclaytech, calcined attapulgite granules, chemical spill cleanup gujarat, CAS 12174-11-7, HS Code 25084000, absorbent granules exporter usa europe, best cat litter manufacturer india, attapulgite market, attapulgite clay, attapulgite powder',
+};
+
 const PAGE_META_CONFIG = {
   '/': {
-    focusKeyword: 'Best API 13A Powder',
-    title: 'Bento Clay Tech™ (Bentoclay) | Best API 13A Powder & Attapulgite Manufacturer',
-    description: "Official website of Bento Clay Tech™ (Bentoclay Tech / bentoclayclaytech.com) – Manufacturer & exporter of API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat (API Spec 13A Section 12 Drilling Clay), Salt Gel Attapulgite, and 325 Mesh. Direct supply from Bhavnagar Gujarat to worldwide seaports.",
-    keywords: 'Bento Clay Tech, Bentoclay Tech, Bento Clay, Bentoclay, bentoclaytech, Bentoclay Claytech, Bento Clay Clay Tech, bentoclayclaytech, Attapulgite powder manufacturer India, Attapulgite clay global exporter, API 13A Section 12 drilling clay, api 13 a powder, api 13a powder, best api 13a powder, best API 13A powder Ahmedabad, best attapulgite powder Ahmedabad, best drilling clay Ahmedabad Gujarat, best attapulgite manufacturer Gujarat, Salt Gel attapulgite, Premium 325 mesh attapulgite, Flux Fine 200 foundry clay, Attapulgite granules 1-5mm, Palygorskite manufacturer Gujarat, CAS 12174-11-7 exporter, HS Code 25084000 supplier, drilling mud viscosifier Middle East, API drilling clay Dubai UAE, attapulgite supplier Saudi Arabia, attapulgite exporter to USA, attapulgite powder Europe Rotterdam, paint thixotrope additive, agricultural carrier clay, industrial absorbent cat litter, Bhavnagar mineral plant, Mundra port container shipping, attapulgite supplier Mumbai Maharashtra, drilling clay Ahmedabad Gujarat, foundry flux supplier Chennai Tamil Nadu, paint additives Delhi NCR, agro carriers Hyderabad Telangana, domestic FTL truckload India, bentoclay official website, bentoclay.com, bentoclay minerals, best attapulgite powder Surat, best attapulgite powder Bhavnagar, best attapulgite powder Vadodara, best attapulgite powder Rajkot, best attapulgite supplier Ankleshwar, best attapulgite supplier Bharuch, best attapulgite Morbi, best api 13a powder Mumbai Maharashtra, best drilling clay India, best api 13a powder USA, best API 13A Section 12 drilling clay Texas Houston, best attapulgite exporter Dubai UAE, best attapulgite supplier Saudi Arabia',
+    title: 'Bento Clay Tech | API 13A Attapulgite Powder Manufacturer India',
+    description: 'Bento Clay Tech: API 13A Section 12 attapulgite, salt gel and 325 mesh powder manufacturer and exporter from Bhavnagar, Gujarat. Export via Mundra Port.',
     type: 'website'
   },
   '/products': {
-    focusKeyword: 'Attapulgite Clay Grades & Powder',
-    title: 'Attapulgite Clay Grades & Powder | Bentoclay Catalog',
-    description: 'Explore Attapulgite Clay Grades & Powder by Bentoclay meeting API 13A Section 12 specification: API-13A Section 12, Salt Gel, Premium 325 mesh thixotrope, foundry flux, and 1-5mm granules.',
-    keywords: 'Attapulgite Clay Grades & Powder, API 13A drilling clay, Salt Gel powder, Premium 325 mesh, foundry flux clay, absorbent granules 1-5mm, attapulgite catalog',
+    title: 'Attapulgite Products & Grades | Bento Clay Tech',
+    description: 'Explore Bento Clay Tech attapulgite powder and granule grades for drilling, coatings, foundry, agriculture and absorbent applications.',
     type: 'website'
   },
   '/why-us': {
-    focusKeyword: 'Attapulgite Clay Manufacturing Plant',
-    title: 'Attapulgite Clay Manufacturing Plant | Bhavnagar Port',
-    description: 'Attapulgite Clay Manufacturing Plant in Bhavnagar, Gujarat featuring ISO quality laboratory, captive mines, modern pulverizers, and Mundra port container shipping.',
-    keywords: 'Attapulgite Clay Manufacturing Plant, Why choose Bentoclay, Attapulgite factory Bhavnagar, ISO quality control clay, Mundra port mineral export',
+    title: 'Attapulgite Manufacturing | Bento Clay Tech',
+    description: 'Learn about Bento Clay Tech, its attapulgite products and manufacturing base in Bhavnagar, Gujarat, India.',
     type: 'website'
   },
   '/applications': {
-    focusKeyword: 'Attapulgite Clay Applications',
-    title: 'Attapulgite Clay Applications | 16 Industrial Uses',
-    description: 'Discover Attapulgite Clay Applications across 16 global industries including oil drilling fluids, coatings, foundries, agriculture, and pet litter by Bentoclay.',
-    keywords: 'Attapulgite Clay Applications, drilling fluids clay, paint thixotrope, foundry flux additive, pesticide carrier granules, pet care absorbents',
+    title: 'Attapulgite Applications | Bento Clay Tech',
+    description: 'Explore attapulgite uses in drilling fluids, coatings, foundry products, agriculture and absorbent applications.',
     type: 'website'
   },
   '/about': {
-    focusKeyword: 'Bento Clay Tech Attapulgite Manufacturer',
-    title: 'Bento Clay Tech | Attapulgite Mineral Specialists Bhavnagar',
-    description: "Bento Clay Tech is a Manufacturer & exporter of API 13A Section 12 attapulgite powder from Bhavnagar, Gujarat and worldwide exporter of high-purity palygorskite minerals.",
-    keywords: 'Bento Clay Tech, Attapulgite manufacturer India, Bhavnagar mineral company, Kardej GIDC manufacturer, Gujarat clay mining exporter',
+    title: 'About Bento Clay Tech | Attapulgite Manufacturer',
+    description: 'Bento Clay Tech manufactures attapulgite clay products in Bhavnagar, Gujarat, India, for industrial and drilling applications.',
     type: 'website'
   },
   '/contact': {
-    focusKeyword: 'Buy Attapulgite Clay Direct',
-    title: 'Buy Attapulgite Clay Direct | Bento Clay Tech RFQ',
-    description: 'Buy Attapulgite Clay Direct from manufacturer Bento Clay Tech. Request custom specification milling, free 25kg testing samples, and export container pricing.',
-    keywords: 'Buy Attapulgite Clay Direct, Bento Clay Tech quote, free lab sample COA, mineral sales Bhavnagar WhatsApp',
+    title: 'Contact & Product Enquiries | Bento Clay Tech',
+    description: 'Contact Bento Clay Tech in Bhavnagar, India for attapulgite product specifications, available grades, packaging details and export quotations.',
     type: 'website'
   },
   '/blog': {
-    focusKeyword: 'Attapulgite Mineral Insights & Guides',
-    title: 'Attapulgite Mineral Insights & Guides | Bentoclay',
-    description: 'Read Attapulgite Mineral Insights & Guides covering API Spec 13A oilfield standards, rheology modification in paints, and metallurgical foundry applications.',
-    keywords: 'Attapulgite Mineral Insights & Guides, drilling mud articles, paint thixotrope guides, API Spec 13A Section 12 tutorial, mineralogy Bhavnagar',
+    title: 'Attapulgite Articles & Guides | Bento Clay Tech',
+    description: 'Read Bento Clay Tech articles about attapulgite grades, drilling applications, coatings, foundry uses and industrial minerals.',
     type: 'website'
   },
   '/faq': {
-    focusKeyword: 'Attapulgite Clay FAQ & Specs',
-    title: 'Attapulgite Clay FAQ & Specs | Technical Questions',
-    description: 'Attapulgite Clay FAQ & Specs covering API-13A standards, viscosity testing, custom color formulation, export bag packaging, and Mundra container dispatch.',
-    keywords: 'Attapulgite Clay FAQ & Specs, drilling clay questions, API 13A moisture residue standards, export packaging 25kg HDPE, Mundra port shipping FAQ',
+    title: 'Attapulgite FAQs & Product Specifications | Bento Clay Tech',
+    description: 'Answers to common questions about attapulgite product grades, published specifications, applications and packaging.',
     type: 'website'
   },
   '/terms-conditions': {
-    focusKeyword: 'Attapulgite Supply Terms & Warranty',
-    title: 'Attapulgite Supply Terms & Warranty | Bentoclay COA',
-    description: 'Attapulgite Supply Terms & Warranty outlining Incoterms 2020 (FOB, CIF), Certificate of Analysis (COA) quality guarantees, and commercial container export policies.',
-    keywords: 'Attapulgite Supply Terms & Warranty, mineral supply warranty, Incoterms 2020 Mundra, COA batch analysis warranty',
+    title: 'Terms & Conditions | Bento Clay Tech',
+    description: 'Review Bento Clay Tech terms and conditions for product enquiries, orders, supply and related services.',
     type: 'website'
   }
 };
 
 const PRODUCT_SPECIFIC_META = {
   'salt-gel': {
-    focusKeyword: 'Attapulgite Salt Gel Powder',
-    title: 'Attapulgite Salt Gel Powder | API Viscosifier Bentoclay',
-    description: 'Attapulgite Salt Gel Powder with 35 cps minimum viscosity for saltwater drilling muds. Buy direct from manufacturer Bentoclay meeting API 13A Section 12 specification with fast container export.',
-    sku: 'BC-SG-200',
-    mpn: 'BC-SALT-GEL-200'
+    title: 'Salt Gel Attapulgite Powder | Bento Clay Tech',
+    description: 'Salt gel attapulgite powder for saline drilling fluids. The product data sheet lists 35 cps minimum viscosity at 600 rpm, 4% maximum residue above 75 μm and 8% maximum moisture.'
   },
   'api-13a': {
-    focusKeyword: 'API 13A Attapulgite Drilling Clay',
-    title: 'API 13A Attapulgite Drilling Clay | Bentoclay Export',
-    description: 'API 13A Attapulgite Drilling Clay meeting API 13A Section 12 specification with <8% residue and high gel strength. Global container shipping from Mundra Port by Bentoclay.',
-    sku: 'BC-API13A-200',
-    mpn: 'BC-API13A-SEC12'
+    title: 'API 13A Section 12 Attapulgite Powder | Bento Clay Tech',
+    description: 'API 13A Section 12 attapulgite powder for saline drilling fluids. View grade requirements for viscosity, residue and moisture; request the data sheet.'
   },
   'natural-powder': {
-    focusKeyword: 'Natural Attapulgite Powder',
-    title: 'Natural Attapulgite Powder | Agrochemical Carrier Clay',
-    description: 'Natural Attapulgite Powder 200 mesh carrier clay with 120-150% liquid absorption for agrochemical pesticides and fertilizers. Direct manufacturer Bentoclay.',
-    sku: 'BC-NAT-200',
-    mpn: 'BC-NAT-POWDER-200'
+    title: 'Natural Attapulgite Powder | Bento Clay Tech',
+    description: 'Natural attapulgite powder for agricultural and industrial uses. View the published grade specifications, packaging information and product data sheet.'
   },
   'flux-fine': {
-    focusKeyword: 'Flux Fine Foundry Flux Powder',
-    title: 'Flux Fine Foundry Flux Powder | High Temp Core Wash',
-    description: 'Flux Fine Foundry Flux Powder with 95ml swelling index for refractory core wash slurries and continuous casting. High thermal resistance clay from Bentoclay.',
-    sku: 'BC-FLUX-200',
-    mpn: 'BC-FLUX-FINE-200'
+    title: 'Flux Fine-200 Foundry Powder | Bento Clay Tech',
+    description: 'Flux Fine-200 attapulgite powder for foundry applications. Review the published grade specifications, packaging information and product data sheet.'
   },
   'premium-325': {
-    focusKeyword: 'Premium 325 Mesh Attapulgite',
-    title: 'Premium 325 Mesh Attapulgite | Paint Thixotrope Grade',
-    description: 'Premium 325 Mesh Attapulgite micronized powder (44 um) providing anti-sag and anti-settling rheology for paints and sealants. Direct supply from Bentoclay.',
-    sku: 'BC-PREM-325',
-    mpn: 'BC-PREM-325-MICRON'
+    title: 'Premium 325 Mesh Attapulgite | Bento Clay Tech',
+    description: 'Fine attapulgite powder for paints, coatings, sealants and adhesives. Review the Premium 325 grade specifications and product data sheet.'
   },
   'granules': {
-    focusKeyword: 'Attapulgite Granules 1-5mm',
-    title: 'Attapulgite Granules 1-5mm | Cat Litter & Absorbents',
-    description: 'Attapulgite Granules 1-5mm with 180-220% liquid uptake for industrial hazardous spill response and non-clumping cat litter. Order bulk bags from Bentoclay.',
-    sku: 'BC-GRAN-1-5',
-    mpn: 'BC-NAT-GRAN-1-5'
+    title: 'Attapulgite Granules 1–5 mm | Bento Clay Tech',
+    description: 'Low-dust, non-swelling attapulgite granules for litter, absorbent and carrier applications. View the published grade specifications and product data sheet.'
   }
 };
 
@@ -139,11 +118,11 @@ export default function PageSEO() {
       '@id': `${BASE_URL}/#organization`,
       name: 'Bento Clay Tech',
       legalName: 'Bento Clay Tech',
-      alternateName: ['Bentoclay', 'Bentoclay Tech', 'Bentoclay Claytech', 'Bentoclay Minerals', 'Bentoclay Global'],
+      alternateName: 'Bentoclay',
       url: `${BASE_URL}/`,
-      logo: `${BASE_URL}/assets/bentoclay-logo.png`,
+      logo: `${BASE_URL}/assets/bentoclay-logo.webp`,
       image: `${BASE_URL}/assets/product-range.webp`,
-      description: 'Bento Clay Tech is a premier global manufacturer and Pan-India exporter of high-purity Attapulgite (Palygorskite CAS: 12174-11-7, HS Code: 25084000) clays and engineered absorbent minerals.',
+      description: 'Bento Clay Tech manufactures attapulgite clay products in Bhavnagar, Gujarat, India, including drilling, industrial powder and granule grades.',
       telephone: '+91-7435818628',
       email: ['dipak@bentoclay.com', 'bentoclayclaytech@gmail.com'],
       address: {
@@ -161,14 +140,6 @@ export default function PageSEO() {
       },
       currenciesAccepted: 'USD, EUR, AED, SAR, GBP, INR',
       paymentAccepted: 'Letter of Credit (LC), T/T, Wire Transfer, NEFT/RTGS, GST Invoice',
-      hasMerchantReturnPolicy: {
-        '@type': 'MerchantReturnPolicy',
-        applicableCountry: 'US',
-        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-        merchantReturnDays: 30,
-        returnMethod: 'https://schema.org/ReturnByMail',
-        returnFees: 'https://schema.org/FreeReturn'
-      },
       knowsAbout: [
         'Attapulgite Clay',
         'Palygorskite Mineral',
@@ -201,10 +172,9 @@ export default function PageSEO() {
         const specific = PRODUCT_SPECIFIC_META[product.id] || {};
         
         meta = {
-          focusKeyword: specific.focusKeyword || product.name,
           title: specific.title || `${product.name} | Bento Clay Tech Bhavnagar`,
-          description: specific.description || `${product.name}: ${product.inShort || product.desc}. Attapulgite clay meeting API 13A Section 12 specification available for worldwide container export.`,
-          keywords: `${specific.focusKeyword || product.name}, ${product.shortName}, ${product.type}, Attapulgite ${product.shortName}, Bento Clay Tech Bhavnagar, CAS 12174-11-7, HS Code 25084000`,
+          description: specific.description || `${product.name}: ${product.inShort || product.desc}`,
+          keywords: `${PRODUCT_KEYWORDS[product.id] || `${product.name}, attapulgite`}, ${product.shortName}, ${product.type}, Attapulgite ${product.shortName}, Bento Clay Tech Bhavnagar, CAS 12174-11-7, HS Code 25084000`,
           type: 'product',
           image: product.image ? `${BASE_URL}${product.image}` : `${BASE_URL}/assets/product-range.webp`
         };
@@ -219,14 +189,12 @@ export default function PageSEO() {
           '@type': 'Product',
           '@id': `${BASE_URL}/products/${product.slug || product.id}#product`,
           name: product.name,
-          alternateName: specific.focusKeyword || product.shortName,
+          alternateName: product.shortName,
           description: specific.description || product.inShort || product.desc,
           image: [
             product.image ? `${BASE_URL}${product.image}` : `${BASE_URL}/assets/product-range.webp`,
             `${BASE_URL}/assets/product-range.webp`
           ],
-          sku: specific.sku || `BC-${product.code || 'GRADE'}`,
-          mpn: specific.mpn || `BC-${product.id}`,
           brand: {
             '@type': 'Brand',
             name: 'Bento Clay Tech'
@@ -235,50 +203,6 @@ export default function PageSEO() {
             '@id': `${BASE_URL}/#organization`
           },
           category: product.type || 'Industrial Minerals',
-          offers: {
-            '@type': 'Offer',
-            url: `${BASE_URL}/products/${product.slug || product.id}`,
-            availability: 'https://schema.org/InStock',
-            itemCondition: 'https://schema.org/NewCondition',
-            seller: {
-              '@id': `${BASE_URL}/#organization`
-            },
-            hasMerchantReturnPolicy: {
-              '@type': 'MerchantReturnPolicy',
-              applicableCountry: ['US', 'AE', 'SA', 'NL', 'DE', 'IN', 'SG', 'MY', 'VN', 'EG', 'ZA', 'GB', 'AU'],
-              returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-              merchantReturnDays: 30,
-              returnMethod: 'https://schema.org/ReturnByMail',
-              returnFees: 'https://schema.org/FreeReturn'
-            },
-            shippingDetails: {
-              '@type': 'OfferShippingDetails',
-              shippingRate: {
-                '@type': 'MonetaryAmount',
-                value: '0',
-                currency: 'USD'
-              },
-              shippingDestination: {
-                '@type': 'DefinedRegion',
-                addressCountry: ['US', 'AE', 'SA', 'NL', 'DE', 'IN', 'SG', 'MY', 'VN', 'EG', 'ZA', 'GB', 'AU']
-              },
-              deliveryTime: {
-                '@type': 'ShippingDeliveryTime',
-                handlingTime: {
-                  '@type': 'QuantitativeValue',
-                  minValue: 1,
-                  maxValue: 3,
-                  unitCode: 'd'
-                },
-                transitTime: {
-                  '@type': 'QuantitativeValue',
-                  minValue: 7,
-                  maxValue: 21,
-                  unitCode: 'd'
-                }
-              }
-            }
-          },
           additionalProperty: [
             {
               '@type': 'PropertyValue',
@@ -318,12 +242,11 @@ export default function PageSEO() {
       const article = blogArticles.find(a => a.slug === slug);
       if (article) {
         meta = {
-          focusKeyword: article.title.split(':')[0] || 'Attapulgite Mineral Spotlight',
           title: `${article.title.slice(0, 52)} | Bentoclay`,
           description: (article.excerpt && article.excerpt.length >= 120 && article.excerpt.length <= 200)
             ? article.excerpt
             : `${article.title}: In-depth engineering spotlight on industrial attapulgite clay performance, specifications, and manufacturing from Bentoclay Claytech.`,
-          keywords: `${article.title}, ${article.category}, Attapulgite technical spotlight, Bentoclay Claytech`,
+          keywords: `${article.title}, ${article.category}, attapulgite technical guide, Bento Clay Tech`,
           type: 'article',
           image: article.image ? `${BASE_URL}${article.image}` : `${BASE_URL}/assets/product-range.webp`
         };
@@ -464,11 +387,6 @@ export default function PageSEO() {
           url: `${BASE_URL}/`,
           name: 'Bentoclay Claytech Global',
           publisher: { '@id': `${BASE_URL}/#organization` },
-          potentialAction: {
-            '@type': 'SearchAction',
-            target: `${BASE_URL}/products?search={search_term_string}`,
-            'query-input': 'required name=search_term_string'
-          },
           speakable: speakableSchema
         }
       );
@@ -496,11 +414,16 @@ export default function PageSEO() {
       descTag.setAttribute('content', meta.description);
     }
 
-    // Update meta keywords
-    let keyTag = document.querySelector('meta[name="keywords"]');
-    if (keyTag && meta.keywords) {
-      keyTag.setAttribute('content', meta.keywords);
+    let keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (!keywordsTag) {
+      keywordsTag = document.createElement('meta');
+      keywordsTag.setAttribute('name', 'keywords');
+      document.head.appendChild(keywordsTag);
     }
+    keywordsTag.setAttribute(
+      'content',
+      meta.keywords || PAGE_KEYWORDS[location.pathname] || PAGE_KEYWORDS['/']
+    );
 
     // Update OpenGraph Title & Description & Image & Type
     let ogTitle = document.querySelector('meta[property="og:title"]');
@@ -531,7 +454,6 @@ export default function PageSEO() {
 
     if (isProductPage && currentProductInfo) {
       setMetaTag('product:brand', 'Bento Clay Tech');
-      setMetaTag('product:availability', 'in stock');
       setMetaTag('product:condition', 'new');
       setMetaTag('product:retailer_item_id', currentProductInfo.id);
       setMetaTag('product:category', currentProductInfo.type || 'Industrial Minerals');

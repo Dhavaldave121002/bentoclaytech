@@ -40,7 +40,7 @@ export default function ProductsPage() {
         <div className="product-hero-backdrop" aria-hidden="true">
           <div
             className="product-backdrop-img"
-            style={{ backgroundImage: `url('/assets/bentoclay-mine-bg.jpg')` }}
+            style={{ backgroundImage: `url('/assets/optimized/bentoclay-mine-bg-1376.jpg')` }}
           />
           <div className="product-backdrop-overlay" />
           <div className="product-backdrop-brush" />
@@ -52,7 +52,7 @@ export default function ProductsPage() {
             <em>granule grades.</em>
           </h1>
           <p>
-            Six grades produced from the same rod-structured hydrated aluminium magnesium silicate, each ground and controlled for a different performance parameter. All specifications are taken from published product data sheets. Operating as an attapulgite powder manufacturer India and attapulgite powder bulk supplier, we dispatch standard and custom orders from Bhavnagar via Mundra Port on FOB and CIF terms.
+            Six attapulgite grades for drilling and industrial applications, with specifications taken from the published product data sheets. As an attapulgite powder manufacturer in India, we handle product enquiries from Bhavnagar; contact our team to confirm grade availability, bulk packaging and delivery options for your destination.
           </p>
           <div className="portfolio-hero-pills" aria-label="Available Product Grades">
             <span className="hero-grade-tag">⚡ SG: 35 cps Salt Gel</span>
@@ -82,9 +82,10 @@ export default function ProductsPage() {
       {/* Filterable Products */}
       <section className="products page-products" id="products">
         <div className="container">
-          <div className="filter-bar" role="tablist" aria-label="Product filters">
+          <div className="filter-bar" role="group" aria-label="Product filters">
             <button
               className={`filter ${filter === 'all' ? 'active' : ''}`}
+              aria-pressed={filter === 'all'}
               onClick={() => handleFilterChange('all')}
               type="button"
             >
@@ -92,6 +93,7 @@ export default function ProductsPage() {
             </button>
             <button
               className={`filter ${filter === 'drilling' ? 'active' : ''}`}
+              aria-pressed={filter === 'drilling'}
               onClick={() => handleFilterChange('drilling')}
               type="button"
             >
@@ -99,6 +101,7 @@ export default function ProductsPage() {
             </button>
             <button
               className={`filter ${filter === 'industrial' ? 'active' : ''}`}
+              aria-pressed={filter === 'industrial'}
               onClick={() => handleFilterChange('industrial')}
               type="button"
             >
@@ -106,6 +109,7 @@ export default function ProductsPage() {
             </button>
             <button
               className={`filter ${filter === 'natural' ? 'active' : ''}`}
+              aria-pressed={filter === 'natural'}
               onClick={() => handleFilterChange('natural')}
               type="button"
             >

@@ -66,6 +66,7 @@ export default function GradeComparisonTable({ onSelectProduct }) {
                       <Link
                         to={`/products/${p.slug || p.id}`}
                         className="btn-link"
+                        aria-label={`View specifications for ${p.shortName || p.name}`}
                       >
                         <span>View Specs</span> <span className="link-arrow">↗</span>
                       </Link>

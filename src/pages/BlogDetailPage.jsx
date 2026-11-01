@@ -48,7 +48,7 @@ export default function BlogDetailPage() {
           <div style={{ background: '#fbf9f6', borderRadius: '12px', border: '1px solid #ebdccb', padding: '20px', marginBottom: '40px', display: 'flex', justifyContent: 'center' }}>
             <img 
               src={article.image} 
-              alt={article.title} 
+              alt={article.imageAlt}
               style={{ maxWidth: '100%', maxHeight: '420px', width: 'auto', height: 'auto', objectFit: 'contain', display: 'block' }} 
             />
           </div>
@@ -113,7 +113,13 @@ export default function BlogDetailPage() {
           {featuredProduct && (
             <div style={{ marginTop: '48px', padding: '24px 28px', background: '#ffffff', border: '2px solid #5e361f', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px', flexWrap: 'wrap', boxShadow: '0 6px 20px rgba(94, 54, 31, 0.08)' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '18px', minWidth: '260px' }}>
-                <img src={featuredProduct.image} alt={featuredProduct.name} style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '10px', border: '1px solid #ebdccb', background: '#faf6f0' }} />
+                <img
+                  src={featuredProduct.image}
+                  alt={featuredProduct.form === 'Granules'
+                    ? `Bowl of ${featuredProduct.shortName || featuredProduct.name} attapulgite granules`
+                    : `Bowl of ${featuredProduct.shortName || featuredProduct.name} attapulgite powder`}
+                  style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '10px', border: '1px solid #ebdccb', background: '#faf6f0' }}
+                />
                 <div>
                   <span style={{ fontSize: '11px', fontWeight: 800, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '1px' }}>FEATURED ATTAPULGITE GRADE</span>
                   <h4 style={{ margin: '3px 0', fontSize: '19px', color: 'var(--green)', fontWeight: 800 }}>{featuredProduct.name}</h4>

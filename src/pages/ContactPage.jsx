@@ -204,7 +204,7 @@ export default function ContactPage() {
             <div className="contact-image-card">
               <img
                 src="/assets/contect.webp"
-                alt="Bento Clay Tech Attapulgite Mineral Product Packaging and Export Logistics"
+                alt="Bento Clay Tech attapulgite sack, mineral samples and product notes"
                 className="contact-hero-img"
                 loading="eager"
                 decoding="async"

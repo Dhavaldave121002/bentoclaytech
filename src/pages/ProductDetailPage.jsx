@@ -91,7 +91,7 @@ export default function ProductDetailPage() {
         <div className="product-hero-backdrop" aria-hidden="true">
           <div
             className="product-backdrop-img"
-            style={{ backgroundImage: `url('/assets/bentoclay-mine-bg.jpg')` }}
+            style={{ backgroundImage: `url('/assets/optimized/bentoclay-mine-bg-1376.jpg')` }}
           />
           <div className="product-backdrop-overlay" />
           <div className="product-backdrop-brush" />
@@ -200,7 +200,9 @@ export default function ProductDetailPage() {
                   <div className="detail-media-fade">
                     <ImageWithSkeleton
                       src={product.image}
-                      alt={`${product.name} - High Purity Attapulgite Clay Mineral meeting API 13A Section 12 specification by Bento Clay Tech`}
+                      alt={product.form === 'Granules'
+                        ? `Bowl of ${product.shortName || product.name} attapulgite granules`
+                        : `Bowl of ${product.shortName || product.name} attapulgite powder`}
                       className="product-main-photo"
                     />
                   </div>

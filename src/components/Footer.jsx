@@ -10,7 +10,7 @@ export default function Footer() {
           <Link className="brand footer-brand" to="/" aria-label="Bento Clay Tech home">
             <img
               src="/assets/bentoclay-logo.webp"
-              alt="Bento Clay Tech"
+              alt="Bento Clay Tech logo"
               width="130"
               height="44"
               style={{ height: 'auto' }}
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-links">
-          <h4>Quick links</h4>
+          <h2>Quick links</h2>
           <Link to="/about">About Bentoclay <span>↗</span></Link>
           <Link to="/products">Our products <span>↗</span></Link>
           <Link to="/why-us">Why choose us <span>↗</span></Link>
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-contact">
-          <h4>Get in touch</h4>
+          <h2>Get in touch</h2>
           <a className="contact-line" href="mailto:dipak@bentoclay.com" aria-label="Email sales: dipak@bentoclay.com">
             <i aria-hidden="true">✉</i>
             <span>

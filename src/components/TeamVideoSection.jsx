@@ -8,6 +8,7 @@ const VIDEO_LIST = [
     title: 'Captive Mine Ore Sourcing & Sorting',
     desc: 'Careful selection of high-grade mineral strata, selective in-pit excavation, and manual quality sorting directly at our mining lease.',
     src: '/videos/video2.mp4',
+    captionSrc: '/videos/video2.en.vtt',
     altSrc: '/video2.mp4',
     isFeatured: false,
     nextId: 'video1',
@@ -20,6 +21,7 @@ const VIDEO_LIST = [
     title: 'Active Mine Excavation & Earthmoving',
     desc: 'Continuous heavy excavation, overburden stripping, and high-capacity earthmoving by our mining team to unearth high-purity clay seams.',
     src: '/videos/video1.mp4',
+    captionSrc: '/videos/video1.en.vtt',
     altSrc: '/video1.mp4',
     isFeatured: true,
     nextId: 'video3',
@@ -32,6 +34,7 @@ const VIDEO_LIST = [
     title: 'Deposit Haulage & Batch Stockpiling',
     desc: 'Systematic raw material stockpiling, grade-wise batch segregation, and dedicated haulage from the quarry floor to processing facilities.',
     src: '/videos/video3.mp4',
+    captionSrc: '/videos/video3.en.vtt',
     altSrc: '/video3.mp4',
     isFeatured: false,
     nextId: 'video2',
@@ -102,7 +105,7 @@ export default function TeamVideoSection() {
         if (id !== activeVideoId) {
           vid.currentTime = 0;
           if (progressRefs[id]?.current) {
-            progressRefs[id].current.style.width = '0%';
+            progressRefs[id].current.style.transform = 'scaleX(0)';
           }
         }
       }
@@ -115,7 +118,7 @@ export default function TeamVideoSection() {
     const bar = progressRefs[id]?.current;
     if (!vid || !vid.duration || !bar) return;
     const currentProg = (vid.currentTime / vid.duration) * 100;
-    bar.style.width = `${currentProg}%`;
+    bar.style.transform = `scaleX(${currentProg / 100})`;
   }, []);
 
   // Smooth slide to selected card (only scrolls carousel container, never jumps page)
@@ -201,9 +204,9 @@ export default function TeamVideoSection() {
   };
 
   // Expand modal
-  const handleExpand = (e, src, title) => {
+  const handleExpand = (e, item) => {
     e.stopPropagation();
-    setActiveVideoModal({ src, title });
+    setActiveVideoModal({ src: item.src, title: item.title, captionSrc: item.captionSrc });
   };
 
   return (
@@ -264,6 +267,7 @@ export default function TeamVideoSection() {
                   >
                     <source src={item.src} type="video/mp4" />
                     <source src={item.altSrc} type="video/mp4" />
+                    <track kind="captions" src={item.captionSrc} srcLang="en" label="English" />
                     Your browser does not support HTML5 video.
                   </video>
 
@@ -272,7 +276,7 @@ export default function TeamVideoSection() {
                     <button
                       type="button"
                       className="video-control-btn"
-                      onClick={(e) => handleExpand(e, item.src, item.title)}
+                      onClick={(e) => handleExpand(e, item)}
                       aria-label="Expand Fullscreen"
                       title="Expand Video"
                     >
@@ -307,7 +311,7 @@ export default function TeamVideoSection() {
                     <div
                       ref={progressRefs[item.id]}
                       className="video-progress-bar"
-                      style={{ width: '0%' }}
+                      style={{ transform: 'scaleX(0)' }}
                     />
                   </div>
                 </div>
@@ -342,12 +346,13 @@ export default function TeamVideoSection() {
           >
             ‹
           </button>
-          <div className="video-dots-row" role="tablist" aria-label="Video Slides">
+          <div className="video-dots-row" role="group" aria-label="Video slides">
             {VIDEO_LIST.map((item, idx) => (
               <button
                 key={item.id}
                 type="button"
                 className={`video-dot-btn ${activeVideoId === item.id ? 'active' : ''}`}
+                aria-pressed={activeVideoId === item.id}
                 onClick={() => scrollToCard(item.id)}
                 aria-label={`Slide ${idx + 1}: ${item.pill}`}
                 title={`Stage ${idx + 1}: ${item.pill}`}
@@ -390,6 +395,7 @@ export default function TeamVideoSection() {
                 defaultMuted
                 playsInline
               >
+                <track kind="captions" src={activeVideoModal.captionSrc} srcLang="en" label="English" />
                 Your browser does not support video.
               </video>
             </div>

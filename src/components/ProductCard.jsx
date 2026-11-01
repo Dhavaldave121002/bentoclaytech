@@ -2,6 +2,11 @@ import { Link } from 'react-router-dom';
 
 export default function ProductCard({ product, index }) {
   const targetUrl = `/products/${product.slug || product.id}`;
+  const imageAlt = product.image
+    ? product.form === 'Granules'
+      ? `Bowl of ${product.shortName || product.name} attapulgite granules`
+      : `Bowl of ${product.shortName || product.name} attapulgite powder`
+    : 'Bento Clay Tech attapulgite product range';
 
   return (
     <article className="product-card">
@@ -9,7 +14,7 @@ export default function ProductCard({ product, index }) {
         <div className={`product-photo product-photo-${index + 1}`}>
           <img
             src={product.image || "/assets/product-range.webp"}
-            alt={`${product.name} - High Purity Attapulgite Clay by Bento Clay Tech, Attapulgite Powder Manufacturer India`}
+            alt={imageAlt}
             loading="lazy"
             decoding="async"
             width="600"
